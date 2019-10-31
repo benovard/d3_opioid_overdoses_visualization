@@ -1,0 +1,12 @@
+Data Visualization Final Project - CS 5890
+
+1. 
+	Pie Charts
+
+2. 
+	Austin Williams - A02170170
+	Ben Ovard - A01635364
+	Kate Martin - A02253007
+
+3.
+	https://github.com/austin-michael/data_vis_final_project
