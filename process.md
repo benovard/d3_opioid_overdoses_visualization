@@ -20,8 +20,6 @@ austin.michaelwill@gmail.com
 
 benovard@gmail.com
 
-====================================================================================================================
-
 [https://github.com/austin-michael/data\_vis\_final\_project](https://www.google.com/url?q=https://github.com/austin-michael/data_vis_final_project&sa=D&ust=1573521704293000)
 
 Background and Motivation
@@ -128,7 +126,8 @@ packages, as they are suited for dealing with large amounts of data very
 quickly. They also make it easy to drop unneeded columns, and combine
 rows.
 
-\
+![Space Seperator](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image1.png)
+
 Visualization Design
 ====================
 
