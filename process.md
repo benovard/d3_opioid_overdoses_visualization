@@ -1,11 +1,10 @@
  
 
-![](images/image1.png "horizontal line")
+![Space Seperator](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image1.png)
 
-![](images/image1.png "horizontal line")  {#h.z6ne0og04bp5 .c35}
 -----------------------------------------
 
-![](images/image3.png)
+![U.S Prescription Spill](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image3.png)
 
 Exploring Opioid Prescriptions
 
@@ -19,11 +18,11 @@ Ben Ovard - A01635364
 
 austin.michaelwill@gmail.com
 
-[benovard@gmail.com](mailto:benovard@gmail.com)
+benovard@gmail.com
 
-[https://github.com/austin-michael/data\_vis\_final\_project](https://www.google.com/url?q=https://github.com/austin-michael/data_vis_final_project&sa=D&ust=1573521704293000)![](images/image2.png)
+[https://github.com/austin-michael/data\_vis\_final\_project](https://www.google.com/url?q=https://github.com/austin-michael/data_vis_final_project&sa=D&ust=1573521704293000)![github symbol](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image2.png)
 
-Background and Motivation {#h.au51mny0sx6 .c11}
+Background and Motivation
 =========================
 
 While there may be different motivations for pursuing this project
@@ -37,7 +36,7 @@ decreased by state and overdoses amongst those users. Additionally, this
 visualization will allow users to dive into our visualizations and
 extrapolate where their interests lie.
 
-Project Objectives {#h.3at9u9s4e0vp .c11}
+Project Objectives
 ==================
 
 Primary Questions we are Trying to Answer:
@@ -74,7 +73,7 @@ attributes may be pretty to look at, but ultimately serve no purpose to
 the average user. Our mission is to bypass these attributes and make our
 visualization usable by the average inexperienced user.
 
-Data {#h.4p7xi5bvhxdr .c11}
+Data
 ====
 
 Our main dataset has been acquired from kaggle. “Kaggle is an online
@@ -104,7 +103,7 @@ Drop Homicide, Suicide:
 miami\_fl\_daily\_weather\_12\_30\_2007\_-\_7\_31\_2013\#csv
 (miami\_fl\_daily\_weather\_12\_30\_2007\_-\_7\_31\_2013: [https://public.tableau.com/profile/jonboeckenstedt\#!/vizhome/Temperatures/TemperatureDashboard](https://www.google.com/url?q=https://public.tableau.com/profile/jonboeckenstedt%23!/vizhome/Temperatures/TemperatureDashboard&sa=D&ust=1573521704297000)
 
-Data Processing {#h.yyrhu7ml5bea .c11}
+Data Processing
 ===============
 
 Most of the data sets we are using contain a lot more data than we need.
@@ -127,7 +126,7 @@ quickly. They also make it easy to drop unneeded columns, and combine
 rows.
 
 \
-Visualization Design {#h.qy5ntqq4ap91 .c11}
+Visualization Design
 ====================
 
 The heart of our visualization is going to be a map of the United
@@ -148,15 +147,16 @@ that represent the highest death rates by state, county, etc..
 
 * * * * *
 
-![](images/image5.png) {#h.qgj2ayuf9chi .c11}
-======================
-
-![](images/image6.png)![](images/image4.png)![](images/image7.png) {#h.ljorgq2ii8nc .c11}
+![](images/image5.png)
+![](images/image6.png)
+![](images/image4.png)
+![](images/image7.png)
 ==================================================================
+ 
+ 
+![Space Seperator](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image1.png)
 
- {#h.gjtgebncxy7w .c11 .c21}
-
-Must Have Features {#h.6t0k4tbxg76h .c11}
+Must Have Features
 ==================
 
 Our project must have a map of some kind that shows opioid sales/use in
@@ -165,7 +165,7 @@ visualization. It also must be interactive. Interaction will be another
 core part of the visualization. We want users to be able to explore the
 map more fully by selecting and mousing over different parts.
 
-Optional Features {#h.5yjq5uy3zkcd .c11}
+Optional Features
 =================
 
 One optional feature that we want to include are line charts that will
@@ -174,7 +174,7 @@ about information over time for that region. We also want to combine
 various weather maps with the drug purchase maps in order to look for
 trends.
 
-Project Schedule {#h.t7r430siwjs3 .c11}
+Project Schedule
 ================
 
 Below is a tentative schedule for completing the project, dates may
@@ -191,7 +191,7 @@ implemented
 
 Dec. 1st - Due Date: Test and cleanup
 
-* * * * *
+![Space Seperator](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image1.png)
 
 Works Cited:
 
