@@ -20,7 +20,7 @@ austin.michaelwill@gmail.com
 
 benovard@gmail.com
 
-[https://github.com/austin-michael/data\_vis\_final\_project](https://www.google.com/url?q=https://github.com/austin-michael/data_vis_final_project&sa=D&ust=1573521704293000)![github symbol](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image2.png)
+[https://github.com/austin-michael/data\_vis\_final\_project](https://www.google.com/url?q=https://github.com/austin-michael/data_vis_final_project&sa=D&ust=1573521704293000)
 
 Background and Motivation
 =========================
@@ -147,10 +147,10 @@ that represent the highest death rates by state, county, etc..
 
 * * * * *
 
-![](images/image5.png)
-![](images/image6.png)
-![](images/image4.png)
-![](images/image7.png)
+![](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image4.png)
+![](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image5.png)
+![](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image6.png)
+![](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image7.png)
 ==================================================================
  
  
