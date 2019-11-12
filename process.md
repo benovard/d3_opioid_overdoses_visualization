@@ -20,6 +20,8 @@ austin.michaelwill@gmail.com
 
 benovard@gmail.com
 
+====================================================================================================================
+
 [https://github.com/austin-michael/data\_vis\_final\_project](https://www.google.com/url?q=https://github.com/austin-michael/data_vis_final_project&sa=D&ust=1573521704293000)
 
 Background and Motivation
@@ -30,7 +32,8 @@ amongst our team, for me, Austin, this hits home. Many years ago a
 cousin of mine was arrested for stealing opiods to fulfill his
 addiction. Opioids are very addictive, often users will become dependent
 on them.  We are interested in visualizing how many people are
-prescribed opioids and the impact they have on the United States. It
+prescribed opioids and the impact they have on the United States. We also would like
+to see if weather has an impact on opioid prescriptions/overdoses. It
 will be fascinating to see how opioid dependency has either increased or
 decreased by state and overdoses amongst those users. Additionally, this
 visualization will allow users to dive into our visualizations and
@@ -43,15 +46,15 @@ Primary Questions we are Trying to Answer:
 
 1.  How many people are prescribed opioids in the United States?
 
-1.  How many people are prescribed opioids in my area? In areas around
+2.  How many people are prescribed opioids in my area? In areas around
     me?
 
-2.  How many people die from opioids in the United States? In my area
+3.  How many people die from opioids in the United States? In my area
     and areas around me?
-3.  Is there a correlation between weather, opioid prescriptions, and
+4.  Is there a correlation between weather, opioid prescriptions, and
     opioid related deaths?
 
-1.  I.e. Do cold months lead to more people ‘needing’ opioid
+5.  Do cold months lead to more people ‘needing’ opioid
     prescriptions and ultimately more drug related deaths?
 
 What we want to learn:
