@@ -1,6 +1,6 @@
 var width = 960, height = 600;
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("body").select("#map")
     .attr("width", width)
     .attr("height", height)
 ;
@@ -14,7 +14,8 @@ d3.json("https://d3js.org/us-10m.v1.json", function(error, us) {
         .attr("class", "counties")
         .selectAll("path")
         .data(topojson.feature(us, us.objects.counties).features)
-        .enter().append("path")
+        .enter()
+        .append("path")
         .attr("d", path)
     ;
 
