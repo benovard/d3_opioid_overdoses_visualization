@@ -1,0 +1,5810 @@
+[
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Blount",
+    "Population": 57322,
+    "Deaths": 10,
+    "Death Rate per 100k": 17.445308956
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Chilton",
+    "Population": 43643,
+    "Deaths": 10,
+    "Death Rate per 100k": 22.913181954
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Escambia",
+    "Population": 38319,
+    "Deaths": 11,
+    "Death Rate per 100k": 28.706385866
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Lauderdale",
+    "Population": 92709,
+    "Deaths": 12,
+    "Death Rate per 100k": 12.943727146
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Houston",
+    "Population": 101547,
+    "Deaths": 13,
+    "Death Rate per 100k": 12.801953775
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Limestone",
+    "Population": 82782,
+    "Deaths": 14,
+    "Death Rate per 100k": 16.911889058
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "St. Clair",
+    "Population": 83593,
+    "Deaths": 14,
+    "Death Rate per 100k": 16.747813812
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Montgomery",
+    "Population": 229363,
+    "Deaths": 17,
+    "Death Rate per 100k": 7.4118319
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Morgan",
+    "Population": 119490,
+    "Deaths": 18,
+    "Death Rate per 100k": 15.064022094
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Calhoun",
+    "Population": 118572,
+    "Deaths": 20,
+    "Death Rate per 100k": 16.867388591
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Shelby",
+    "Population": 195085,
+    "Deaths": 23,
+    "Death Rate per 100k": 11.789732681
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Baldwin",
+    "Population": 182265,
+    "Deaths": 24,
+    "Death Rate per 100k": 13.167640523
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Tuscaloosa",
+    "Population": 194656,
+    "Deaths": 24,
+    "Death Rate per 100k": 12.329442709
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Madison",
+    "Population": 334811,
+    "Deaths": 30,
+    "Death Rate per 100k": 8.960279083
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Walker",
+    "Population": 67023,
+    "Deaths": 32,
+    "Death Rate per 100k": 47.744804022
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Mobile",
+    "Population": 412992,
+    "Deaths": 46,
+    "Death Rate per 100k": 11.13823028
+  },
+  {
+    "Year": 2010,
+    "State": "AL",
+    "County": "Jefferson",
+    "Population": 658466,
+    "Deaths": 70,
+    "Death Rate per 100k": 10.630769091
+  },
+  {
+    "Year": 2010,
+    "State": "AZ",
+    "County": "Coconino",
+    "Population": 134421,
+    "Deaths": 15,
+    "Death Rate per 100k": 11.158970697
+  },
+  {
+    "Year": 2010,
+    "State": "AZ",
+    "County": "Navajo",
+    "Population": 107449,
+    "Deaths": 17,
+    "Death Rate per 100k": 15.821459483
+  },
+  {
+    "Year": 2010,
+    "State": "AZ",
+    "County": "Cochise",
+    "Population": 131346,
+    "Deaths": 21,
+    "Death Rate per 100k": 15.988305696
+  },
+  {
+    "Year": 2010,
+    "State": "AZ",
+    "County": "Yuma",
+    "Population": 195751,
+    "Deaths": 23,
+    "Death Rate per 100k": 11.749620692
+  },
+  {
+    "Year": 2010,
+    "State": "AZ",
+    "County": "Pinal",
+    "Population": 375770,
+    "Deaths": 42,
+    "Death Rate per 100k": 11.177049791
+  },
+  {
+    "Year": 2010,
+    "State": "AZ",
+    "County": "Yavapai",
+    "Population": 211033,
+    "Deaths": 42,
+    "Death Rate per 100k": 19.902100619
+  },
+  {
+    "Year": 2010,
+    "State": "AZ",
+    "County": "Mohave",
+    "Population": 200186,
+    "Deaths": 51,
+    "Death Rate per 100k": 25.476307034
+  },
+  {
+    "Year": 2010,
+    "State": "AZ",
+    "County": "Pima",
+    "Population": 980263,
+    "Deaths": 181,
+    "Death Rate per 100k": 18.464432504
+  },
+  {
+    "Year": 2010,
+    "State": "AZ",
+    "County": "Maricopa",
+    "Population": 3817117,
+    "Deaths": 556,
+    "Death Rate per 100k": 14.565966933
+  },
+  {
+    "Year": 2010,
+    "State": "AR",
+    "County": "Crawford",
+    "Population": 61948,
+    "Deaths": 12,
+    "Death Rate per 100k": 19.371085426
+  },
+  {
+    "Year": 2010,
+    "State": "AR",
+    "County": "Faulkner",
+    "Population": 113237,
+    "Deaths": 12,
+    "Death Rate per 100k": 10.597242951
+  },
+  {
+    "Year": 2010,
+    "State": "AR",
+    "County": "Lonoke",
+    "Population": 68356,
+    "Deaths": 12,
+    "Death Rate per 100k": 17.555152437
+  },
+  {
+    "Year": 2010,
+    "State": "AR",
+    "County": "Sebastian",
+    "Population": 125744,
+    "Deaths": 12,
+    "Death Rate per 100k": 9.54319888
+  },
+  {
+    "Year": 2010,
+    "State": "AR",
+    "County": "Craighead",
+    "Population": 96443,
+    "Deaths": 13,
+    "Death Rate per 100k": 13.479464554
+  },
+  {
+    "Year": 2010,
+    "State": "AR",
+    "County": "Pope",
+    "Population": 61754,
+    "Deaths": 13,
+    "Death Rate per 100k": 21.051267934
+  },
+  {
+    "Year": 2010,
+    "State": "AR",
+    "County": "Washington",
+    "Population": 203065,
+    "Deaths": 14,
+    "Death Rate per 100k": 6.894344176
+  },
+  {
+    "Year": 2010,
+    "State": "AR",
+    "County": "Garland",
+    "Population": 96024,
+    "Deaths": 24,
+    "Death Rate per 100k": 24.993751562
+  },
+  {
+    "Year": 2010,
+    "State": "AR",
+    "County": "Benton",
+    "Population": 221339,
+    "Deaths": 28,
+    "Death Rate per 100k": 12.650278532
+  },
+  {
+    "Year": 2010,
+    "State": "AR",
+    "County": "Pulaski",
+    "Population": 382748,
+    "Deaths": 47,
+    "Death Rate per 100k": 12.279620011
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Kings",
+    "Population": 152982,
+    "Deaths": 11,
+    "Death Rate per 100k": 7.190388412
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Lassen",
+    "Population": 34895,
+    "Deaths": 11,
+    "Death Rate per 100k": 31.523140851
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Imperial",
+    "Population": 174528,
+    "Deaths": 12,
+    "Death Rate per 100k": 6.875687569
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Mendocino",
+    "Population": 87841,
+    "Deaths": 12,
+    "Death Rate per 100k": 13.661046664
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Nevada",
+    "Population": 98764,
+    "Deaths": 13,
+    "Death Rate per 100k": 13.162690859
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Siskiyou",
+    "Population": 44900,
+    "Deaths": 13,
+    "Death Rate per 100k": 28.953229399
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Sutter",
+    "Population": 94737,
+    "Deaths": 13,
+    "Death Rate per 100k": 13.722199352
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Madera",
+    "Population": 150865,
+    "Deaths": 14,
+    "Death Rate per 100k": 9.279819706
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Napa",
+    "Population": 136484,
+    "Deaths": 14,
+    "Death Rate per 100k": 10.257612614
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Yolo",
+    "Population": 200849,
+    "Deaths": 14,
+    "Death Rate per 100k": 6.970410607
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Tuolumne",
+    "Population": 55365,
+    "Deaths": 16,
+    "Death Rate per 100k": 28.899123995
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Placer",
+    "Population": 348432,
+    "Deaths": 21,
+    "Death Rate per 100k": 6.027000964
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Tulare",
+    "Population": 442179,
+    "Deaths": 24,
+    "Death Rate per 100k": 5.427666171
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Merced",
+    "Population": 255793,
+    "Deaths": 25,
+    "Death Rate per 100k": 9.773527814
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Marin",
+    "Population": 252409,
+    "Deaths": 30,
+    "Death Rate per 100k": 11.885471596
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "San Luis Obispo",
+    "Population": 269637,
+    "Deaths": 30,
+    "Death Rate per 100k": 11.126069493
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Lake",
+    "Population": 64665,
+    "Deaths": 32,
+    "Death Rate per 100k": 49.48581149
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "El Dorado",
+    "Population": 181058,
+    "Deaths": 36,
+    "Death Rate per 100k": 19.883131372
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Monterey",
+    "Population": 415057,
+    "Deaths": 38,
+    "Death Rate per 100k": 9.155369022
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Santa Cruz",
+    "Population": 262382,
+    "Deaths": 39,
+    "Death Rate per 100k": 14.8638245
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "San Mateo",
+    "Population": 718451,
+    "Deaths": 40,
+    "Death Rate per 100k": 5.567533485
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Humboldt",
+    "Population": 134623,
+    "Deaths": 43,
+    "Death Rate per 100k": 31.941050192
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Santa Barbara",
+    "Population": 423895,
+    "Deaths": 43,
+    "Death Rate per 100k": 10.144021515
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Shasta",
+    "Population": 177223,
+    "Deaths": 44,
+    "Death Rate per 100k": 24.827477246
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Solano",
+    "Population": 413344,
+    "Deaths": 44,
+    "Death Rate per 100k": 10.644886584
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Sonoma",
+    "Population": 483878,
+    "Deaths": 61,
+    "Death Rate per 100k": 12.606483452
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Ventura",
+    "Population": 823318,
+    "Deaths": 73,
+    "Death Rate per 100k": 8.866561887
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Butte",
+    "Population": 220000,
+    "Deaths": 76,
+    "Death Rate per 100k": 34.545454545
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Contra Costa",
+    "Population": 1049025,
+    "Deaths": 87,
+    "Death Rate per 100k": 8.293415314
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Stanislaus",
+    "Population": 514453,
+    "Deaths": 88,
+    "Death Rate per 100k": 17.105547057
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Fresno",
+    "Population": 930450,
+    "Deaths": 102,
+    "Death Rate per 100k": 10.96243753
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Alameda",
+    "Population": 1510271,
+    "Deaths": 109,
+    "Death Rate per 100k": 7.217247765
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Santa Clara",
+    "Population": 1781642,
+    "Deaths": 109,
+    "Death Rate per 100k": 6.117951867
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "San Joaquin",
+    "Population": 685306,
+    "Deaths": 127,
+    "Death Rate per 100k": 18.531867516
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Kern",
+    "Population": 839631,
+    "Deaths": 140,
+    "Death Rate per 100k": 16.673991313
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "San Bernardino",
+    "Population": 2035210,
+    "Deaths": 153,
+    "Death Rate per 100k": 7.517651741
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "San Francisco",
+    "Population": 805235,
+    "Deaths": 163,
+    "Death Rate per 100k": 20.242537893
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Sacramento",
+    "Population": 1418788,
+    "Deaths": 181,
+    "Death Rate per 100k": 12.757367556
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Riverside",
+    "Population": 2189641,
+    "Deaths": 224,
+    "Death Rate per 100k": 10.229987473
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Orange",
+    "Population": 3010232,
+    "Deaths": 260,
+    "Death Rate per 100k": 8.637208029
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "San Diego",
+    "Population": 3095313,
+    "Deaths": 307,
+    "Death Rate per 100k": 9.918221518
+  },
+  {
+    "Year": 2010,
+    "State": "CA",
+    "County": "Los Angeles",
+    "Population": 9818605,
+    "Deaths": 602,
+    "Death Rate per 100k": 6.131217215
+  },
+  {
+    "Year": 2010,
+    "State": "CO",
+    "County": "Boulder",
+    "Population": 294567,
+    "Deaths": 18,
+    "Death Rate per 100k": 6.110664127
+  },
+  {
+    "Year": 2010,
+    "State": "CO",
+    "County": "Douglas",
+    "Population": 285465,
+    "Deaths": 18,
+    "Death Rate per 100k": 6.30550155
+  },
+  {
+    "Year": 2010,
+    "State": "CO",
+    "County": "Mesa",
+    "Population": 146723,
+    "Deaths": 18,
+    "Death Rate per 100k": 12.26801524
+  },
+  {
+    "Year": 2010,
+    "State": "CO",
+    "County": "Weld",
+    "Population": 252825,
+    "Deaths": 20,
+    "Death Rate per 100k": 7.910610106
+  },
+  {
+    "Year": 2010,
+    "State": "CO",
+    "County": "Pueblo",
+    "Population": 159063,
+    "Deaths": 23,
+    "Death Rate per 100k": 14.459679498
+  },
+  {
+    "Year": 2010,
+    "State": "CO",
+    "County": "Larimer",
+    "Population": 299630,
+    "Deaths": 32,
+    "Death Rate per 100k": 10.679838467
+  },
+  {
+    "Year": 2010,
+    "State": "CO",
+    "County": "Jefferson",
+    "Population": 534543,
+    "Deaths": 38,
+    "Death Rate per 100k": 7.10887618
+  },
+  {
+    "Year": 2010,
+    "State": "CO",
+    "County": "Adams",
+    "Population": 441603,
+    "Deaths": 61,
+    "Death Rate per 100k": 13.813311957
+  },
+  {
+    "Year": 2010,
+    "State": "CO",
+    "County": "El Paso",
+    "Population": 622263,
+    "Deaths": 68,
+    "Death Rate per 100k": 10.927855264
+  },
+  {
+    "Year": 2010,
+    "State": "CO",
+    "County": "Arapahoe",
+    "Population": 572003,
+    "Deaths": 72,
+    "Death Rate per 100k": 12.58734657
+  },
+  {
+    "Year": 2010,
+    "State": "CO",
+    "County": "Denver",
+    "Population": 600158,
+    "Deaths": 113,
+    "Death Rate per 100k": 18.828375195
+  },
+  {
+    "Year": 2010,
+    "State": "CT",
+    "County": "Windham",
+    "Population": 118428,
+    "Deaths": 15,
+    "Death Rate per 100k": 12.665923599
+  },
+  {
+    "Year": 2010,
+    "State": "CT",
+    "County": "Litchfield",
+    "Population": 189927,
+    "Deaths": 19,
+    "Death Rate per 100k": 10.003843582
+  },
+  {
+    "Year": 2010,
+    "State": "CT",
+    "County": "Middlesex",
+    "Population": 165676,
+    "Deaths": 25,
+    "Death Rate per 100k": 15.089693136
+  },
+  {
+    "Year": 2010,
+    "State": "CT",
+    "County": "New London",
+    "Population": 274055,
+    "Deaths": 25,
+    "Death Rate per 100k": 9.122256481
+  },
+  {
+    "Year": 2010,
+    "State": "CT",
+    "County": "Fairfield",
+    "Population": 916829,
+    "Deaths": 55,
+    "Death Rate per 100k": 5.998937643
+  },
+  {
+    "Year": 2010,
+    "State": "CT",
+    "County": "Hartford",
+    "Population": 894014,
+    "Deaths": 75,
+    "Death Rate per 100k": 8.389130372
+  },
+  {
+    "Year": 2010,
+    "State": "CT",
+    "County": "New Haven",
+    "Population": 862477,
+    "Deaths": 107,
+    "Death Rate per 100k": 12.406127932
+  },
+  {
+    "Year": 2010,
+    "State": "DE",
+    "County": "Kent",
+    "Population": 162310,
+    "Deaths": 22,
+    "Death Rate per 100k": 13.554309654
+  },
+  {
+    "Year": 2010,
+    "State": "DE",
+    "County": "Sussex",
+    "Population": 197145,
+    "Deaths": 32,
+    "Death Rate per 100k": 16.231707626
+  },
+  {
+    "Year": 2010,
+    "State": "DE",
+    "County": "New Castle",
+    "Population": 538479,
+    "Deaths": 76,
+    "Death Rate per 100k": 14.113828023
+  },
+  {
+    "Year": 2010,
+    "State": "DC",
+    "County": "District of Columbia",
+    "Population": 601723,
+    "Deaths": 83,
+    "Death Rate per 100k": 13.793722361
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Flagler",
+    "Population": 95696,
+    "Deaths": 12,
+    "Death Rate per 100k": 12.539709079
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Nassau",
+    "Population": 73314,
+    "Deaths": 14,
+    "Death Rate per 100k": 19.095943476
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Okaloosa",
+    "Population": 180822,
+    "Deaths": 14,
+    "Death Rate per 100k": 7.742420723
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Monroe",
+    "Population": 73090,
+    "Deaths": 16,
+    "Death Rate per 100k": 21.890819538
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Columbia",
+    "Population": 67531,
+    "Deaths": 18,
+    "Death Rate per 100k": 26.654425375
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Indian River",
+    "Population": 138028,
+    "Deaths": 18,
+    "Death Rate per 100k": 13.040832295
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Alachua",
+    "Population": 247336,
+    "Deaths": 20,
+    "Death Rate per 100k": 8.086166187
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Santa Rosa",
+    "Population": 151372,
+    "Deaths": 20,
+    "Death Rate per 100k": 13.212483154
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Clay",
+    "Population": 190865,
+    "Deaths": 21,
+    "Death Rate per 100k": 11.002541063
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Martin",
+    "Population": 146318,
+    "Deaths": 21,
+    "Death Rate per 100k": 14.352301152
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "St. Johns",
+    "Population": 190039,
+    "Deaths": 21,
+    "Death Rate per 100k": 11.050363346
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Osceola",
+    "Population": 268685,
+    "Deaths": 22,
+    "Death Rate per 100k": 8.188026872
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Bay",
+    "Population": 168852,
+    "Deaths": 23,
+    "Death Rate per 100k": 13.621396252
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Charlotte",
+    "Population": 159978,
+    "Deaths": 23,
+    "Death Rate per 100k": 14.376976834
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Escambia",
+    "Population": 297619,
+    "Deaths": 25,
+    "Death Rate per 100k": 8.400001344
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Putnam",
+    "Population": 74364,
+    "Deaths": 25,
+    "Death Rate per 100k": 33.618417514
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Citrus",
+    "Population": 141236,
+    "Deaths": 28,
+    "Death Rate per 100k": 19.824973803
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Lake",
+    "Population": 297052,
+    "Deaths": 35,
+    "Death Rate per 100k": 11.782448864
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Collier",
+    "Population": 321520,
+    "Deaths": 36,
+    "Death Rate per 100k": 11.196815128
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "St. Lucie",
+    "Population": 277789,
+    "Deaths": 48,
+    "Death Rate per 100k": 17.279301916
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Hernando",
+    "Population": 172778,
+    "Deaths": 53,
+    "Death Rate per 100k": 30.675201704
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Marion",
+    "Population": 331298,
+    "Deaths": 55,
+    "Death Rate per 100k": 16.601367953
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Manatee",
+    "Population": 322833,
+    "Deaths": 63,
+    "Death Rate per 100k": 19.514733624
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Seminole",
+    "Population": 422718,
+    "Deaths": 64,
+    "Death Rate per 100k": 15.140117052
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Sarasota",
+    "Population": 379448,
+    "Deaths": 69,
+    "Death Rate per 100k": 18.18430984
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Lee",
+    "Population": 618754,
+    "Deaths": 82,
+    "Death Rate per 100k": 13.25243958
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Polk",
+    "Population": 602095,
+    "Deaths": 88,
+    "Death Rate per 100k": 14.615633746
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Miami-Dade",
+    "Population": 2496435,
+    "Deaths": 91,
+    "Death Rate per 100k": 3.645198052
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Volusia",
+    "Population": 494593,
+    "Deaths": 112,
+    "Death Rate per 100k": 22.644881751
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Brevard",
+    "Population": 543376,
+    "Deaths": 123,
+    "Death Rate per 100k": 22.636259239
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Duval",
+    "Population": 864263,
+    "Deaths": 123,
+    "Death Rate per 100k": 14.231778984
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Orange",
+    "Population": 1145956,
+    "Deaths": 136,
+    "Death Rate per 100k": 11.867820405
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Pasco",
+    "Population": 464697,
+    "Deaths": 168,
+    "Death Rate per 100k": 36.152589752
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Palm Beach",
+    "Population": 1320134,
+    "Deaths": 210,
+    "Death Rate per 100k": 15.907476059
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Broward",
+    "Population": 1748066,
+    "Deaths": 225,
+    "Death Rate per 100k": 12.871367557
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Hillsborough",
+    "Population": 1229226,
+    "Deaths": 251,
+    "Death Rate per 100k": 20.419353317
+  },
+  {
+    "Year": 2010,
+    "State": "FL",
+    "County": "Pinellas",
+    "Population": 916542,
+    "Deaths": 258,
+    "Death Rate per 100k": 28.149282848
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Douglas",
+    "Population": 132403,
+    "Deaths": 10,
+    "Death Rate per 100k": 7.552698957
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Fannin",
+    "Population": 23682,
+    "Deaths": 10,
+    "Death Rate per 100k": 42.226163331
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Jackson",
+    "Population": 60485,
+    "Deaths": 10,
+    "Death Rate per 100k": 16.533024717
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Murray",
+    "Population": 39628,
+    "Deaths": 10,
+    "Death Rate per 100k": 25.234682548
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Catoosa",
+    "Population": 63942,
+    "Deaths": 11,
+    "Death Rate per 100k": 17.203090301
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Polk",
+    "Population": 41475,
+    "Deaths": 11,
+    "Death Rate per 100k": 26.522001206
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Whitfield",
+    "Population": 102599,
+    "Deaths": 11,
+    "Death Rate per 100k": 10.72135206
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Bibb",
+    "Population": 155547,
+    "Deaths": 12,
+    "Death Rate per 100k": 7.714710023
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Barrow",
+    "Population": 69367,
+    "Deaths": 13,
+    "Death Rate per 100k": 18.740899852
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Haralson",
+    "Population": 28780,
+    "Deaths": 14,
+    "Death Rate per 100k": 48.644892286
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Columbia",
+    "Population": 124053,
+    "Deaths": 15,
+    "Death Rate per 100k": 12.091606007
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Forsyth",
+    "Population": 175511,
+    "Deaths": 15,
+    "Death Rate per 100k": 8.546472871
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Houston",
+    "Population": 139900,
+    "Deaths": 15,
+    "Death Rate per 100k": 10.721944246
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Floyd",
+    "Population": 96317,
+    "Deaths": 19,
+    "Death Rate per 100k": 19.726528027
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Bartow",
+    "Population": 100157,
+    "Deaths": 21,
+    "Death Rate per 100k": 20.967081682
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Clayton",
+    "Population": 259424,
+    "Deaths": 22,
+    "Death Rate per 100k": 8.480325645
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Carroll",
+    "Population": 110527,
+    "Deaths": 23,
+    "Death Rate per 100k": 20.809394989
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Chatham",
+    "Population": 265128,
+    "Deaths": 25,
+    "Death Rate per 100k": 9.429407682
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Cherokee",
+    "Population": 214346,
+    "Deaths": 26,
+    "Death Rate per 100k": 12.129920782
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Hall",
+    "Population": 179684,
+    "Deaths": 26,
+    "Death Rate per 100k": 14.469847065
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Henry",
+    "Population": 203922,
+    "Deaths": 26,
+    "Death Rate per 100k": 12.749973029
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Muscogee",
+    "Population": 189885,
+    "Deaths": 26,
+    "Death Rate per 100k": 13.692498091
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Paulding",
+    "Population": 142324,
+    "Deaths": 34,
+    "Death Rate per 100k": 23.889154324
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Richmond",
+    "Population": 200549,
+    "Deaths": 35,
+    "Death Rate per 100k": 17.452094002
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "DeKalb",
+    "Population": 691893,
+    "Deaths": 36,
+    "Death Rate per 100k": 5.203116667
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Gwinnett",
+    "Population": 805321,
+    "Deaths": 49,
+    "Death Rate per 100k": 6.084530268
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Cobb",
+    "Population": 688078,
+    "Deaths": 55,
+    "Death Rate per 100k": 7.993279832
+  },
+  {
+    "Year": 2010,
+    "State": "GA",
+    "County": "Fulton",
+    "Population": 920581,
+    "Deaths": 102,
+    "Death Rate per 100k": 11.079959287
+  },
+  {
+    "Year": 2010,
+    "State": "ID",
+    "County": "Bannock",
+    "Population": 82839,
+    "Deaths": 12,
+    "Death Rate per 100k": 14.48593054
+  },
+  {
+    "Year": 2010,
+    "State": "ID",
+    "County": "Twin Falls",
+    "Population": 77230,
+    "Deaths": 12,
+    "Death Rate per 100k": 15.538003367
+  },
+  {
+    "Year": 2010,
+    "State": "ID",
+    "County": "Bonneville",
+    "Population": 104234,
+    "Deaths": 13,
+    "Death Rate per 100k": 12.471938139
+  },
+  {
+    "Year": 2010,
+    "State": "ID",
+    "County": "Canyon",
+    "Population": 188923,
+    "Deaths": 18,
+    "Death Rate per 100k": 9.527691176
+  },
+  {
+    "Year": 2010,
+    "State": "ID",
+    "County": "Ada",
+    "Population": 392365,
+    "Deaths": 42,
+    "Death Rate per 100k": 10.704318683
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Marion",
+    "Population": 39437,
+    "Deaths": 10,
+    "Death Rate per 100k": 25.356898344
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Champaign",
+    "Population": 201081,
+    "Deaths": 11,
+    "Death Rate per 100k": 5.470432313
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Kankakee",
+    "Population": 113449,
+    "Deaths": 11,
+    "Death Rate per 100k": 9.695986743
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Rock Island",
+    "Population": 147546,
+    "Deaths": 11,
+    "Death Rate per 100k": 7.455302075
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Tazewell",
+    "Population": 135394,
+    "Deaths": 12,
+    "Death Rate per 100k": 8.863021995
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Vermilion",
+    "Population": 81625,
+    "Deaths": 12,
+    "Death Rate per 100k": 14.701378254
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Williamson",
+    "Population": 66357,
+    "Deaths": 13,
+    "Death Rate per 100k": 19.591000196
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "McLean",
+    "Population": 169572,
+    "Deaths": 14,
+    "Death Rate per 100k": 8.256080013
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Peoria",
+    "Population": 186494,
+    "Deaths": 19,
+    "Death Rate per 100k": 10.187995324
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Sangamon",
+    "Population": 197465,
+    "Deaths": 19,
+    "Death Rate per 100k": 9.621958322
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Kane",
+    "Population": 515269,
+    "Deaths": 27,
+    "Death Rate per 100k": 5.239981447
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "St. Clair",
+    "Population": 270056,
+    "Deaths": 27,
+    "Death Rate per 100k": 9.997926356
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "LaSalle",
+    "Population": 113924,
+    "Deaths": 29,
+    "Death Rate per 100k": 25.455566869
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "McHenry",
+    "Population": 308760,
+    "Deaths": 33,
+    "Death Rate per 100k": 10.687912942
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Will",
+    "Population": 677560,
+    "Deaths": 54,
+    "Death Rate per 100k": 7.969773895
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Winnebago",
+    "Population": 295266,
+    "Deaths": 54,
+    "Death Rate per 100k": 18.288594014
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Madison",
+    "Population": 269282,
+    "Deaths": 58,
+    "Death Rate per 100k": 21.538758625
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "DuPage",
+    "Population": 916924,
+    "Deaths": 63,
+    "Death Rate per 100k": 6.870798452
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Lake",
+    "Population": 703462,
+    "Deaths": 82,
+    "Death Rate per 100k": 11.656635326
+  },
+  {
+    "Year": 2010,
+    "State": "IL",
+    "County": "Cook",
+    "Population": 5194675,
+    "Deaths": 463,
+    "Death Rate per 100k": 8.912973381
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Jackson",
+    "Population": 42376,
+    "Deaths": 10,
+    "Death Rate per 100k": 23.598263168
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Wabash",
+    "Population": 32888,
+    "Deaths": 10,
+    "Death Rate per 100k": 30.406227195
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Dearborn",
+    "Population": 50047,
+    "Deaths": 11,
+    "Death Rate per 100k": 21.979339421
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Delaware",
+    "Population": 117671,
+    "Deaths": 11,
+    "Death Rate per 100k": 9.348097662
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Greene",
+    "Population": 33165,
+    "Deaths": 11,
+    "Death Rate per 100k": 33.167495854
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Tippecanoe",
+    "Population": 172780,
+    "Deaths": 11,
+    "Death Rate per 100k": 6.366477602
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Hendricks",
+    "Population": 145448,
+    "Deaths": 12,
+    "Death Rate per 100k": 8.250371267
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Elkhart",
+    "Population": 197559,
+    "Deaths": 13,
+    "Death Rate per 100k": 6.580312717
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Grant",
+    "Population": 70061,
+    "Deaths": 13,
+    "Death Rate per 100k": 18.555258989
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "La Porte",
+    "Population": 111467,
+    "Deaths": 13,
+    "Death Rate per 100k": 11.66264455
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Wayne",
+    "Population": 68917,
+    "Deaths": 13,
+    "Death Rate per 100k": 18.863270311
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Floyd",
+    "Population": 74578,
+    "Deaths": 14,
+    "Death Rate per 100k": 18.772292097
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Henry",
+    "Population": 49462,
+    "Deaths": 14,
+    "Death Rate per 100k": 28.304557034
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Vigo",
+    "Population": 107848,
+    "Deaths": 14,
+    "Death Rate per 100k": 12.981232846
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Bartholomew",
+    "Population": 76794,
+    "Deaths": 16,
+    "Death Rate per 100k": 20.834961065
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Monroe",
+    "Population": 137974,
+    "Deaths": 17,
+    "Death Rate per 100k": 12.321161958
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Morgan",
+    "Population": 68894,
+    "Deaths": 17,
+    "Death Rate per 100k": 24.675588585
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Clark",
+    "Population": 110232,
+    "Deaths": 20,
+    "Death Rate per 100k": 18.143551782
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Lake",
+    "Population": 496005,
+    "Deaths": 20,
+    "Death Rate per 100k": 4.032217417
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "St. Joseph",
+    "Population": 266931,
+    "Deaths": 22,
+    "Death Rate per 100k": 8.241830286
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Hamilton",
+    "Population": 274569,
+    "Deaths": 23,
+    "Death Rate per 100k": 8.376765039
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Johnson",
+    "Population": 139654,
+    "Deaths": 23,
+    "Death Rate per 100k": 16.469274063
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Porter",
+    "Population": 164343,
+    "Deaths": 26,
+    "Death Rate per 100k": 15.820570392
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Vanderburgh",
+    "Population": 179703,
+    "Deaths": 26,
+    "Death Rate per 100k": 14.468317168
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Howard",
+    "Population": 82752,
+    "Deaths": 28,
+    "Death Rate per 100k": 33.836040217
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Madison",
+    "Population": 131636,
+    "Deaths": 36,
+    "Death Rate per 100k": 27.348141846
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Allen",
+    "Population": 355329,
+    "Deaths": 38,
+    "Death Rate per 100k": 10.694314283
+  },
+  {
+    "Year": 2010,
+    "State": "IN",
+    "County": "Marion",
+    "Population": 903393,
+    "Deaths": 135,
+    "Death Rate per 100k": 14.943662393
+  },
+  {
+    "Year": 2010,
+    "State": "IA",
+    "County": "Linn",
+    "Population": 211226,
+    "Deaths": 15,
+    "Death Rate per 100k": 7.101398502
+  },
+  {
+    "Year": 2010,
+    "State": "IA",
+    "County": "Scott",
+    "Population": 165224,
+    "Deaths": 17,
+    "Death Rate per 100k": 10.289062122
+  },
+  {
+    "Year": 2010,
+    "State": "IA",
+    "County": "Polk",
+    "Population": 430640,
+    "Deaths": 39,
+    "Death Rate per 100k": 9.056288315
+  },
+  {
+    "Year": 2010,
+    "State": "KS",
+    "County": "Butler",
+    "Population": 65880,
+    "Deaths": 11,
+    "Death Rate per 100k": 16.697024894
+  },
+  {
+    "Year": 2010,
+    "State": "KS",
+    "County": "Wyandotte",
+    "Population": 157505,
+    "Deaths": 19,
+    "Death Rate per 100k": 12.063109108
+  },
+  {
+    "Year": 2010,
+    "State": "KS",
+    "County": "Shawnee",
+    "Population": 177934,
+    "Deaths": 24,
+    "Death Rate per 100k": 13.488147291
+  },
+  {
+    "Year": 2010,
+    "State": "KS",
+    "County": "Johnson",
+    "Population": 544179,
+    "Deaths": 28,
+    "Death Rate per 100k": 5.145365771
+  },
+  {
+    "Year": 2010,
+    "State": "KS",
+    "County": "Sedgwick",
+    "Population": 498365,
+    "Deaths": 54,
+    "Death Rate per 100k": 10.835431862
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Bullitt",
+    "Population": 74319,
+    "Deaths": 10,
+    "Death Rate per 100k": 13.455509358
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Clark",
+    "Population": 35613,
+    "Deaths": 10,
+    "Death Rate per 100k": 28.079633842
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Jessamine",
+    "Population": 48586,
+    "Deaths": 10,
+    "Death Rate per 100k": 20.582060676
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Knox",
+    "Population": 31883,
+    "Deaths": 10,
+    "Death Rate per 100k": 31.364677101
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Breathitt",
+    "Population": 13878,
+    "Deaths": 11,
+    "Death Rate per 100k": 79.262141519
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "McCracken",
+    "Population": 65565,
+    "Deaths": 11,
+    "Death Rate per 100k": 16.777243956
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Warren",
+    "Population": 113792,
+    "Deaths": 11,
+    "Death Rate per 100k": 9.666760405
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Knott",
+    "Population": 16346,
+    "Deaths": 12,
+    "Death Rate per 100k": 73.412455647
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Greenup",
+    "Population": 36910,
+    "Deaths": 13,
+    "Death Rate per 100k": 35.220807369
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Laurel",
+    "Population": 58849,
+    "Deaths": 13,
+    "Death Rate per 100k": 22.090434842
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Hardin",
+    "Population": 105543,
+    "Deaths": 14,
+    "Death Rate per 100k": 13.2647357
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Harlan",
+    "Population": 29278,
+    "Deaths": 14,
+    "Death Rate per 100k": 47.817473871
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Daviess",
+    "Population": 96656,
+    "Deaths": 15,
+    "Death Rate per 100k": 15.518953816
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Carter",
+    "Population": 27720,
+    "Deaths": 16,
+    "Death Rate per 100k": 57.72005772
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Clay",
+    "Population": 21730,
+    "Deaths": 16,
+    "Death Rate per 100k": 73.630924988
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Letcher",
+    "Population": 24519,
+    "Deaths": 16,
+    "Death Rate per 100k": 65.25551613
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Powell",
+    "Population": 12613,
+    "Deaths": 16,
+    "Death Rate per 100k": 126.85324665
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Whitley",
+    "Population": 35637,
+    "Deaths": 19,
+    "Death Rate per 100k": 53.31537447
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Boyd",
+    "Population": 49542,
+    "Deaths": 21,
+    "Death Rate per 100k": 42.388276614
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Johnson",
+    "Population": 23356,
+    "Deaths": 21,
+    "Death Rate per 100k": 89.912656277
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Madison",
+    "Population": 82916,
+    "Deaths": 21,
+    "Death Rate per 100k": 25.326836799
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Bell",
+    "Population": 28691,
+    "Deaths": 26,
+    "Death Rate per 100k": 90.620752152
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Campbell",
+    "Population": 90336,
+    "Deaths": 29,
+    "Death Rate per 100k": 32.102373362
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Boone",
+    "Population": 118811,
+    "Deaths": 30,
+    "Death Rate per 100k": 25.250187272
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Pike",
+    "Population": 65024,
+    "Deaths": 37,
+    "Death Rate per 100k": 56.902066929
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Floyd",
+    "Population": 39451,
+    "Deaths": 38,
+    "Death Rate per 100k": 96.322019721
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Fayette",
+    "Population": 295803,
+    "Deaths": 53,
+    "Death Rate per 100k": 17.917330115
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Kenton",
+    "Population": 159720,
+    "Deaths": 64,
+    "Death Rate per 100k": 40.070122715
+  },
+  {
+    "Year": 2010,
+    "State": "KY",
+    "County": "Jefferson",
+    "Population": 741096,
+    "Deaths": 103,
+    "Death Rate per 100k": 13.898334359
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Jefferson Davis Parish",
+    "Population": 31594,
+    "Deaths": 10,
+    "Death Rate per 100k": 31.651579414
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "St. Bernard Parish",
+    "Population": 35897,
+    "Deaths": 10,
+    "Death Rate per 100k": 27.857481127
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "St. John the Baptist Parish",
+    "Population": 45924,
+    "Deaths": 10,
+    "Death Rate per 100k": 21.775106698
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "St. Landry Parish",
+    "Population": 83384,
+    "Deaths": 10,
+    "Death Rate per 100k": 11.992708433
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "St. Mary Parish",
+    "Population": 54650,
+    "Deaths": 11,
+    "Death Rate per 100k": 20.128087832
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Ouachita Parish",
+    "Population": 153720,
+    "Deaths": 12,
+    "Death Rate per 100k": 7.806401249
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Bossier Parish",
+    "Population": 116979,
+    "Deaths": 13,
+    "Death Rate per 100k": 11.113105771
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Rapides Parish",
+    "Population": 131613,
+    "Deaths": 18,
+    "Death Rate per 100k": 13.676460532
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Acadia Parish",
+    "Population": 61773,
+    "Deaths": 19,
+    "Death Rate per 100k": 30.757774432
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Lafourche Parish",
+    "Population": 96318,
+    "Deaths": 20,
+    "Death Rate per 100k": 20.764550759
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Orleans Parish",
+    "Population": 343829,
+    "Deaths": 20,
+    "Death Rate per 100k": 5.816845001
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Caddo Parish",
+    "Population": 254969,
+    "Deaths": 21,
+    "Death Rate per 100k": 8.236295393
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Terrebonne Parish",
+    "Population": 111860,
+    "Deaths": 24,
+    "Death Rate per 100k": 21.455390667
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Calcasieu Parish",
+    "Population": 192768,
+    "Deaths": 25,
+    "Death Rate per 100k": 12.968957503
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Tangipahoa Parish",
+    "Population": 121097,
+    "Deaths": 30,
+    "Death Rate per 100k": 24.773528659
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "East Baton Rouge Parish",
+    "Population": 440171,
+    "Deaths": 32,
+    "Death Rate per 100k": 7.269901924
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Livingston Parish",
+    "Population": 128026,
+    "Deaths": 35,
+    "Death Rate per 100k": 27.338196929
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Lafayette Parish",
+    "Population": 221578,
+    "Deaths": 36,
+    "Death Rate per 100k": 16.247100344
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "St. Tammany Parish",
+    "Population": 233740,
+    "Deaths": 44,
+    "Death Rate per 100k": 18.824334731
+  },
+  {
+    "Year": 2010,
+    "State": "LA",
+    "County": "Jefferson Parish",
+    "Population": 432552,
+    "Deaths": 59,
+    "Death Rate per 100k": 13.639978546
+  },
+  {
+    "Year": 2010,
+    "State": "ME",
+    "County": "Androscoggin",
+    "Population": 107702,
+    "Deaths": 12,
+    "Death Rate per 100k": 11.141854376
+  },
+  {
+    "Year": 2010,
+    "State": "ME",
+    "County": "Kennebec",
+    "Population": 122151,
+    "Deaths": 12,
+    "Death Rate per 100k": 9.823906476
+  },
+  {
+    "Year": 2010,
+    "State": "ME",
+    "County": "Penobscot",
+    "Population": 153923,
+    "Deaths": 13,
+    "Death Rate per 100k": 8.445781332
+  },
+  {
+    "Year": 2010,
+    "State": "ME",
+    "County": "York",
+    "Population": 197131,
+    "Deaths": 18,
+    "Death Rate per 100k": 9.130983965
+  },
+  {
+    "Year": 2010,
+    "State": "ME",
+    "County": "Cumberland",
+    "Population": 281674,
+    "Deaths": 23,
+    "Death Rate per 100k": 8.165467881
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Wicomico",
+    "Population": 98733,
+    "Deaths": 10,
+    "Death Rate per 100k": 10.128325889
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Allegany",
+    "Population": 75087,
+    "Deaths": 11,
+    "Death Rate per 100k": 14.649673046
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Howard",
+    "Population": 287085,
+    "Deaths": 13,
+    "Death Rate per 100k": 4.528275598
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "St. Mary's",
+    "Population": 105151,
+    "Deaths": 13,
+    "Death Rate per 100k": 12.363172961
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Carroll",
+    "Population": 167134,
+    "Deaths": 14,
+    "Death Rate per 100k": 8.37651226
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Charles",
+    "Population": 146551,
+    "Deaths": 14,
+    "Death Rate per 100k": 9.552988379
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Frederick",
+    "Population": 233385,
+    "Deaths": 14,
+    "Death Rate per 100k": 5.998671723
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Washington",
+    "Population": 147430,
+    "Deaths": 17,
+    "Death Rate per 100k": 11.530896018
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Montgomery",
+    "Population": 971777,
+    "Deaths": 26,
+    "Death Rate per 100k": 2.675510945
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Cecil",
+    "Population": 101108,
+    "Deaths": 27,
+    "Death Rate per 100k": 26.704118368
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Harford",
+    "Population": 244826,
+    "Deaths": 39,
+    "Death Rate per 100k": 15.929680671
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Prince George's",
+    "Population": 863420,
+    "Deaths": 52,
+    "Death Rate per 100k": 6.022561442
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Anne Arundel",
+    "Population": 537656,
+    "Deaths": 60,
+    "Death Rate per 100k": 11.159551832
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Baltimore",
+    "Population": 805029,
+    "Deaths": 122,
+    "Death Rate per 100k": 15.154733556
+  },
+  {
+    "Year": 2010,
+    "State": "MD",
+    "County": "Baltimore city",
+    "Population": 620961,
+    "Deaths": 141,
+    "Death Rate per 100k": 22.706740037
+  },
+  {
+    "Year": 2010,
+    "State": "MA",
+    "County": "Berkshire",
+    "Population": 131219,
+    "Deaths": 10,
+    "Death Rate per 100k": 7.620847591
+  },
+  {
+    "Year": 2010,
+    "State": "MA",
+    "County": "Hampshire",
+    "Population": 158080,
+    "Deaths": 14,
+    "Death Rate per 100k": 8.856275304
+  },
+  {
+    "Year": 2010,
+    "State": "MA",
+    "County": "Barnstable",
+    "Population": 215888,
+    "Deaths": 26,
+    "Death Rate per 100k": 12.043281702
+  },
+  {
+    "Year": 2010,
+    "State": "MA",
+    "County": "Plymouth",
+    "Population": 494919,
+    "Deaths": 54,
+    "Death Rate per 100k": 10.910876325
+  },
+  {
+    "Year": 2010,
+    "State": "MA",
+    "County": "Hampden",
+    "Population": 463490,
+    "Deaths": 61,
+    "Death Rate per 100k": 13.161017498
+  },
+  {
+    "Year": 2010,
+    "State": "MA",
+    "County": "Essex",
+    "Population": 743159,
+    "Deaths": 72,
+    "Death Rate per 100k": 9.68837086
+  },
+  {
+    "Year": 2010,
+    "State": "MA",
+    "County": "Norfolk",
+    "Population": 670850,
+    "Deaths": 76,
+    "Death Rate per 100k": 11.328911083
+  },
+  {
+    "Year": 2010,
+    "State": "MA",
+    "County": "Suffolk",
+    "Population": 722023,
+    "Deaths": 96,
+    "Death Rate per 100k": 13.295975336
+  },
+  {
+    "Year": 2010,
+    "State": "MA",
+    "County": "Worcester",
+    "Population": 798552,
+    "Deaths": 98,
+    "Death Rate per 100k": 12.272212705
+  },
+  {
+    "Year": 2010,
+    "State": "MA",
+    "County": "Bristol",
+    "Population": 548285,
+    "Deaths": 103,
+    "Death Rate per 100k": 18.785850425
+  },
+  {
+    "Year": 2010,
+    "State": "MA",
+    "County": "Middlesex",
+    "Population": 1503085,
+    "Deaths": 137,
+    "Death Rate per 100k": 9.114587665
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Grand Traverse",
+    "Population": 86986,
+    "Deaths": 10,
+    "Death Rate per 100k": 11.496102821
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Ionia",
+    "Population": 63905,
+    "Deaths": 10,
+    "Death Rate per 100k": 15.648227838
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Eaton",
+    "Population": 107759,
+    "Deaths": 12,
+    "Death Rate per 100k": 11.135960801
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Lenawee",
+    "Population": 99892,
+    "Deaths": 12,
+    "Death Rate per 100k": 12.012974012
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Bay",
+    "Population": 107771,
+    "Deaths": 14,
+    "Death Rate per 100k": 12.99050765
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Van Buren",
+    "Population": 76258,
+    "Deaths": 16,
+    "Death Rate per 100k": 20.98140523
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Shiawassee",
+    "Population": 70648,
+    "Deaths": 17,
+    "Death Rate per 100k": 24.062960027
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Livingston",
+    "Population": 180967,
+    "Deaths": 18,
+    "Death Rate per 100k": 9.946564843
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Jackson",
+    "Population": 160248,
+    "Deaths": 19,
+    "Death Rate per 100k": 11.856622236
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Lapeer",
+    "Population": 88319,
+    "Deaths": 19,
+    "Death Rate per 100k": 21.512924739
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Ottawa",
+    "Population": 263801,
+    "Deaths": 19,
+    "Death Rate per 100k": 7.202398778
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Saginaw",
+    "Population": 200169,
+    "Deaths": 20,
+    "Death Rate per 100k": 9.991557134
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Berrien",
+    "Population": 156813,
+    "Deaths": 21,
+    "Death Rate per 100k": 13.391746858
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Kalamazoo",
+    "Population": 250331,
+    "Deaths": 24,
+    "Death Rate per 100k": 9.587306406
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Calhoun",
+    "Population": 136146,
+    "Deaths": 28,
+    "Death Rate per 100k": 20.56615692
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Ingham",
+    "Population": 280895,
+    "Deaths": 28,
+    "Death Rate per 100k": 9.96813756
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Monroe",
+    "Population": 152021,
+    "Deaths": 29,
+    "Death Rate per 100k": 19.076311825
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Muskegon",
+    "Population": 172188,
+    "Deaths": 31,
+    "Death Rate per 100k": 18.003577485
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "St. Clair",
+    "Population": 163040,
+    "Deaths": 40,
+    "Death Rate per 100k": 24.533856722
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Kent",
+    "Population": 602622,
+    "Deaths": 43,
+    "Death Rate per 100k": 7.135484599
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Washtenaw",
+    "Population": 344791,
+    "Deaths": 47,
+    "Death Rate per 100k": 13.631446296
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Genesee",
+    "Population": 425790,
+    "Deaths": 100,
+    "Death Rate per 100k": 23.485755889
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Oakland",
+    "Population": 1202362,
+    "Deaths": 165,
+    "Death Rate per 100k": 13.722988584
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Macomb",
+    "Population": 840978,
+    "Deaths": 203,
+    "Death Rate per 100k": 24.138562483
+  },
+  {
+    "Year": 2010,
+    "State": "MI",
+    "County": "Wayne",
+    "Population": 1820584,
+    "Deaths": 384,
+    "Death Rate per 100k": 21.092133074
+  },
+  {
+    "Year": 2010,
+    "State": "MN",
+    "County": "Washington",
+    "Population": 238136,
+    "Deaths": 11,
+    "Death Rate per 100k": 4.619209191
+  },
+  {
+    "Year": 2010,
+    "State": "MN",
+    "County": "St. Louis",
+    "Population": 200226,
+    "Deaths": 23,
+    "Death Rate per 100k": 11.487019668
+  },
+  {
+    "Year": 2010,
+    "State": "MN",
+    "County": "Anoka",
+    "Population": 330844,
+    "Deaths": 28,
+    "Death Rate per 100k": 8.463203202
+  },
+  {
+    "Year": 2010,
+    "State": "MN",
+    "County": "Dakota",
+    "Population": 398552,
+    "Deaths": 29,
+    "Death Rate per 100k": 7.276340352
+  },
+  {
+    "Year": 2010,
+    "State": "MN",
+    "County": "Ramsey",
+    "Population": 508640,
+    "Deaths": 46,
+    "Death Rate per 100k": 9.043724442
+  },
+  {
+    "Year": 2010,
+    "State": "MN",
+    "County": "Hennepin",
+    "Population": 1152425,
+    "Deaths": 94,
+    "Death Rate per 100k": 8.156713018
+  },
+  {
+    "Year": 2010,
+    "State": "MS",
+    "County": "Marion",
+    "Population": 27088,
+    "Deaths": 10,
+    "Death Rate per 100k": 36.916715889
+  },
+  {
+    "Year": 2010,
+    "State": "MS",
+    "County": "Lee",
+    "Population": 82910,
+    "Deaths": 11,
+    "Death Rate per 100k": 13.267398384
+  },
+  {
+    "Year": 2010,
+    "State": "MS",
+    "County": "Pearl River",
+    "Population": 55834,
+    "Deaths": 13,
+    "Death Rate per 100k": 23.28330408
+  },
+  {
+    "Year": 2010,
+    "State": "MS",
+    "County": "DeSoto",
+    "Population": 161252,
+    "Deaths": 14,
+    "Death Rate per 100k": 8.682062858
+  },
+  {
+    "Year": 2010,
+    "State": "MS",
+    "County": "Rankin",
+    "Population": 141617,
+    "Deaths": 28,
+    "Death Rate per 100k": 19.771637586
+  },
+  {
+    "Year": 2010,
+    "State": "MS",
+    "County": "Harrison",
+    "Population": 187105,
+    "Deaths": 32,
+    "Death Rate per 100k": 17.102696347
+  },
+  {
+    "Year": 2010,
+    "State": "MS",
+    "County": "Jackson",
+    "Population": 139668,
+    "Deaths": 43,
+    "Death Rate per 100k": 30.787295587
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "Phelps",
+    "Population": 45156,
+    "Deaths": 10,
+    "Death Rate per 100k": 22.145451324
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "Polk",
+    "Population": 31137,
+    "Deaths": 10,
+    "Death Rate per 100k": 32.116131933
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "Cape Girardeau",
+    "Population": 75674,
+    "Deaths": 11,
+    "Death Rate per 100k": 14.536036155
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "Cole",
+    "Population": 75990,
+    "Deaths": 11,
+    "Death Rate per 100k": 14.475588893
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "Pemiscot",
+    "Population": 18296,
+    "Deaths": 12,
+    "Death Rate per 100k": 65.58810669
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "St. Francois",
+    "Population": 65359,
+    "Deaths": 14,
+    "Death Rate per 100k": 21.420156367
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "Christian",
+    "Population": 77422,
+    "Deaths": 15,
+    "Death Rate per 100k": 19.374338043
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "Franklin",
+    "Population": 101492,
+    "Deaths": 20,
+    "Death Rate per 100k": 19.705986679
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "Jasper",
+    "Population": 117404,
+    "Deaths": 23,
+    "Death Rate per 100k": 19.590473919
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "Boone",
+    "Population": 162642,
+    "Deaths": 24,
+    "Death Rate per 100k": 14.756336002
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "Clay",
+    "Population": 221939,
+    "Deaths": 24,
+    "Death Rate per 100k": 10.813782165
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "St. Charles",
+    "Population": 360485,
+    "Deaths": 45,
+    "Death Rate per 100k": 12.483182379
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "Jefferson",
+    "Population": 218733,
+    "Deaths": 51,
+    "Death Rate per 100k": 23.316097708
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "St. Louis city",
+    "Population": 319294,
+    "Deaths": 72,
+    "Death Rate per 100k": 22.549750387
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "Greene",
+    "Population": 275174,
+    "Deaths": 84,
+    "Death Rate per 100k": 30.526139824
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "Jackson",
+    "Population": 674158,
+    "Deaths": 104,
+    "Death Rate per 100k": 15.426650726
+  },
+  {
+    "Year": 2010,
+    "State": "MO",
+    "County": "St. Louis",
+    "Population": 998954,
+    "Deaths": 131,
+    "Death Rate per 100k": 13.113716948
+  },
+  {
+    "Year": 2010,
+    "State": "MT",
+    "County": "Lewis and Clark",
+    "Population": 63395,
+    "Deaths": 10,
+    "Death Rate per 100k": 15.774114678
+  },
+  {
+    "Year": 2010,
+    "State": "MT",
+    "County": "Missoula",
+    "Population": 109299,
+    "Deaths": 16,
+    "Death Rate per 100k": 14.638743264
+  },
+  {
+    "Year": 2010,
+    "State": "MT",
+    "County": "Yellowstone",
+    "Population": 147972,
+    "Deaths": 19,
+    "Death Rate per 100k": 12.840267078
+  },
+  {
+    "Year": 2010,
+    "State": "NE",
+    "County": "Lancaster",
+    "Population": 285407,
+    "Deaths": 22,
+    "Death Rate per 100k": 7.708290266
+  },
+  {
+    "Year": 2010,
+    "State": "NE",
+    "County": "Douglas",
+    "Population": 517110,
+    "Deaths": 43,
+    "Death Rate per 100k": 8.315445456
+  },
+  {
+    "Year": 2010,
+    "State": "NV",
+    "County": "Douglas",
+    "Population": 46997,
+    "Deaths": 12,
+    "Death Rate per 100k": 25.533544694
+  },
+  {
+    "Year": 2010,
+    "State": "NV",
+    "County": "Lyon",
+    "Population": 51980,
+    "Deaths": 14,
+    "Death Rate per 100k": 26.933435937
+  },
+  {
+    "Year": 2010,
+    "State": "NV",
+    "County": "Nye",
+    "Population": 43946,
+    "Deaths": 17,
+    "Death Rate per 100k": 38.683839257
+  },
+  {
+    "Year": 2010,
+    "State": "NV",
+    "County": "Washoe",
+    "Population": 421407,
+    "Deaths": 93,
+    "Death Rate per 100k": 22.06892624
+  },
+  {
+    "Year": 2010,
+    "State": "NV",
+    "County": "Clark",
+    "Population": 1951269,
+    "Deaths": 321,
+    "Death Rate per 100k": 16.450832766
+  },
+  {
+    "Year": 2010,
+    "State": "NH",
+    "County": "Merrimack",
+    "Population": 146445,
+    "Deaths": 10,
+    "Death Rate per 100k": 6.828502168
+  },
+  {
+    "Year": 2010,
+    "State": "NH",
+    "County": "Strafford",
+    "Population": 123143,
+    "Deaths": 15,
+    "Death Rate per 100k": 12.180960347
+  },
+  {
+    "Year": 2010,
+    "State": "NH",
+    "County": "Rockingham",
+    "Population": 295223,
+    "Deaths": 26,
+    "Death Rate per 100k": 8.806901901
+  },
+  {
+    "Year": 2010,
+    "State": "NH",
+    "County": "Hillsborough",
+    "Population": 400721,
+    "Deaths": 47,
+    "Death Rate per 100k": 11.728858732
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Cumberland",
+    "Population": 156898,
+    "Deaths": 12,
+    "Death Rate per 100k": 7.648281049
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Somerset",
+    "Population": 323444,
+    "Deaths": 15,
+    "Death Rate per 100k": 4.63758796
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Warren",
+    "Population": 108692,
+    "Deaths": 15,
+    "Death Rate per 100k": 13.800463696
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Sussex",
+    "Population": 149265,
+    "Deaths": 18,
+    "Death Rate per 100k": 12.059089539
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Mercer",
+    "Population": 366513,
+    "Deaths": 35,
+    "Death Rate per 100k": 9.549456636
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Union",
+    "Population": 536499,
+    "Deaths": 35,
+    "Death Rate per 100k": 6.523777304
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Passaic",
+    "Population": 501226,
+    "Deaths": 36,
+    "Death Rate per 100k": 7.182388783
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Morris",
+    "Population": 492276,
+    "Deaths": 38,
+    "Death Rate per 100k": 7.719246927
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Hudson",
+    "Population": 634266,
+    "Deaths": 40,
+    "Death Rate per 100k": 6.306502319
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Atlantic",
+    "Population": 274549,
+    "Deaths": 42,
+    "Death Rate per 100k": 15.29781569
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Bergen",
+    "Population": 905116,
+    "Deaths": 43,
+    "Death Rate per 100k": 4.750772277
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Gloucester",
+    "Population": 288288,
+    "Deaths": 47,
+    "Death Rate per 100k": 16.303141303
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Burlington",
+    "Population": 448734,
+    "Deaths": 50,
+    "Death Rate per 100k": 11.142458561
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Middlesex",
+    "Population": 809858,
+    "Deaths": 52,
+    "Death Rate per 100k": 6.420878722
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Ocean",
+    "Population": 576567,
+    "Deaths": 62,
+    "Death Rate per 100k": 10.753303606
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Monmouth",
+    "Population": 630380,
+    "Deaths": 69,
+    "Death Rate per 100k": 10.945778737
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Essex",
+    "Population": 783969,
+    "Deaths": 81,
+    "Death Rate per 100k": 10.33204119
+  },
+  {
+    "Year": 2010,
+    "State": "NJ",
+    "County": "Camden",
+    "Population": 513657,
+    "Deaths": 89,
+    "Death Rate per 100k": 17.326737492
+  },
+  {
+    "Year": 2010,
+    "State": "NM",
+    "County": "Otero",
+    "Population": 63797,
+    "Deaths": 10,
+    "Death Rate per 100k": 15.674718247
+  },
+  {
+    "Year": 2010,
+    "State": "NM",
+    "County": "Lea",
+    "Population": 64727,
+    "Deaths": 12,
+    "Death Rate per 100k": 18.539403958
+  },
+  {
+    "Year": 2010,
+    "State": "NM",
+    "County": "San Juan",
+    "Population": 130044,
+    "Deaths": 13,
+    "Death Rate per 100k": 9.99661653
+  },
+  {
+    "Year": 2010,
+    "State": "NM",
+    "County": "Eddy",
+    "Population": 53829,
+    "Deaths": 17,
+    "Death Rate per 100k": 31.581489532
+  },
+  {
+    "Year": 2010,
+    "State": "NM",
+    "County": "Sandoval",
+    "Population": 131561,
+    "Deaths": 17,
+    "Death Rate per 100k": 12.921762528
+  },
+  {
+    "Year": 2010,
+    "State": "NM",
+    "County": "Rio Arriba",
+    "Population": 40246,
+    "Deaths": 18,
+    "Death Rate per 100k": 44.724941609
+  },
+  {
+    "Year": 2010,
+    "State": "NM",
+    "County": "Valencia",
+    "Population": 76569,
+    "Deaths": 21,
+    "Death Rate per 100k": 27.426242997
+  },
+  {
+    "Year": 2010,
+    "State": "NM",
+    "County": "Santa Fe",
+    "Population": 144170,
+    "Deaths": 30,
+    "Death Rate per 100k": 20.808767427
+  },
+  {
+    "Year": 2010,
+    "State": "NM",
+    "County": "Dona Ana",
+    "Population": 209233,
+    "Deaths": 32,
+    "Death Rate per 100k": 15.293954587
+  },
+  {
+    "Year": 2010,
+    "State": "NM",
+    "County": "Bernalillo",
+    "Population": 662564,
+    "Deaths": 159,
+    "Death Rate per 100k": 23.997681733
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Oswego",
+    "Population": 122109,
+    "Deaths": 10,
+    "Death Rate per 100k": 8.189404548
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Ulster",
+    "Population": 182493,
+    "Deaths": 13,
+    "Death Rate per 100k": 7.123560904
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Rensselaer",
+    "Population": 159429,
+    "Deaths": 16,
+    "Death Rate per 100k": 10.035815316
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Rockland",
+    "Population": 311687,
+    "Deaths": 16,
+    "Death Rate per 100k": 5.133354936
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Broome",
+    "Population": 200600,
+    "Deaths": 18,
+    "Death Rate per 100k": 8.973080758
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Oneida",
+    "Population": 234878,
+    "Deaths": 19,
+    "Death Rate per 100k": 8.089305938
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Albany",
+    "Population": 304204,
+    "Deaths": 26,
+    "Death Rate per 100k": 8.546896162
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Niagara",
+    "Population": 216469,
+    "Deaths": 32,
+    "Death Rate per 100k": 14.782717156
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Onondaga",
+    "Population": 467026,
+    "Deaths": 36,
+    "Death Rate per 100k": 7.708350285
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Westchester",
+    "Population": 949113,
+    "Deaths": 38,
+    "Death Rate per 100k": 4.003738227
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Dutchess",
+    "Population": 297488,
+    "Deaths": 49,
+    "Death Rate per 100k": 16.471252622
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Monroe",
+    "Population": 744344,
+    "Deaths": 52,
+    "Death Rate per 100k": 6.986017218
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Orange",
+    "Population": 372813,
+    "Deaths": 57,
+    "Death Rate per 100k": 15.289166419
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Richmond",
+    "Population": 468730,
+    "Deaths": 66,
+    "Death Rate per 100k": 14.080600772
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Erie",
+    "Population": 919040,
+    "Deaths": 71,
+    "Death Rate per 100k": 7.725452646
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Nassau",
+    "Population": 1339532,
+    "Deaths": 106,
+    "Death Rate per 100k": 7.91321148
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "New York",
+    "Population": 1585873,
+    "Deaths": 120,
+    "Death Rate per 100k": 7.566810205
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Queens",
+    "Population": 2230722,
+    "Deaths": 123,
+    "Death Rate per 100k": 5.513909846
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Kings",
+    "Population": 2504700,
+    "Deaths": 168,
+    "Death Rate per 100k": 6.707390107
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Bronx",
+    "Population": 1385108,
+    "Deaths": 173,
+    "Death Rate per 100k": 12.49000078
+  },
+  {
+    "Year": 2010,
+    "State": "NY",
+    "County": "Suffolk",
+    "Population": 1493350,
+    "Deaths": 183,
+    "Death Rate per 100k": 12.254327519
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Carteret",
+    "Population": 66469,
+    "Deaths": 10,
+    "Death Rate per 100k": 15.044607261
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Rutherford",
+    "Population": 67810,
+    "Deaths": 10,
+    "Death Rate per 100k": 14.74708745
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Union",
+    "Population": 201292,
+    "Deaths": 10,
+    "Death Rate per 100k": 4.967907319
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Craven",
+    "Population": 103505,
+    "Deaths": 11,
+    "Death Rate per 100k": 10.627505918
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Harnett",
+    "Population": 114678,
+    "Deaths": 11,
+    "Death Rate per 100k": 9.592075202
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Onslow",
+    "Population": 177772,
+    "Deaths": 11,
+    "Death Rate per 100k": 6.1877011
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Wayne",
+    "Population": 122623,
+    "Deaths": 11,
+    "Death Rate per 100k": 8.970584637
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Caldwell",
+    "Population": 83029,
+    "Deaths": 12,
+    "Death Rate per 100k": 14.452781558
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Cherokee",
+    "Population": 27444,
+    "Deaths": 12,
+    "Death Rate per 100k": 43.72540446
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Columbus",
+    "Population": 58098,
+    "Deaths": 13,
+    "Death Rate per 100k": 22.375985404
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Haywood",
+    "Population": 59036,
+    "Deaths": 13,
+    "Death Rate per 100k": 22.020462091
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Henderson",
+    "Population": 106740,
+    "Deaths": 14,
+    "Death Rate per 100k": 13.115982762
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Rockingham",
+    "Population": 93643,
+    "Deaths": 15,
+    "Death Rate per 100k": 16.018282199
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Davidson",
+    "Population": 162878,
+    "Deaths": 16,
+    "Death Rate per 100k": 9.823303331
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Pitt",
+    "Population": 168148,
+    "Deaths": 16,
+    "Death Rate per 100k": 9.515426886
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Surry",
+    "Population": 73673,
+    "Deaths": 16,
+    "Death Rate per 100k": 21.71758989
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Wilkes",
+    "Population": 69340,
+    "Deaths": 16,
+    "Death Rate per 100k": 23.074704355
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Catawba",
+    "Population": 154358,
+    "Deaths": 17,
+    "Death Rate per 100k": 11.013358556
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Randolph",
+    "Population": 141752,
+    "Deaths": 17,
+    "Death Rate per 100k": 11.992776116
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Cleveland",
+    "Population": 98078,
+    "Deaths": 18,
+    "Death Rate per 100k": 18.352739656
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Stanly",
+    "Population": 60585,
+    "Deaths": 18,
+    "Death Rate per 100k": 29.710324338
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Burke",
+    "Population": 90912,
+    "Deaths": 19,
+    "Death Rate per 100k": 20.899331221
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Iredell",
+    "Population": 159437,
+    "Deaths": 19,
+    "Death Rate per 100k": 11.916932707
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Brunswick",
+    "Population": 107431,
+    "Deaths": 20,
+    "Death Rate per 100k": 18.616600423
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Durham",
+    "Population": 267587,
+    "Deaths": 21,
+    "Death Rate per 100k": 7.847914884
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Rowan",
+    "Population": 138428,
+    "Deaths": 21,
+    "Death Rate per 100k": 15.17034126
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Cabarrus",
+    "Population": 178011,
+    "Deaths": 22,
+    "Death Rate per 100k": 12.358786817
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Buncombe",
+    "Population": 238318,
+    "Deaths": 23,
+    "Death Rate per 100k": 9.650970552
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Johnston",
+    "Population": 168878,
+    "Deaths": 24,
+    "Death Rate per 100k": 14.21144258
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Forsyth",
+    "Population": 350670,
+    "Deaths": 25,
+    "Death Rate per 100k": 7.129209798
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Guilford",
+    "Population": 488406,
+    "Deaths": 27,
+    "Death Rate per 100k": 5.528187614
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "New Hanover",
+    "Population": 202667,
+    "Deaths": 29,
+    "Death Rate per 100k": 14.309186991
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Cumberland",
+    "Population": 319431,
+    "Deaths": 39,
+    "Death Rate per 100k": 12.209209501
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Wake",
+    "Population": 900993,
+    "Deaths": 43,
+    "Death Rate per 100k": 4.772512106
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Mecklenburg",
+    "Population": 919628,
+    "Deaths": 45,
+    "Death Rate per 100k": 4.893282936
+  },
+  {
+    "Year": 2010,
+    "State": "NC",
+    "County": "Gaston",
+    "Population": 206086,
+    "Deaths": 46,
+    "Death Rate per 100k": 22.320778704
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Knox",
+    "Population": 60921,
+    "Deaths": 10,
+    "Death Rate per 100k": 16.414701006
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Union",
+    "Population": 52300,
+    "Deaths": 10,
+    "Death Rate per 100k": 19.120458891
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Wood",
+    "Population": 125488,
+    "Deaths": 10,
+    "Death Rate per 100k": 7.968889456
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Columbiana",
+    "Population": 107841,
+    "Deaths": 11,
+    "Death Rate per 100k": 10.200202149
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Madison",
+    "Population": 43435,
+    "Deaths": 11,
+    "Death Rate per 100k": 25.325198573
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Guernsey",
+    "Population": 40087,
+    "Deaths": 12,
+    "Death Rate per 100k": 29.934891611
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Lawrence",
+    "Population": 62450,
+    "Deaths": 12,
+    "Death Rate per 100k": 19.215372298
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Delaware",
+    "Population": 174214,
+    "Deaths": 13,
+    "Death Rate per 100k": 7.462086859
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Medina",
+    "Population": 172332,
+    "Deaths": 14,
+    "Death Rate per 100k": 8.123853956
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Miami",
+    "Population": 102506,
+    "Deaths": 14,
+    "Death Rate per 100k": 13.657737108
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Richland",
+    "Population": 124475,
+    "Deaths": 14,
+    "Death Rate per 100k": 11.247238401
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Jefferson",
+    "Population": 69709,
+    "Deaths": 15,
+    "Death Rate per 100k": 21.518024932
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Portage",
+    "Population": 161419,
+    "Deaths": 16,
+    "Death Rate per 100k": 9.912092133
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Brown",
+    "Population": 44846,
+    "Deaths": 17,
+    "Death Rate per 100k": 37.907505686
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Ross",
+    "Population": 78064,
+    "Deaths": 17,
+    "Death Rate per 100k": 21.777003484
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Ashtabula",
+    "Population": 101497,
+    "Deaths": 18,
+    "Death Rate per 100k": 17.734514321
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Fairfield",
+    "Population": 146156,
+    "Deaths": 18,
+    "Death Rate per 100k": 12.315607981
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Erie",
+    "Population": 77079,
+    "Deaths": 19,
+    "Death Rate per 100k": 24.65003438
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Clark",
+    "Population": 138333,
+    "Deaths": 22,
+    "Death Rate per 100k": 15.90365278
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Licking",
+    "Population": 166492,
+    "Deaths": 22,
+    "Death Rate per 100k": 13.213848113
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Warren",
+    "Population": 212693,
+    "Deaths": 24,
+    "Death Rate per 100k": 11.283869239
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Scioto",
+    "Population": 79499,
+    "Deaths": 25,
+    "Death Rate per 100k": 31.446936439
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Greene",
+    "Population": 161573,
+    "Deaths": 28,
+    "Death Rate per 100k": 17.329628094
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Lorain",
+    "Population": 301356,
+    "Deaths": 28,
+    "Death Rate per 100k": 9.291336492
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Lake",
+    "Population": 230041,
+    "Deaths": 40,
+    "Death Rate per 100k": 17.388204711
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Stark",
+    "Population": 375586,
+    "Deaths": 41,
+    "Death Rate per 100k": 10.916274835
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Trumbull",
+    "Population": 210312,
+    "Deaths": 46,
+    "Death Rate per 100k": 21.872265967
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Clermont",
+    "Population": 197363,
+    "Deaths": 50,
+    "Death Rate per 100k": 25.334029175
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Mahoning",
+    "Population": 238823,
+    "Deaths": 52,
+    "Death Rate per 100k": 21.773447281
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Lucas",
+    "Population": 441815,
+    "Deaths": 59,
+    "Death Rate per 100k": 13.354005636
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Butler",
+    "Population": 368130,
+    "Deaths": 70,
+    "Death Rate per 100k": 19.015021867
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Summit",
+    "Population": 541781,
+    "Deaths": 86,
+    "Death Rate per 100k": 15.873572532
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Montgomery",
+    "Population": 535153,
+    "Deaths": 119,
+    "Death Rate per 100k": 22.236631393
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Hamilton",
+    "Population": 802374,
+    "Deaths": 125,
+    "Death Rate per 100k": 15.57877
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Cuyahoga",
+    "Population": 1280122,
+    "Deaths": 175,
+    "Death Rate per 100k": 13.670572024
+  },
+  {
+    "Year": 2010,
+    "State": "OH",
+    "County": "Franklin",
+    "Population": 1163414,
+    "Deaths": 220,
+    "Death Rate per 100k": 18.909863557
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Rogers",
+    "Population": 86905,
+    "Deaths": 10,
+    "Death Rate per 100k": 11.50681779
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Kay",
+    "Population": 46562,
+    "Deaths": 11,
+    "Death Rate per 100k": 23.624414759
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Mayes",
+    "Population": 41259,
+    "Deaths": 11,
+    "Death Rate per 100k": 26.660849754
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Pontotoc",
+    "Population": 37492,
+    "Deaths": 11,
+    "Death Rate per 100k": 29.339592446
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Stephens",
+    "Population": 45048,
+    "Deaths": 11,
+    "Death Rate per 100k": 24.418398153
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Canadian",
+    "Population": 115541,
+    "Deaths": 13,
+    "Death Rate per 100k": 11.251417246
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Comanche",
+    "Population": 124098,
+    "Deaths": 13,
+    "Death Rate per 100k": 10.475591871
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Sequoyah",
+    "Population": 42391,
+    "Deaths": 13,
+    "Death Rate per 100k": 30.666886839
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Muskogee",
+    "Population": 70990,
+    "Deaths": 16,
+    "Death Rate per 100k": 22.538385688
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Carter",
+    "Population": 47557,
+    "Deaths": 17,
+    "Death Rate per 100k": 35.746577791
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Creek",
+    "Population": 69967,
+    "Deaths": 19,
+    "Death Rate per 100k": 27.155659096
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Wagoner",
+    "Population": 73085,
+    "Deaths": 20,
+    "Death Rate per 100k": 27.365396456
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Cleveland",
+    "Population": 255755,
+    "Deaths": 36,
+    "Death Rate per 100k": 14.075971144
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Tulsa",
+    "Population": 603403,
+    "Deaths": 126,
+    "Death Rate per 100k": 20.881566714
+  },
+  {
+    "Year": 2010,
+    "State": "OK",
+    "County": "Oklahoma",
+    "Population": 718633,
+    "Deaths": 140,
+    "Death Rate per 100k": 19.481432108
+  },
+  {
+    "Year": 2010,
+    "State": "OR",
+    "County": "Clatsop",
+    "Population": 37039,
+    "Deaths": 11,
+    "Death Rate per 100k": 29.698425983
+  },
+  {
+    "Year": 2010,
+    "State": "OR",
+    "County": "Josephine",
+    "Population": 82713,
+    "Deaths": 11,
+    "Death Rate per 100k": 13.298997739
+  },
+  {
+    "Year": 2010,
+    "State": "OR",
+    "County": "Yamhill",
+    "Population": 99193,
+    "Deaths": 11,
+    "Death Rate per 100k": 11.089492202
+  },
+  {
+    "Year": 2010,
+    "State": "OR",
+    "County": "Coos",
+    "Population": 63043,
+    "Deaths": 12,
+    "Death Rate per 100k": 19.034627159
+  },
+  {
+    "Year": 2010,
+    "State": "OR",
+    "County": "Klamath",
+    "Population": 66380,
+    "Deaths": 12,
+    "Death Rate per 100k": 18.077734257
+  },
+  {
+    "Year": 2010,
+    "State": "OR",
+    "County": "Linn",
+    "Population": 116672,
+    "Deaths": 15,
+    "Death Rate per 100k": 12.856555129
+  },
+  {
+    "Year": 2010,
+    "State": "OR",
+    "County": "Deschutes",
+    "Population": 157733,
+    "Deaths": 19,
+    "Death Rate per 100k": 12.045672117
+  },
+  {
+    "Year": 2010,
+    "State": "OR",
+    "County": "Jackson",
+    "Population": 203206,
+    "Deaths": 22,
+    "Death Rate per 100k": 10.826451975
+  },
+  {
+    "Year": 2010,
+    "State": "OR",
+    "County": "Washington",
+    "Population": 529710,
+    "Deaths": 31,
+    "Death Rate per 100k": 5.852258783
+  },
+  {
+    "Year": 2010,
+    "State": "OR",
+    "County": "Marion",
+    "Population": 315335,
+    "Deaths": 35,
+    "Death Rate per 100k": 11.099307086
+  },
+  {
+    "Year": 2010,
+    "State": "OR",
+    "County": "Clackamas",
+    "Population": 375992,
+    "Deaths": 43,
+    "Death Rate per 100k": 11.436413541
+  },
+  {
+    "Year": 2010,
+    "State": "OR",
+    "County": "Lane",
+    "Population": 351715,
+    "Deaths": 44,
+    "Death Rate per 100k": 12.51012894
+  },
+  {
+    "Year": 2010,
+    "State": "OR",
+    "County": "Multnomah",
+    "Population": 735334,
+    "Deaths": 126,
+    "Death Rate per 100k": 17.135070594
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Blair",
+    "Population": 127089,
+    "Deaths": 10,
+    "Death Rate per 100k": 7.868501601
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Carbon",
+    "Population": 65249,
+    "Deaths": 10,
+    "Death Rate per 100k": 15.325905378
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Crawford",
+    "Population": 88765,
+    "Deaths": 10,
+    "Death Rate per 100k": 11.265701572
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Adams",
+    "Population": 101407,
+    "Deaths": 12,
+    "Death Rate per 100k": 11.833502618
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Franklin",
+    "Population": 149618,
+    "Deaths": 12,
+    "Death Rate per 100k": 8.02042535
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Indiana",
+    "Population": 88880,
+    "Deaths": 12,
+    "Death Rate per 100k": 13.501350135
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Lawrence",
+    "Population": 91108,
+    "Deaths": 12,
+    "Death Rate per 100k": 13.171181455
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Northumberland",
+    "Population": 94528,
+    "Deaths": 12,
+    "Death Rate per 100k": 12.69465132
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Somerset",
+    "Population": 77742,
+    "Deaths": 12,
+    "Death Rate per 100k": 15.435671838
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Greene",
+    "Population": 38686,
+    "Deaths": 13,
+    "Death Rate per 100k": 33.603887711
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Lycoming",
+    "Population": 116111,
+    "Deaths": 13,
+    "Death Rate per 100k": 11.196182963
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Armstrong",
+    "Population": 68941,
+    "Deaths": 14,
+    "Death Rate per 100k": 20.307219216
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Monroe",
+    "Population": 169842,
+    "Deaths": 15,
+    "Death Rate per 100k": 8.831737733
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Pike",
+    "Population": 57369,
+    "Deaths": 16,
+    "Death Rate per 100k": 27.889626802
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Cumberland",
+    "Population": 235406,
+    "Deaths": 17,
+    "Death Rate per 100k": 7.221566145
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Dauphin",
+    "Population": 268100,
+    "Deaths": 19,
+    "Death Rate per 100k": 7.08690787
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Mercer",
+    "Population": 116638,
+    "Deaths": 19,
+    "Death Rate per 100k": 16.289716902
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Butler",
+    "Population": 183862,
+    "Deaths": 20,
+    "Death Rate per 100k": 10.87772351
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Erie",
+    "Population": 280566,
+    "Deaths": 21,
+    "Death Rate per 100k": 7.48486987
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Beaver",
+    "Population": 170539,
+    "Deaths": 24,
+    "Death Rate per 100k": 14.073027284
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Schuylkill",
+    "Population": 148289,
+    "Deaths": 24,
+    "Death Rate per 100k": 16.18461248
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Fayette",
+    "Population": 136606,
+    "Deaths": 25,
+    "Death Rate per 100k": 18.3008067
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Northampton",
+    "Population": 297735,
+    "Deaths": 29,
+    "Death Rate per 100k": 9.740205216
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Lackawanna",
+    "Population": 214437,
+    "Deaths": 32,
+    "Death Rate per 100k": 14.922797838
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Washington",
+    "Population": 207820,
+    "Deaths": 36,
+    "Death Rate per 100k": 17.322683091
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Cambria",
+    "Population": 143679,
+    "Deaths": 37,
+    "Death Rate per 100k": 25.751849609
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Lehigh",
+    "Population": 349497,
+    "Deaths": 38,
+    "Death Rate per 100k": 10.872768579
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Lancaster",
+    "Population": 519445,
+    "Deaths": 42,
+    "Death Rate per 100k": 8.08555285
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Chester",
+    "Population": 498886,
+    "Deaths": 43,
+    "Death Rate per 100k": 8.619203586
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "York",
+    "Population": 434972,
+    "Deaths": 48,
+    "Death Rate per 100k": 11.03519307
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Berks",
+    "Population": 411442,
+    "Deaths": 49,
+    "Death Rate per 100k": 11.909333515
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Luzerne",
+    "Population": 320918,
+    "Deaths": 54,
+    "Death Rate per 100k": 16.826728323
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Westmoreland",
+    "Population": 365169,
+    "Deaths": 60,
+    "Death Rate per 100k": 16.430748503
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Montgomery",
+    "Population": 799874,
+    "Deaths": 90,
+    "Death Rate per 100k": 11.251772154
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Bucks",
+    "Population": 625249,
+    "Deaths": 98,
+    "Death Rate per 100k": 15.673755576
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Delaware",
+    "Population": 558979,
+    "Deaths": 110,
+    "Death Rate per 100k": 19.678735695
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Allegheny",
+    "Population": 1223348,
+    "Deaths": 219,
+    "Death Rate per 100k": 17.901692732
+  },
+  {
+    "Year": 2010,
+    "State": "PA",
+    "County": "Philadelphia",
+    "Population": 1526006,
+    "Deaths": 327,
+    "Death Rate per 100k": 21.428487175
+  },
+  {
+    "Year": 2010,
+    "State": "RI",
+    "County": "Washington",
+    "Population": 126979,
+    "Deaths": 18,
+    "Death Rate per 100k": 14.175572339
+  },
+  {
+    "Year": 2010,
+    "State": "RI",
+    "County": "Kent",
+    "Population": 166158,
+    "Deaths": 25,
+    "Death Rate per 100k": 15.045920148
+  },
+  {
+    "Year": 2010,
+    "State": "RI",
+    "County": "Providence",
+    "Population": 626667,
+    "Deaths": 102,
+    "Death Rate per 100k": 16.276587087
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Orangeburg",
+    "Population": 92501,
+    "Deaths": 10,
+    "Death Rate per 100k": 10.810693938
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Laurens",
+    "Population": 66537,
+    "Deaths": 12,
+    "Death Rate per 100k": 18.035078227
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Beaufort",
+    "Population": 162233,
+    "Deaths": 13,
+    "Death Rate per 100k": 8.013166249
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Florence",
+    "Population": 136885,
+    "Deaths": 16,
+    "Death Rate per 100k": 11.688643752
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Lancaster",
+    "Population": 76652,
+    "Deaths": 16,
+    "Death Rate per 100k": 20.87355842
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Oconee",
+    "Population": 74273,
+    "Deaths": 19,
+    "Death Rate per 100k": 25.581301415
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Berkeley",
+    "Population": 177843,
+    "Deaths": 24,
+    "Death Rate per 100k": 13.495049004
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Aiken",
+    "Population": 160099,
+    "Deaths": 25,
+    "Death Rate per 100k": 15.61533801
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "York",
+    "Population": 226073,
+    "Deaths": 25,
+    "Death Rate per 100k": 11.05837495
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Pickens",
+    "Population": 119224,
+    "Deaths": 28,
+    "Death Rate per 100k": 23.485204321
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Anderson",
+    "Population": 187126,
+    "Deaths": 34,
+    "Death Rate per 100k": 18.16957558
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Horry",
+    "Population": 269291,
+    "Deaths": 40,
+    "Death Rate per 100k": 14.853819845
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Lexington",
+    "Population": 262391,
+    "Deaths": 41,
+    "Death Rate per 100k": 15.625535937
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Spartanburg",
+    "Population": 284307,
+    "Deaths": 47,
+    "Death Rate per 100k": 16.531425536
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Richland",
+    "Population": 384504,
+    "Deaths": 48,
+    "Death Rate per 100k": 12.483615255
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Charleston",
+    "Population": 350209,
+    "Deaths": 57,
+    "Death Rate per 100k": 16.275995191
+  },
+  {
+    "Year": 2010,
+    "State": "SC",
+    "County": "Greenville",
+    "Population": 451225,
+    "Deaths": 62,
+    "Death Rate per 100k": 13.740373428
+  },
+  {
+    "Year": 2010,
+    "State": "SD",
+    "County": "Minnehaha",
+    "Population": 169468,
+    "Deaths": 14,
+    "Death Rate per 100k": 8.261146647
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Cheatham",
+    "Population": 39105,
+    "Deaths": 10,
+    "Death Rate per 100k": 25.572177471
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Rhea",
+    "Population": 31809,
+    "Deaths": 10,
+    "Death Rate per 100k": 31.437643434
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Williamson",
+    "Population": 183182,
+    "Deaths": 10,
+    "Death Rate per 100k": 5.459051654
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Cumberland",
+    "Population": 56053,
+    "Deaths": 11,
+    "Death Rate per 100k": 19.62428416
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Campbell",
+    "Population": 40716,
+    "Deaths": 12,
+    "Death Rate per 100k": 29.472443266
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Carter",
+    "Population": 57424,
+    "Deaths": 12,
+    "Death Rate per 100k": 20.897185846
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Greene",
+    "Population": 68831,
+    "Deaths": 12,
+    "Death Rate per 100k": 17.434005027
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Putnam",
+    "Population": 72321,
+    "Deaths": 12,
+    "Death Rate per 100k": 16.59269092
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Hamblen",
+    "Population": 62544,
+    "Deaths": 13,
+    "Death Rate per 100k": 20.785367102
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Hawkins",
+    "Population": 56833,
+    "Deaths": 13,
+    "Death Rate per 100k": 22.874034452
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Maury",
+    "Population": 80956,
+    "Deaths": 14,
+    "Death Rate per 100k": 17.293344533
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Anderson",
+    "Population": 75129,
+    "Deaths": 17,
+    "Death Rate per 100k": 22.627746942
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "McMinn",
+    "Population": 52266,
+    "Deaths": 18,
+    "Death Rate per 100k": 34.439214786
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Sumner",
+    "Population": 160645,
+    "Deaths": 18,
+    "Death Rate per 100k": 11.204830527
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Wilson",
+    "Population": 113993,
+    "Deaths": 18,
+    "Death Rate per 100k": 15.790443273
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Montgomery",
+    "Population": 172331,
+    "Deaths": 19,
+    "Death Rate per 100k": 11.025294346
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Bradley",
+    "Population": 98963,
+    "Deaths": 23,
+    "Death Rate per 100k": 23.241009266
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Roane",
+    "Population": 54181,
+    "Deaths": 23,
+    "Death Rate per 100k": 42.450305458
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Sevier",
+    "Population": 89889,
+    "Deaths": 23,
+    "Death Rate per 100k": 25.587112995
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Washington",
+    "Population": 122979,
+    "Deaths": 24,
+    "Death Rate per 100k": 19.515527041
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Sullivan",
+    "Population": 156823,
+    "Deaths": 25,
+    "Death Rate per 100k": 15.941539187
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Rutherford",
+    "Population": 262604,
+    "Deaths": 26,
+    "Death Rate per 100k": 9.900839287
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Blount",
+    "Population": 123010,
+    "Deaths": 33,
+    "Death Rate per 100k": 26.827087229
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Hamilton",
+    "Population": 336463,
+    "Deaths": 35,
+    "Death Rate per 100k": 10.4023325
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Knox",
+    "Population": 432226,
+    "Deaths": 87,
+    "Death Rate per 100k": 20.128358775
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Davidson",
+    "Population": 626681,
+    "Deaths": 97,
+    "Death Rate per 100k": 15.478369378
+  },
+  {
+    "Year": 2010,
+    "State": "TN",
+    "County": "Shelby",
+    "Population": 927644,
+    "Deaths": 128,
+    "Death Rate per 100k": 13.798396799
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Ellis",
+    "Population": 149610,
+    "Deaths": 10,
+    "Death Rate per 100k": 6.684045184
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Wise",
+    "Population": 59127,
+    "Deaths": 10,
+    "Death Rate per 100k": 16.912747138
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Hardin",
+    "Population": 54635,
+    "Deaths": 11,
+    "Death Rate per 100k": 20.133613984
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Hopkins",
+    "Population": 35161,
+    "Deaths": 11,
+    "Death Rate per 100k": 31.284661983
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Hunt",
+    "Population": 86129,
+    "Deaths": 11,
+    "Death Rate per 100k": 12.771540364
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Johnson",
+    "Population": 150934,
+    "Deaths": 11,
+    "Death Rate per 100k": 7.287953675
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Anderson",
+    "Population": 58458,
+    "Deaths": 12,
+    "Death Rate per 100k": 20.527558247
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Brazos",
+    "Population": 194851,
+    "Deaths": 12,
+    "Death Rate per 100k": 6.158551919
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Guadalupe",
+    "Population": 131533,
+    "Deaths": 12,
+    "Death Rate per 100k": 9.123185816
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Henderson",
+    "Population": 78532,
+    "Deaths": 12,
+    "Death Rate per 100k": 15.280395253
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Midland",
+    "Population": 136872,
+    "Deaths": 12,
+    "Death Rate per 100k": 8.767315448
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "San Patricio",
+    "Population": 64804,
+    "Deaths": 13,
+    "Death Rate per 100k": 20.060490093
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Taylor",
+    "Population": 131506,
+    "Deaths": 13,
+    "Death Rate per 100k": 9.88548051
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Cameron",
+    "Population": 406220,
+    "Deaths": 14,
+    "Death Rate per 100k": 3.44640835
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Liberty",
+    "Population": 75643,
+    "Deaths": 14,
+    "Death Rate per 100k": 18.507991486
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Ector",
+    "Population": 137130,
+    "Deaths": 15,
+    "Death Rate per 100k": 10.938525487
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Hidalgo",
+    "Population": 774769,
+    "Deaths": 16,
+    "Death Rate per 100k": 2.065131672
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Grayson",
+    "Population": 120877,
+    "Deaths": 17,
+    "Death Rate per 100k": 14.063883121
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Hays",
+    "Population": 157107,
+    "Deaths": 17,
+    "Death Rate per 100k": 10.820650894
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Parker",
+    "Population": 116927,
+    "Deaths": 18,
+    "Death Rate per 100k": 15.394220326
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Smith",
+    "Population": 209714,
+    "Deaths": 18,
+    "Death Rate per 100k": 8.583117961
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "McLennan",
+    "Population": 234906,
+    "Deaths": 19,
+    "Death Rate per 100k": 8.08834172
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Wichita",
+    "Population": 131500,
+    "Deaths": 19,
+    "Death Rate per 100k": 14.448669202
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Comal",
+    "Population": 108472,
+    "Deaths": 20,
+    "Death Rate per 100k": 18.437937901
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Lubbock",
+    "Population": 278831,
+    "Deaths": 20,
+    "Death Rate per 100k": 7.172803598
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Tom Green",
+    "Population": 110224,
+    "Deaths": 20,
+    "Death Rate per 100k": 18.144868631
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Bell",
+    "Population": 310235,
+    "Deaths": 24,
+    "Death Rate per 100k": 7.736071043
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Brazoria",
+    "Population": 313166,
+    "Deaths": 24,
+    "Death Rate per 100k": 7.663667192
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Orange",
+    "Population": 81837,
+    "Deaths": 25,
+    "Death Rate per 100k": 30.548529394
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Webb",
+    "Population": 250304,
+    "Deaths": 27,
+    "Death Rate per 100k": 10.78688315
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Williamson",
+    "Population": 422679,
+    "Deaths": 28,
+    "Death Rate per 100k": 6.624412379
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Fort Bend",
+    "Population": 585375,
+    "Deaths": 32,
+    "Death Rate per 100k": 5.466581251
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Jefferson",
+    "Population": 252273,
+    "Deaths": 36,
+    "Death Rate per 100k": 14.270254843
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Montgomery",
+    "Population": 455746,
+    "Deaths": 36,
+    "Death Rate per 100k": 7.8991368
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Denton",
+    "Population": 662614,
+    "Deaths": 47,
+    "Death Rate per 100k": 7.093119071
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Collin",
+    "Population": 782341,
+    "Deaths": 49,
+    "Death Rate per 100k": 6.263253492
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Galveston",
+    "Population": 291309,
+    "Deaths": 51,
+    "Death Rate per 100k": 17.507183094
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "El Paso",
+    "Population": 800647,
+    "Deaths": 53,
+    "Death Rate per 100k": 6.619646361
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Nueces",
+    "Population": 340223,
+    "Deaths": 55,
+    "Death Rate per 100k": 16.165867681
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Travis",
+    "Population": 1024266,
+    "Deaths": 101,
+    "Death Rate per 100k": 9.860719774
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Tarrant",
+    "Population": 1809034,
+    "Deaths": 127,
+    "Death Rate per 100k": 7.020321343
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Bexar",
+    "Population": 1714773,
+    "Deaths": 180,
+    "Death Rate per 100k": 10.497016223
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Dallas",
+    "Population": 2368139,
+    "Deaths": 181,
+    "Death Rate per 100k": 7.643132434
+  },
+  {
+    "Year": 2010,
+    "State": "TX",
+    "County": "Harris",
+    "Population": 4092459,
+    "Deaths": 384,
+    "Death Rate per 100k": 9.383111718
+  },
+  {
+    "Year": 2010,
+    "State": "UT",
+    "County": "Washington",
+    "Population": 138115,
+    "Deaths": 20,
+    "Death Rate per 100k": 14.480686385
+  },
+  {
+    "Year": 2010,
+    "State": "UT",
+    "County": "Davis",
+    "Population": 306479,
+    "Deaths": 36,
+    "Death Rate per 100k": 11.746318671
+  },
+  {
+    "Year": 2010,
+    "State": "UT",
+    "County": "Weber",
+    "Population": 231236,
+    "Deaths": 42,
+    "Death Rate per 100k": 18.163261776
+  },
+  {
+    "Year": 2010,
+    "State": "UT",
+    "County": "Utah",
+    "Population": 516564,
+    "Deaths": 70,
+    "Death Rate per 100k": 13.551079827
+  },
+  {
+    "Year": 2010,
+    "State": "UT",
+    "County": "Salt Lake",
+    "Population": 1029655,
+    "Deaths": 148,
+    "Death Rate per 100k": 14.373746546
+  },
+  {
+    "Year": 2010,
+    "State": "VT",
+    "County": "Chittenden",
+    "Population": 156545,
+    "Deaths": 12,
+    "Death Rate per 100k": 7.665527484
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Bedford",
+    "Population": 68676,
+    "Deaths": 10,
+    "Death Rate per 100k": 14.561127614
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Frederick",
+    "Population": 78305,
+    "Deaths": 10,
+    "Death Rate per 100k": 12.770576592
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Roanoke city",
+    "Population": 97032,
+    "Deaths": 10,
+    "Death Rate per 100k": 10.305878473
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Newport News city",
+    "Population": 180719,
+    "Deaths": 11,
+    "Death Rate per 100k": 6.086797736
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Hampton city",
+    "Population": 137436,
+    "Deaths": 13,
+    "Death Rate per 100k": 9.458948165
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Norfolk city",
+    "Population": 242803,
+    "Deaths": 13,
+    "Death Rate per 100k": 5.354134834
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Prince William",
+    "Population": 402002,
+    "Deaths": 13,
+    "Death Rate per 100k": 3.233814757
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Russell",
+    "Population": 28897,
+    "Deaths": 13,
+    "Death Rate per 100k": 44.987368931
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Tazewell",
+    "Population": 45078,
+    "Deaths": 13,
+    "Death Rate per 100k": 28.83890146
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Wise",
+    "Population": 41452,
+    "Deaths": 13,
+    "Death Rate per 100k": 31.361574834
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Chesapeake city",
+    "Population": 222209,
+    "Deaths": 15,
+    "Death Rate per 100k": 6.750401649
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Richmond city",
+    "Population": 204214,
+    "Deaths": 16,
+    "Death Rate per 100k": 7.834918272
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Virginia Beach city",
+    "Population": 437994,
+    "Deaths": 16,
+    "Death Rate per 100k": 3.653018078
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Chesterfield",
+    "Population": 316236,
+    "Deaths": 19,
+    "Death Rate per 100k": 6.008171113
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Henrico",
+    "Population": 306935,
+    "Deaths": 19,
+    "Death Rate per 100k": 6.190235718
+  },
+  {
+    "Year": 2010,
+    "State": "VA",
+    "County": "Fairfax",
+    "Population": 1081726,
+    "Deaths": 27,
+    "Death Rate per 100k": 2.496011005
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Mason",
+    "Population": 60699,
+    "Deaths": 10,
+    "Death Rate per 100k": 16.474735992
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Grant",
+    "Population": 89120,
+    "Deaths": 11,
+    "Death Rate per 100k": 12.342908438
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Benton",
+    "Population": 175177,
+    "Deaths": 12,
+    "Death Rate per 100k": 6.850214355
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Chelan",
+    "Population": 72453,
+    "Deaths": 12,
+    "Death Rate per 100k": 16.562461182
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Lewis",
+    "Population": 75455,
+    "Deaths": 12,
+    "Death Rate per 100k": 15.903518654
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Clallam",
+    "Population": 71404,
+    "Deaths": 13,
+    "Death Rate per 100k": 18.206262954
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Grays Harbor",
+    "Population": 72797,
+    "Deaths": 14,
+    "Death Rate per 100k": 19.23156174
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Skagit",
+    "Population": 116901,
+    "Deaths": 16,
+    "Death Rate per 100k": 13.686794809
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Cowlitz",
+    "Population": 102410,
+    "Deaths": 17,
+    "Death Rate per 100k": 16.599941412
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Thurston",
+    "Population": 252264,
+    "Deaths": 23,
+    "Death Rate per 100k": 9.117432531
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Whatcom",
+    "Population": 201140,
+    "Deaths": 25,
+    "Death Rate per 100k": 12.429153823
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Kitsap",
+    "Population": 251133,
+    "Deaths": 26,
+    "Death Rate per 100k": 10.353079842
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Yakima",
+    "Population": 243231,
+    "Deaths": 27,
+    "Death Rate per 100k": 11.100558728
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Clark",
+    "Population": 425363,
+    "Deaths": 44,
+    "Death Rate per 100k": 10.344106093
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Spokane",
+    "Population": 471221,
+    "Deaths": 68,
+    "Death Rate per 100k": 14.43059626
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Pierce",
+    "Population": 795225,
+    "Deaths": 96,
+    "Death Rate per 100k": 12.072055079
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "Snohomish",
+    "Population": 713335,
+    "Deaths": 98,
+    "Death Rate per 100k": 13.738285658
+  },
+  {
+    "Year": 2010,
+    "State": "WA",
+    "County": "King",
+    "Population": 1931249,
+    "Deaths": 204,
+    "Death Rate per 100k": 10.563112266
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Putnam",
+    "Population": 55486,
+    "Deaths": 10,
+    "Death Rate per 100k": 18.02256425
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Summers",
+    "Population": 13927,
+    "Deaths": 10,
+    "Death Rate per 100k": 71.802972643
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Hancock",
+    "Population": 30676,
+    "Deaths": 11,
+    "Death Rate per 100k": 35.858651715
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Lincoln",
+    "Population": 21720,
+    "Deaths": 13,
+    "Death Rate per 100k": 59.85267035
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Mingo",
+    "Population": 26839,
+    "Deaths": 14,
+    "Death Rate per 100k": 52.162897276
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Fayette",
+    "Population": 46039,
+    "Deaths": 15,
+    "Death Rate per 100k": 32.581072569
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Wayne",
+    "Population": 42481,
+    "Deaths": 17,
+    "Death Rate per 100k": 40.017890351
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Boone",
+    "Population": 24629,
+    "Deaths": 18,
+    "Death Rate per 100k": 73.084575094
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Harrison",
+    "Population": 69099,
+    "Deaths": 19,
+    "Death Rate per 100k": 27.496779982
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Logan",
+    "Population": 36743,
+    "Deaths": 20,
+    "Death Rate per 100k": 54.432136734
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Berkeley",
+    "Population": 104169,
+    "Deaths": 21,
+    "Death Rate per 100k": 20.159548426
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "McDowell",
+    "Population": 22113,
+    "Deaths": 22,
+    "Death Rate per 100k": 99.488988378
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Wyoming",
+    "Population": 23796,
+    "Deaths": 25,
+    "Death Rate per 100k": 105.059673895
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Cabell",
+    "Population": 96319,
+    "Deaths": 29,
+    "Death Rate per 100k": 30.108286008
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Mercer",
+    "Population": 62264,
+    "Deaths": 32,
+    "Death Rate per 100k": 51.394063986
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Raleigh",
+    "Population": 78859,
+    "Deaths": 44,
+    "Death Rate per 100k": 55.795787418
+  },
+  {
+    "Year": 2010,
+    "State": "WV",
+    "County": "Kanawha",
+    "Population": 193063,
+    "Deaths": 47,
+    "Death Rate per 100k": 24.344384993
+  },
+  {
+    "Year": 2010,
+    "State": "WI",
+    "County": "Dodge",
+    "Population": 88759,
+    "Deaths": 11,
+    "Death Rate per 100k": 12.393109431
+  },
+  {
+    "Year": 2010,
+    "State": "WI",
+    "County": "Manitowoc",
+    "Population": 81442,
+    "Deaths": 11,
+    "Death Rate per 100k": 13.506544535
+  },
+  {
+    "Year": 2010,
+    "State": "WI",
+    "County": "Winnebago",
+    "Population": 166994,
+    "Deaths": 12,
+    "Death Rate per 100k": 7.185886918
+  },
+  {
+    "Year": 2010,
+    "State": "WI",
+    "County": "Fond du Lac",
+    "Population": 101633,
+    "Deaths": 13,
+    "Death Rate per 100k": 12.791120994
+  },
+  {
+    "Year": 2010,
+    "State": "WI",
+    "County": "Racine",
+    "Population": 195408,
+    "Deaths": 13,
+    "Death Rate per 100k": 6.652747073
+  },
+  {
+    "Year": 2010,
+    "State": "WI",
+    "County": "Walworth",
+    "Population": 102228,
+    "Deaths": 13,
+    "Death Rate per 100k": 12.716672536
+  },
+  {
+    "Year": 2010,
+    "State": "WI",
+    "County": "Brown",
+    "Population": 248007,
+    "Deaths": 14,
+    "Death Rate per 100k": 5.645001956
+  },
+  {
+    "Year": 2010,
+    "State": "WI",
+    "County": "La Crosse",
+    "Population": 114638,
+    "Deaths": 14,
+    "Death Rate per 100k": 12.212355414
+  },
+  {
+    "Year": 2010,
+    "State": "WI",
+    "County": "Rock",
+    "Population": 160331,
+    "Deaths": 20,
+    "Death Rate per 100k": 12.474194011
+  },
+  {
+    "Year": 2010,
+    "State": "WI",
+    "County": "Kenosha",
+    "Population": 166426,
+    "Deaths": 29,
+    "Death Rate per 100k": 17.425161934
+  },
+  {
+    "Year": 2010,
+    "State": "WI",
+    "County": "Waukesha",
+    "Population": 389891,
+    "Deaths": 39,
+    "Death Rate per 100k": 10.002795653
+  },
+  {
+    "Year": 2010,
+    "State": "WI",
+    "County": "Dane",
+    "Population": 488073,
+    "Deaths": 52,
+    "Death Rate per 100k": 10.65414395
+  },
+  {
+    "Year": 2010,
+    "State": "WI",
+    "County": "Milwaukee",
+    "Population": 947735,
+    "Deaths": 149,
+    "Death Rate per 100k": 15.721694355
+  },
+  {
+    "Year": 2010,
+    "State": "WY",
+    "County": "Laramie",
+    "Population": 91738,
+    "Deaths": 11,
+    "Death Rate per 100k": 11.990669079
+  },
+  {
+    "Year": 2010,
+    "State": "WY",
+    "County": "Natrona",
+    "Population": 75450,
+    "Deaths": 11,
+    "Death Rate per 100k": 14.579191518
+  }
+]
