@@ -11,7 +11,7 @@ drugSales = drugSales.drop(['BUYER_COUNTY','BUYER_STATE'],axis=1)
 drugSales = drugSales.rename(columns={'YEAR':'Year','QUANTITY':'Quantity','DOSAGE_UNIT':'Dosage Unit'})
 
 weather = pd.read_csv(r'NALDAS_DAILY-MAX-AIR-TEMP-AVG.tsv',sep='\t',header=0,usecols=['Notes','County','County Code','Year','Year Code','Avg Daily Max Air Temperature (F)'])
-weather['County'] = (weather['County'].str[:-11] + weather['County'].str[-2:]).str.upper()
+weather['County'] = (weather['County'].str.split(',').str[0].str.split(' ').str[:-1].str.join('') + weather['County'].str[-2:]).str.upper()
 weather = weather.drop(weather.tail(18).index)
 weather = weather.drop(['County Code','Year Code'],axis=1)
 weather = weather.rename(columns={'Avg Daily Max Air Temperature (F)':'Temp'})
@@ -24,3 +24,72 @@ print(drugOD)
 print(drugSales)
 print(weather)
 print(weatherTotal)
+
+dODCounties = drugOD['County'].tolist()
+dSCounties = drugSales['County'].tolist()
+wCounties = weather['County'].tolist()
+counties = set().union(dODCounties, dSCounties, wCounties)
+k = 0
+
+print('{')
+for i in counties:
+    a = drugOD[drugOD['County'] == i]
+    b = drugSales[drugSales['County'] == i]
+    c = weather[weather['County'] == i]
+    d = weatherTotal[weatherTotal['County'] == i]
+    P, OD, Q, DU = 0, 0, 0, 0
+    Pq, ODq, Qq, DUq = 0, 0, 0, 0
+    print('\t"'+i+'" : {')
+    for y in range(2006,2012):
+        print('\t\t'+str(y)+' : {')
+        dOD = a[a['Year'] == y].values
+        if len(dOD) > 0:
+            print('\t\t\t"Population" : '+str(dOD[0][2])+',')
+            P += dOD[0][2]
+            Pq += 1
+            print('\t\t\t"Drug Overdoses" : '+str(dOD[0][3])+',')
+            OD += dOD[0][3]
+            ODq += 1
+        dS = b[b['Year'] == y].values
+        if len(dS) > 0:
+            print('\t\t\t"Quantity" : '+str(dS[0][1])+',')
+            Q += dS[0][1]
+            Qq += 1
+            print('\t\t\t"Dosage Unit" : '+str(dS[0][2])+',')
+            DU += dS[0][2]
+            DUq += 1
+        w = c[c['Year'] == y].values
+        if len(w) > 0:
+            print('\t\t\t"Temperature" : '+str(w[0][2]))
+    if Pq > 0:
+        P /= Pq
+    if ODq > 0:
+        OD /= ODq
+    if Qq > 0:
+        Q /= Qq
+    if DUq > 0:
+        DU /= DUq
+    print('\t\t},')
+    print('\t\t"Average : {')
+    if P != 0:
+        print('\t\t\t"Population" : '+str(round(P))+',')
+    if OD != 0:
+        print('\t\t\t"Overdoses" : '+str(round(OD))+',')
+    if Q != 0:
+        print('\t\t\t"Quantity" : '+str(round(Q))+',')
+    if DU != 0:
+        print('\t\t\t"Dosage Unit" :'+str(round(DU))+',')
+    print('\t\t\t"Temperature" : '+str(d.values[0][1]))
+    print('\t\t},')
+    print('\t\t"Ranking" : {')
+    print('\t\t\t"Population" : '+',')
+    print('\t\t\t"Overdoses" : '+',')
+    print('\t\t\t"Quantity" : '+',')
+    print('\t\t\t"Dosage Unit" :'+',')
+    print('\t\t\t"Temperature" : ')
+    print('\t\t}')
+    print('\t}')
+    k += 1
+    if k > 0:
+        break
+print('}')
