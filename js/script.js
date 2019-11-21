@@ -1,27 +1,57 @@
 
-projection = d3.geoConicConformal().scale(150).translate([400, 350]);
+yearSelector = d3.select('#year-slider')
+  .append('svg')
+  .attr('width', 600)
+  .attr('height', 100)
+  .append('g')
+  .attr('transform', 'translate(50,40)')
+  .attr('id', 'slider')
+  ;
 
-function drawMap(world){
-  const geoJSON = topojson.feature(world, world.objects.countries).features;
-  const geoGenerator = d3.geoPath().projection(this.projection);
+var slider = d3.sliderBottom()
+  .min(2006)
+  .max(2011)
+  .width(400)
+  .tickFormat(d3.format('1000'))
+  .ticks(7)
+  .step(1)
+  .default(0.015)
+  .on('onchange', sliderChange)
+  ;
 
-  let map = d3.select('#map')
-    .selectAll('path')
-    .data(geoJSON)
-    ;
+yearSelector.call(slider);
 
-  map.enter()
-    .append('path')
-    .attr('d', geoGenerator)
-    .attr('class', 'counties')
-    .attr('id', (d,i) => d.id)
-    ;
+// slider = d3.select('#year-slider')
+//   .append('input')
+//   .attr('type', 'range')
+//   .attr('min', 2006)
+//   .attr('max', 2011)
+//   .style('display', 'block')
+//   .attr('id', 'slider')
+//   .on('input', sliderChange)
+//   ;
 
-  d3.select('#map')
-    .append('path')
-    .datum(d3.geoGraticule())
-    .attr('class', 'grat')
-    .attr('d', geoGenerator)
-    .attr('opacity', 0.25)
-    ;
+
+dropdownData = ['Opioid Purchases', 'Drug Overdoses', 'Temperature'];
+
+dropdown = d3.select('#year-slider')
+  .insert('select', 'svg')
+  .on('change', dropdownChange)
+  .attr('align', 'right')
+  ;
+
+dropdown.selectAll('option')
+  .data(dropdownData)
+  .enter()
+  .append('option')
+  .attr('value', function(d) {return d})
+  .text(function(d) {return d})
+  ;
+
+function dropdownChange(){
+  console.log('dropdown changed')
+}
+
+function sliderChange(){
+  console.log('moved slider')
 }
