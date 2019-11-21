@@ -1,16 +1,13 @@
 import pandas as pd
-import csv
-from dask import dataframe as dd
 
-df = dd.read_csv(r'C:\Users\profile\Desktop\data stuff\arcos_all_washpost.tsv', delimiter='\t', blocksize=64000000, dtype={'ACTION_INDICATOR': 'object', 'ORDER_FORM_NO': 'object', 'REPORTER_ADDRESS2': 'object', 'NDC_NO': 'object', 'UNIT': 'object'})
+chunksize = 10 ** 6
+i=0
+output = {}
+tsvline = pd.read_csv(r'arcos_all_washpost.tsv', chunksize=chunksize, sep='\t', header=0,usecols=['TRANSACTION_DATE','BUYER_COUNTY','BUYER_STATE','QUANTITY','DOSAGE_UNIT'])
 
-df = df.drop(df.columns.difference(['TRANSACTION_DATE', 'BUYER_COUNTY', 'BUYER_STATE', 'QUANTITY', 'DOSAGE_UNIT']), 1)
-df['YEAR'] = df['TRANSACTION_DATE'].astype(str).str[-4:]
-
-print(df.head())
-
-sum_df = df.groupby(['BUYER_STATE', 'BUYER_COUNTY', 'YEAR']).agg({'QUANTITY': 'sum', 'DOSAGE_UNIT': 'sum'}).reset_index()
-
-print(sum_df.head())
-
-sum_df.to_csv('total_data.csv', index=False, mode='w', header=True)
+for chunk in tsvline:
+    chunk['YEAR'] = chunk['TRANSACTION_DATE'].astype(str).str[-4:]
+    sum_chunks = chunk.groupby(['BUYER_STATE','BUYER_COUNTY','YEAR']).agg({'QUANTITY':'sum','DOSAGE_UNIT':'sum'}).reset_index()
+    print(str(i)+'/178'+str(round(i/178,2)*100)+'%')
+    i+=1
+sum_chunks.to_csv('total_data.csv',index=False,mode='w',header=True)
