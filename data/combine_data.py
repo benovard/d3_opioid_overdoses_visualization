@@ -20,10 +20,10 @@ weather = weather.drop('Notes',axis=1)
 weather = weather.dropna()
 weatherTotal = weatherTotal.drop(['Notes','Year'],axis=1)
 
-print(drugOD)
-print(drugSales)
-print(weather)
-print(weatherTotal)
+# print(drugOD)
+# print(drugSales)
+# print(weather)
+# print(weatherTotal)
 
 dODCounties = drugOD['County'].tolist()
 dSCounties = drugSales['County'].tolist()
@@ -61,6 +61,7 @@ for i in counties:
         w = c[c['Year'] == y].values
         if len(w) > 0:
             print('\t\t\t"Temperature" : '+str(w[0][2]))
+        print('\t\t},')
     if Pq > 0:
         P /= Pq
     if ODq > 0:
@@ -70,7 +71,7 @@ for i in counties:
     if DUq > 0:
         DU /= DUq
     print('\t\t},')
-    print('\t\t"Average : {')
+    print('\t\t"Average" : {')
     if P != 0:
         print('\t\t\t"Population" : '+str(round(P))+',')
     if OD != 0:
@@ -79,17 +80,16 @@ for i in counties:
         print('\t\t\t"Quantity" : '+str(round(Q))+',')
     if DU != 0:
         print('\t\t\t"Dosage Unit" :'+str(round(DU))+',')
-    print('\t\t\t"Temperature" : '+str(d.values[0][1]))
+    if len(d.values) > 0:
+        print('\t\t\t"Temperature" : '+str(d.values[0][1]))
     print('\t\t},')
     print('\t\t"Ranking" : {')
     print('\t\t\t"Population" : '+',')
     print('\t\t\t"Overdoses" : '+',')
     print('\t\t\t"Quantity" : '+',')
-    print('\t\t\t"Dosage Unit" :'+',')
+    print('\t\t\t"Dosage Unit" : '+',')
     print('\t\t\t"Temperature" : ')
     print('\t\t}')
-    print('\t}')
-    k += 1
-    if k > 0:
-        break
+    print('\t},')
+    # break
 print('}')
