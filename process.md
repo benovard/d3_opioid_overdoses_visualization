@@ -205,3 +205,50 @@ Works Cited:
 [https://en.wikipedia.org/wiki/Kaggle](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Kaggle&sa=D&ust=1573521704301000).
 
 Tableau Community Forums, https://community.tableau.com/docs/DOC-9135.
+
+Process Book
+=========================
+
+Overview and Motivation
+=========================
+
+While our project has changed slightly since our proposal, our goals have remained consistent. Our goal is to create a visualization of opioid use in America that is pleasing to the eye, all information can be seen within one viewport, and there is reasonable amount of interactivity. We have found visualizations that require scrolling, panning, etc.. become cumbersome and key parts are hidden. To put a twist on things, we are introducing weather data to see if weather impacts opioid sales/deaths. Users will thus be able to extrapolate what they wish from our visualizations. 
+
+Related Work
+=========================
+A lot of our inspiration has come from Mike Bostock, he is widely known for some of his awesome map visualizations.
+
+Here is a link to go check out some of his work: https://github.com/mbostock?tab=repositories
+
+Questions
+=========================
+Our questions have remained relatively the same since our proposal:
+
+1.  How many people are prescribed opioids in the United States?
+
+2.  How many people are prescribed opioids in my area? In areas around
+    me?
+
+3.  How many people die from opioids in the United States? In my area
+    and areas around me?
+4.  Is there a correlation between weather, opioid prescriptions, and
+    opioid related deaths?
+
+5.  Do cold months lead to more people ‘needing’ opioid
+    prescriptions and ultimately more drug related deaths?
+    
+We feel these are the most important questions to answer.
+
+Data
+=========================
+Our data sources are listed above in our proposal. Cleaning these datasets has been a challenge. Our main dataset “Pain Pills in the US” had millions of rows, which made for quite the project to get cleaned. After many failed attempts with running into memory errors and loss of data, we were finally able to get the dataset cleaned and the total prescription quantities for all counties. In addition to this, we found a new weather dataset. The dataset prior did not have sufficient data to move forward with. The new weather dataset contains weather data by county for most all states. Lastly, tableau prep builder was also used to clean the overdoses dataset. 
+
+Exploratory Data Analysis / Data Evaluation
+=========================
+Thus far, we have mainly used a map to visualize our data. One insight that we have gained, is that we may not have as much data as we thought we had. However, there is still sufficient data to proceed with the visualization and the user will still be able select various years and get varying data.
+
+Design Evolution / Implementation
+=========================
+Our design has remained consistent. However, we have messed around with the layout and considered using a linechart/areachart to compare total prescriptions, weather, and overdoses. Here is an image our current thought process:
+
+![Updated Flow](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image8.JPG)
