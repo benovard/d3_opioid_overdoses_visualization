@@ -251,4 +251,4 @@ Design Evolution / Implementation
 =========================
 Our design has remained consistent. However, we have messed around with the layout and considered using a linechart/areachart to compare total prescriptions, weather, and overdoses. Here is an image our current thought process:
 
-![Updated Flow](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image8.jpg)
+![Updated Flow](https://github.com/austin-michael/data_vis_final_project/blob/master/process_images/image8.JPG)
