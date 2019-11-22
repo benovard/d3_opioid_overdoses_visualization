@@ -1,5 +1,6 @@
-import csv
 import pandas as pd
+
+# this is some of the worst python I have ever written...
 
 drugOD = pd.read_csv(r'drug_overdoses_2006-2016_cleaned.csv',header=0,usecols=['Year','State','County','Population','Deaths','Death Rate per 100k'])
 drugOD['County'] = (drugOD['County'] + drugOD['State']).str.upper()
