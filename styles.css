@@ -32,3 +32,11 @@
 .slider::-moz-range-thumb {
   cursor: pointer; /* Cursor on hover */
 }
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}

@@ -18,8 +18,16 @@
         <div id="year-slider">
         </div>
 
-        <div>
-            <svg id="map"></svg>
+        <div class ="row">
+            <div class="column">
+                <svg id="map"></svg>
+            </div>
+            <div class="column">
+                <h2 class="state"></h2>
+                <h2 class="county"></h2>
+                <p class="population"></p>
+                <p class="deaths"></p>
+            </div>
         </div>
 
         <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -31,12 +39,6 @@
         <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
         <script src="http://d3js.org/topojson.v1.min.js"></script>
         <script src="https://d3js.org/d3-queue.v2.min.js"></script>
-
-        <div class="details">
-                <h2 class="county"></h2>
-                <p class="population"></p>
-                <p class="deaths"></p>
-        </div>
 
     </body>
 
