@@ -36,7 +36,7 @@ dropdownData = ['Opioid Purchases', 'Drug Overdoses', 'Temperature'];
 
 dropdown = d3.select('#year-slider')
   .insert('select', 'svg')
-  .on('change', dropdownChange)
+  .on('change', (val) => {map.update(val)})
   .attr('align', 'right')
   ;
 
@@ -47,11 +47,3 @@ dropdown.selectAll('option')
   .attr('value', function(d) {return d})
   .text(function(d) {return d})
   ;
-
-function dropdownChange(){
-  console.log('changed dropdown');
-}
-
-function sliderChange(){
-  console.log('moved slider');
-}
