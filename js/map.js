@@ -40,6 +40,8 @@ class Map{
         var features = topojson.feature(us, us.objects.counties).features;
         var deathsById = {};
 
+        console.log(features)
+
         data.forEach(function (d) {
             deathsById[d.County] = {
                 deaths: +d.Deaths,
@@ -74,6 +76,9 @@ class Map{
                     .style("stroke-width", 1)
                     .style("cursor", "pointer");
                 
+                d3.select(".state")
+                    .text(d.properties.state);
+
                 d3.select(".county")
                     .text(d.properties.name);
 
