@@ -71,7 +71,6 @@ for i in counties:
         Q /= Qq
     if DUq > 0:
         DU /= DUq
-    print('\t\t},')
     print('\t\t"Average" : {')
     if P != 0:
         print('\t\t\t"Population" : '+str(round(P))+',')
