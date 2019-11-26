@@ -14,24 +14,23 @@ drugSales = drugSales.rename(columns={'YEAR':'Year','QUANTITY':'Quantity','DOSAG
 weather = pd.read_csv(r'NALDAS_DAILY-MAX-AIR-TEMP-AVG.tsv',sep='\t',header=0,usecols=['Notes','County','County Code','Year','Year Code','Avg Daily Max Air Temperature (F)'])
 weather['County'] = (weather['County'].str.split(',').str[0].str.split(' ').str[:-1].str.join('') + weather['County'].str[-2:]).str.upper()
 weather = weather.drop(weather.tail(18).index)
-weather = weather.drop(['County Code','Year Code'],axis=1)
+weather = weather.drop('Year Code',axis=1)
 weather = weather.rename(columns={'Avg Daily Max Air Temperature (F)':'Temp'})
 weatherTotal = weather[weather['Notes'] == 'Total']
 weather = weather.drop('Notes',axis=1)
 weather = weather.dropna()
 weatherTotal = weatherTotal.drop(['Notes','Year'],axis=1)
 
-# print(drugOD)
-# print(drugSales)
-# print(weather)
-# print(weatherTotal)
+#print(drugOD)
+#print(drugSales)
+#print(weather)
+#print(weatherTotal)
 
 dODCounties = drugOD['County'].tolist()
 dSCounties = drugSales['County'].tolist()
 wCounties = weather['County'].tolist()
 counties = set().union(dODCounties, dSCounties, wCounties)
 k = 0
-
 print('{')
 for i in counties:
     a = drugOD[drugOD['County'] == i]
@@ -41,6 +40,12 @@ for i in counties:
     P, OD, Q, DU = 0, 0, 0, 0
     Pq, ODq, Qq, DUq = 0, 0, 0, 0
     print('\t"'+i+'" : {')
+    if len(d) > 0:
+        fips = str(int(d.values[0][1]))
+        if len(fips) < 5:
+            fips = '0'+fips
+            kill = 1
+        print('\t\t"fips" : '+fips+',')
     for y in range(2006,2012):
         print('\t\t'+str(y)+' : {')
         dOD = a[a['Year'] == y].values
@@ -61,7 +66,7 @@ for i in counties:
             DUq += 1
         w = c[c['Year'] == y].values
         if len(w) > 0:
-            print('\t\t\t"Temperature" : '+str(w[0][2]))
+            print('\t\t\t"Temperature" : '+str(w[0][3]))
         print('\t\t},')
     if Pq > 0:
         P /= Pq
@@ -81,7 +86,7 @@ for i in counties:
     if DU != 0:
         print('\t\t\t"Dosage Unit" :'+str(round(DU))+',')
     if len(d.values) > 0:
-        print('\t\t\t"Temperature" : '+str(d.values[0][1]))
+        print('\t\t\t"Temperature" : '+str(d.values[0][2]))
     print('\t\t},')
     print('\t\t"Ranking" : {')
     print('\t\t\t"Population" : '+',')
