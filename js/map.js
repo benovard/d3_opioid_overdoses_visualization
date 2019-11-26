@@ -2,7 +2,7 @@ class Map{
 
     constructor(){
         this.width = 960; 
-        this.height = 600;
+        this.height = 750;
         this.svg = d3.select("body").select("#map")
             .attr("width", this.width)
             .attr("height", this.height)
@@ -33,6 +33,9 @@ class Map{
         var color = d3.scaleThreshold()
             .domain([1, 10, 20, 30, 40, 50, 60, 70, 80, 90])
             .range(["#f7fcfd", "#e0ecf4", "#bfd3e6", "#9ebcda", "#8c96c6", "#8c6bb1", "#88419d", "#810f7c", "#4d004b"]);
+        
+        var ext_color_domain = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90];
+        var legend_labels = ["< 1", "10+", "20+", "30+", "40+", "50+", "60+", "70+", "80+", "90+"];
 
         var features = topojson.feature(us, us.objects.counties).features;
         var deathsById = {};
@@ -64,7 +67,7 @@ class Map{
             .style("fill", function (d) {
                 return d.details && d.details.deathsPerCap ? color(d.details.deathsPerCap) : undefined;
             })
-            .on('mouseover', function (d) {
+            .on('click', function (d) {
 
                 d3.select(this)
                     .style("stroke", "white")
@@ -99,6 +102,46 @@ class Map{
                 return a !== b; 
             })))
         ;
+
+        var legend = this.svg.selectAll("g.legend")
+            .data(ext_color_domain)
+            .enter().append("g")
+            .attr("class", "legend")
+        ;
+		 
+        const ls_w = 96; // width of the map divided by 10 gives us 10 cells with a size of 96
+        const ls_h = 20; // height of a cell for the legend
+		 
+		legend.append("rect")
+            .attr("x", function(d, i) { 
+                return 960 - (i*ls_w) - ls_w;
+            })
+            .attr("y", 680)
+            .attr("width", ls_w)
+            .attr("height", ls_h)
+            .style("fill", function(d, i) { 
+                return color(d); 
+            })
+            .style("opacity", 0.8)
+        ;
+		 
+		legend.append("text")
+            .attr("x", function(d, i){ return 960 - (i*ls_w) - ls_w;})
+            .attr("y", 720)
+            .text(function(d, i){ return legend_labels[i]; })
+        ;
+
+		var legend_title = "Number of deaths:";
+
+		this.svg.append("text")
+            .attr("x", 0)
+            .attr("y", 670)
+            .attr("class", "legend_title")
+            .text(function() {
+                return legend_title
+            })
+        ;
+
     };
 
     update(year){
