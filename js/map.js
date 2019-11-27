@@ -13,7 +13,7 @@ class Map{
 
         d3.queue()
             .defer(d3.json, "data/topojson-counties.json")
-            .defer(d3.json, "data/overdoses_2010.json")
+            .defer(d3.json, "data/new_data.json")
             .await((error, us, data) => {
                 if (error) {
                     console.log("Uh oh: " + error);
@@ -38,7 +38,6 @@ class Map{
         var features = topojson.feature(us, us.objects.counties).features;
         var deathsById = {};
 
-        console.log(features)
 
         data.forEach(function (d) {
             deathsById[d.County] = {
@@ -47,10 +46,14 @@ class Map{
                 deathsPerCap: +d['Death Rate per 100k']
             }
         });
+        console.log(data);
 
+        // match names in topojson and data
         features.forEach(function (d) {
             d.details = deathsById[d.properties.name] ? deathsById[d.properties.name] : {};
         });
+
+        console.log(features);
 
         this.map.append("g")
             .attr("class", "counties")
@@ -73,7 +76,7 @@ class Map{
                 //d3.select(".state")
                 //    .text(d.properties.state);
                 d3.select(".county")
-                    .text(d.properties.long_name+", "+d.properties.state);
+                    .text(d.properties.long_name + ", " + d.properties.state);
                 d3.select(".deaths")
                     .text(d.details && d.details.deaths && "Deaths: " + d.details.deaths);
                 d3.select(".population")
@@ -141,8 +144,8 @@ class Map{
 
     };
 
-    update(year){
-        console.log(year);
+    update(year, data){
+        console.log(year, data);
     };
 
 }

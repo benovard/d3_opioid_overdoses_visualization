@@ -1,6 +1,8 @@
 let map = new Map();
+var selectedData = 'Opioid Purchases';
+var selectedYear = 2006;
 
-yearSelector = d3.select('#year-slider')
+var yearSelector = d3.select('#year-slider')
   .append('svg')
   .attr('width', 600)
   .attr('height', 100)
@@ -17,7 +19,10 @@ var slider = d3.sliderBottom()
   .ticks(6)
   .step(1)
   .default(0.015)
-  .on('onchange', (val) => {map.update(val)})
+  .on('onchange', (val) => {
+    selectedYear = val;
+    map.update(selectedYear, selectedData);
+  })
   ;
 
 yearSelector.call(slider);
@@ -36,7 +41,10 @@ dropdownData = ['Opioid Purchases', 'Drug Overdoses', 'Temperature'];
 
 dropdown = d3.select('#year-slider')
   .insert('select', 'svg')
-  .on('change', (val) => {map.update(val)})
+  .on('change', (val) => {
+    selectedData = val;
+    map.update(selectedYear, selectedData);
+  })
   .attr('align', 'right')
   ;
 
