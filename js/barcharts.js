@@ -65,8 +65,6 @@ class Barcharts{
             .attr('width', d => xScale(xValue(d)))
             .attr('height', yScale.bandwidth())
 
-
-        console.log(data);
     }
 
     drawStateBarchart (data) {
@@ -107,8 +105,6 @@ class Barcharts{
             .attr('width', d => xScale(xValue(d)))
             .attr('height', yScale.bandwidth())
 
-
-        console.log(data);
     }
 
 

@@ -1,6 +1,6 @@
 class Map{
 
-    constructor(year, data){
+    constructor(){
         this.width = 960; 
         this.height = 750;
         this.svg = d3.select("body").select("#map")
@@ -10,108 +10,103 @@ class Map{
         this.map = this.svg.append("g")
             .attr("class", "map")
             ;
-        this.year = String(year);
-        this.selectedData = data;
-        this.mapData = {};
-        this.features;
-        this.us;
-        this.data;
 
         d3.queue()
             .defer(d3.json, "data/topojson-counties.json")
-            .defer(d3.json, "data/data.json")
+            .defer(d3.json, "data/new_data.json")
             .await((error, us, data) => {
                 if (error) {
                     console.log("Uh oh: " + error);
                 }
                 else {
-                    this.us = us;
-                    this.data = data;
-                    this.drawMap()
+                    this.drawMap(us, data)
                 }
             });
     }
 
-    drawMap() {
+    drawMap (us, data) {
+
+        console.log(data);
 
         var path = d3.geoPath();
-        this.colorScale = d3.scaleThreshold()
+
+        var color = d3.scaleThreshold()
             .domain([1, 10, 20, 30, 40, 50, 60, 70, 80, 90])
-            .range(["#f7fcfd", "#e0ecf4", "#bfd3e6", "#9ebcda", "#8c96c6", "#8c6bb1", "#88419d", "#810f7c", "#4d004b"])
-            ;
+            .range(["#f7fcfd", "#e0ecf4", "#bfd3e6", "#9ebcda", "#8c96c6", "#8c6bb1", "#88419d", "#810f7c", "#4d004b"]);
         
         var ext_color_domain = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90];
         var legend_labels = ["< 1", "10+", "20+", "30+", "40+", "50+", "60+", "70+", "80+", "90+"];
 
-        this.features = topojson.feature(this.us, this.us.objects.counties).features;
+        var features = topojson.feature(us, us.objects.counties).features;
+        var mapData = {};
 
-        // create mapData from data
-        for (var key in this.data){
-            this.mapData[key] = {};
-            for(var year in this.data[key]){
-                this.mapData[key][year] = {
-                    temperature: this.data[key][year].Temperature,
-                    quantity: this.data[key][year].Quantity,
-                    dosage_unit: this.data[key][year]['Dosage Unit'],
-                    deaths: this.data[key][year]['Drug Overdoses'],
-                    population: this.data[key][year].Population
-                };
+<<<<<<< HEAD
+
+=======
+>>>>>>> 289a23ecddd47642fe4a54264a4a8daf8406cc7b
+        data.forEach(function (d) {
+            mapData[d.County] = {
+                deaths: +d.Deaths,
+                population: +d.Population,
+                deathsPerCap: +d['Death Rate per 100k']
             }
-        }
+        });
+        console.log(data);
 
         // match names in topojson and data
-        this.features.forEach((d) => {
-            d.details = this.mapData[d.properties.id] ? this.mapData[d.properties.id] : {};
+        features.forEach(function (d) {
+            d.details = mapData[d.properties.name] ? mapData[d.properties.name] : {};
         });
 
-        console.log(this.features);
+        console.log(features);
 
         this.map.append("g")
             .attr("class", "counties")
             .selectAll("path")
-            .data(this.features)
-            .enter()
-            .append("path")
+            .data(features)
+            .enter().append("path")
             .attr("d", path)
             .attr("id", function (d) {
                 return d.properties.id;
             })
-            .style("fill", (d) => {
-                return d.details[this.year] && d.details[this.year].quantity ? this.colorScale(d.details[this.year].quantity) : undefined;
+            .style("fill", function (d) {
+                return d.details && d.details.deaths ? color(d.details.deaths) : undefined;
             })
             .on('click', function (d) {
                 d3.select(this)
                     .style("stroke", "white")
                     .style("stroke-width", 1)
-                    .style("cursor", "pointer")
-                    ;
+                    .style("cursor", "pointer");
+                
                 d3.select(".county")
-                    .text(d.properties.long_name + ", " + d.properties.state)
-                    ;
+<<<<<<< HEAD
+                    .text(d.properties.long_name + ", " + d.properties.state);
+=======
+                    .text(d.properties.long_name+", "+d.properties.state);
+
+>>>>>>> 289a23ecddd47642fe4a54264a4a8daf8406cc7b
                 d3.select(".deaths")
-                    .text(d.details && d.details.deaths && "Deaths: " + d.details.deaths)
-                    ;
+                    .text(d.details && d.details.deaths && "Deaths: " + d.details.deaths);
+                
                 d3.select(".population")
-                    .text(d.details && d.details.population && "Population: " + d.details.population)
-                    ;
+                    .text(d.details && d.details.population && "Population: " + d.details.population);
+
                 d3.select('.details')
                     .style('visibility', "visible")
-                    ;
             })
             .on('mouseout', function (d) {
                 d3.select(this)
                     .style("stroke", null)
-                    .style("stroke-width", 0.25)
-                    ;
+                    .style("stroke-width", 0.25);
+                
                 d3.select('.details')
-                    .style('visibility', "hidden")
-                    ;
+                    .style('visibility', "hidden");
             })
-            ;
+        ;
 
         this.map.append("path")
             .attr("class", "county-borders")
-            .attr("d", path(topojson.mesh(this.us, this.us.objects.counties, function(a, b) { 
+            .attr("d", path(topojson.mesh(us, us.objects.counties, function(a, b) { 
                 return a !== b; 
             })))
         ;
@@ -132,8 +127,8 @@ class Map{
             .attr("y", 680)
             .attr("width", ls_w)
             .attr("height", ls_h)
-            .style("fill", (d, i) => { 
-                return this.colorScale(d); 
+            .style("fill", function(d, i) { 
+                return color(d); 
             })
             .style("opacity", 0.8)
         ;
@@ -158,15 +153,7 @@ class Map{
     };
 
     update(year, data){
-        this.year = String(year);
-        this.selectedData = data;
-
-        this.map.select('.counties')
-            .selectAll('path')
-            .style("fill", (d) => {
-                return d.details[this.year] && d.details[this.year].quantity ? this.colorScale(d.details[this.year].quantity) : undefined;
-            })
-            ;
+        console.log(year, data);
     };
 
 }

@@ -1,7 +1,10 @@
+let map = new Map();
+<<<<<<< HEAD
 var selectedData = 'Opioid Purchases';
 var selectedYear = 2006;
-let map = new Map(selectedYear, selectedData);
+=======
 let barchart = new Barcharts();
+>>>>>>> 289a23ecddd47642fe4a54264a4a8daf8406cc7b
 
 var yearSelector = d3.select('#year-slider')
   .append('svg')
