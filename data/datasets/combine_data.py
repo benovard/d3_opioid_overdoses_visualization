@@ -45,26 +45,33 @@ for i in counties:
         if len(fips) < 5:
             fips = '0'+fips
             kill = 1
-        print('\t\t"fips" : '+fips+',')
+        print('\t\t"fips" : "'+fips+'",')
     for y in range(2006,2012):
-        print('\t\t'+str(y)+' : {')
+        print('\t\t"'+str(y)+'" : {')
         dOD = a[a['Year'] == y].values
+        dS = b[b['Year'] == y].values
+        w = c[c['Year'] == y].values
         if len(dOD) > 0:
             print('\t\t\t"Population" : '+str(dOD[0][2])+',')
             P += dOD[0][2]
             Pq += 1
-            print('\t\t\t"Drug Overdoses" : '+str(dOD[0][3])+',')
+            comma = ''
+            if len(w) > 0 or len(dS) > 0:
+                comma = ','
+            print('\t\t\t"Drug Overdoses" : '+str(dOD[0][3])+comma)
             OD += dOD[0][3]
             ODq += 1
-        dS = b[b['Year'] == y].values
+        
         if len(dS) > 0:
             print('\t\t\t"Quantity" : '+str(dS[0][1])+',')
             Q += dS[0][1]
             Qq += 1
-            print('\t\t\t"Dosage Unit" : '+str(dS[0][2])+',')
+            comma = ''
+            if len(w) > 0:
+                comma = ','
+            print('\t\t\t"Dosage Unit" : '+str(dS[0][2])+comma)
             DU += dS[0][2]
             DUq += 1
-        w = c[c['Year'] == y].values
         if len(w) > 0:
             print('\t\t\t"Temperature" : '+str(w[0][3]))
         print('\t\t},')
@@ -80,20 +87,26 @@ for i in counties:
     if P != 0:
         print('\t\t\t"Population" : '+str(round(P))+',')
     if OD != 0:
-        print('\t\t\t"Overdoses" : '+str(round(OD))+',')
+        comma = ''
+        if Q != 0 or len(d.values) > 0:
+            comma = ','
+        print('\t\t\t"Drug Overdoses" : '+str(round(OD))+comma)
     if Q != 0:
         print('\t\t\t"Quantity" : '+str(round(Q))+',')
+    comma = ''
+    if len(d.values) > 0:
+        comma = ','
     if DU != 0:
-        print('\t\t\t"Dosage Unit" :'+str(round(DU))+',')
+        print('\t\t\t"Dosage Unit" :'+str(round(DU))+comma)
     if len(d.values) > 0:
         print('\t\t\t"Temperature" : '+str(d.values[0][2]))
     print('\t\t},')
     print('\t\t"Ranking" : {')
-    print('\t\t\t"Population" : '+',')
-    print('\t\t\t"Overdoses" : '+',')
-    print('\t\t\t"Quantity" : '+',')
-    print('\t\t\t"Dosage Unit" : '+',')
-    print('\t\t\t"Temperature" : ')
+    print('\t\t\t"Population" : ""'+',')
+    print('\t\t\t"Drug Overdoses" : ""'+',')
+    print('\t\t\t"Quantity" : ""'+',')
+    print('\t\t\t"Dosage Unit" : ""'+',')
+    print('\t\t\t"Temperature" : ""')
     print('\t\t}')
     print('\t},')
     # break
