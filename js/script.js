@@ -1,4 +1,5 @@
 let map = new Map();
+let barchart = new Barcharts();
 
 yearSelector = d3.select('#year-slider')
   .append('svg')

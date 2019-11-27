@@ -25,9 +25,11 @@ class Map{
     }
 
     drawMap (us, data) {
-        console.log(us);
+
+        console.log(data);
 
         var path = d3.geoPath();
+
         var color = d3.scaleThreshold()
             .domain([1, 10, 20, 30, 40, 50, 60, 70, 80, 90])
             .range(["#f7fcfd", "#e0ecf4", "#bfd3e6", "#9ebcda", "#8c96c6", "#8c6bb1", "#88419d", "#810f7c", "#4d004b"]);
@@ -37,8 +39,6 @@ class Map{
 
         var features = topojson.feature(us, us.objects.counties).features;
         var deathsById = {};
-
-        console.log(features)
 
         data.forEach(function (d) {
             deathsById[d.County] = {
@@ -56,40 +56,43 @@ class Map{
             .attr("class", "counties")
             .selectAll("path")
             .data(features)
-            .enter()
-            .append("path")
+            .enter().append("path")
             .attr("d", path)
+            .attr("name", function (d) {
+                return d.properties.name;
+            })
             .attr("id", function (d) {
-                return d.properties.id;
+                return d.id;
             })
             .style("fill", function (d) {
-                return d.details && d.details.deaths ? color(d.details.deaths) : undefined;
+                return d.details && d.details.deathsPerCap ? color(d.details.deathsPerCap) : undefined;
             })
             .on('click', function (d) {
+
                 d3.select(this)
-                    .style("stroke", "black")
+                    .style("stroke", "white")
                     .style("stroke-width", 1)
                     .style("cursor", "pointer");
-                // d3.select(".state")
-                //    .text(d.properties.state);
+                
                 d3.select(".county")
-                    .text(d.properties.long_name+", "+d.properties.state);
+                    .text(d.properties.name);
+
                 d3.select(".deaths")
                     .text(d.details && d.details.deaths && "Deaths: " + d.details.deaths);
+                
                 d3.select(".population")
                     .text(d.details && d.details.population && "Population: " + d.details.population);
+
                 d3.select('.details')
                     .style('visibility', "visible")
-                    ;
             })
             .on('mouseout', function (d) {
                 d3.select(this)
                     .style("stroke", null)
-                    .style("stroke-width", 0.25)
-                    ;
+                    .style("stroke-width", 0.25);
+                
                 d3.select('.details')
-                    .style('visibility', "hidden")
-                    ;
+                    .style('visibility', "hidden");
             })
         ;
 
