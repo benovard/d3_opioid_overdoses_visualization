@@ -38,21 +38,28 @@ yearSelector.call(slider);
 //   .on('input', sliderChange)
 //   ;
 
-dropdownData = ['Opioid Purchases', 'Drug Overdoses', 'Temperature'];
+// dropdownData = ['Opioid Purchases', 'Drug Overdoses', 'Temperature'];
 
-dropdown = d3.select('#year-slider')
-  .insert('select', 'svg')
-  .on('change', (val) => {
-    selectedData = val;
+// dropdown = d3.select('#year-slider')
+//   .insert('select', 'svg')
+//   .on('change', (val) => {
+//     selectedData = val;
+//     map.update(selectedYear, selectedData);
+//   })
+//   .attr('align', 'right')
+//   ;
+
+// dropdown.selectAll('option')
+//   .data(dropdownData)
+//   .enter()
+//   .append('option')
+//   .attr('value', function(d) {return d})
+//   .text(function(d) {return d})
+//   ;
+
+d3.selectAll('input[name="switch-two"]')
+  .on('change', function(){
+    selectedData = this.value;
     map.update(selectedYear, selectedData);
   })
-  .attr('align', 'right')
-  ;
-
-dropdown.selectAll('option')
-  .data(dropdownData)
-  .enter()
-  .append('option')
-  .attr('value', function(d) {return d})
-  .text(function(d) {return d})
   ;

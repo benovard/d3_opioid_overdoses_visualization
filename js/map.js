@@ -64,8 +64,6 @@ class Map{
             d.details = this.mapData[d.properties.id] ? this.mapData[d.properties.id] : {};
         });
 
-        console.log(this.features);
-
         this.map.append("g")
             .attr("class", "counties")
             .selectAll("path")
