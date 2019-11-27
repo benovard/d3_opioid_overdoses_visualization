@@ -58,24 +58,20 @@ class Map{
             .data(features)
             .enter().append("path")
             .attr("d", path)
-            .attr("name", function (d) {
-                return d.properties.name;
-            })
             .attr("id", function (d) {
-                return d.id;
+                return d.properties.id;
             })
             .style("fill", function (d) {
-                return d.details && d.details.deathsPerCap ? color(d.details.deathsPerCap) : undefined;
+                return d.details && d.details.deaths ? color(d.details.deaths) : undefined;
             })
             .on('click', function (d) {
-
                 d3.select(this)
                     .style("stroke", "white")
                     .style("stroke-width", 1)
                     .style("cursor", "pointer");
                 
                 d3.select(".county")
-                    .text(d.properties.name);
+                    .text(d.properties.long_name+", "+d.properties.state);
 
                 d3.select(".deaths")
                     .text(d.details && d.details.deaths && "Deaths: " + d.details.deaths);
