@@ -114,43 +114,37 @@ class Map{
             })))
         ;
 
-        var legend = this.svg.selectAll("g.legend")
-            .data(ext_color_domain)
-            .enter().append("g")
-            .attr("class", "legend")
-        ;
-		 
         const ls_w = 96; // width of the map divided by 10 gives us 10 cells with a size of 96
         const ls_h = 20; // height of a cell for the legend
-		 
-		legend.append("rect")
-            .attr("x", function(d, i) { 
-                return 960 - (i*ls_w) - ls_w;
-            })
-            .attr("y", 680)
-            .attr("width", ls_w)
-            .attr("height", ls_h)
-            .style("fill", (d, i) => { 
-                return this.colorScale(d); 
-            })
-            .style("opacity", 0.8)
-        ;
-		 
-		legend.append("text")
+
+        var legend = this.svg.append('g').attr('class','legend');
+
+        legend.selectAll('rect')
+            .data(ext_color_domain)
+            .enter()
+            .append('rect')
+            .attr('x',(d,i)=>960-(i*ls_w)-ls_w)
+            .attr('y',680)
+            .attr('width',ls_w)
+            .attr('height',ls_h)
+            .style('fill',(d,i)=>this.colorScale(d))
+            .style('opacity',0.8);
+
+		legend.selectAll('text')
+            .data(ext_color_domain)
+            .enter()
+            .append("text")
             .attr("x", function(d, i){ return 960 - (i*ls_w) - ls_w;})
             .attr("y", 720)
             .text(function(d, i){ return legend_labels[i]; })
         ;
 
 		var legend_title = "Number of deaths:";
-
-		this.svg.append("text")
-            .attr("x", 0)
-            .attr("y", 670)
-            .attr("class", "legend_title")
-            .text(function() {
-                return legend_title
-            })
+        legend.append('text')
+            .attr('x',0)
+            .attr('y',670)
+            .attr('class','legend_title')
+            .text(legend_title)
         ;
 
     };
