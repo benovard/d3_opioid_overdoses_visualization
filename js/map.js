@@ -63,14 +63,14 @@ class Map{
                 return d.properties.id;
             })
             .style("fill", function (d) {
-                return d.details && d.details.deathsPerCap ? color(d.details.deathsPerCap) : undefined;
+                return d.details && d.details.deaths ? color(d.details.deaths) : undefined;
             })
             .on('click', function (d) {
                 d3.select(this)
                     .style("stroke", "black")
                     .style("stroke-width", 1)
                     .style("cursor", "pointer");
-                //d3.select(".state")
+                // d3.select(".state")
                 //    .text(d.properties.state);
                 d3.select(".county")
                     .text(d.properties.long_name+", "+d.properties.state);
