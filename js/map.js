@@ -39,22 +39,22 @@ class Map {
         var ext_color_range = ['#f7fcfd', '#e0ecf4', '#bfd3e6', '#9ebcda', '#8c96c6', '#8c6bb1', '#88419d', '#810f7c', '#4d004b']
         var legend_labels = ['< 1', '10+', '20+', '30+', '40+', '50+', '60+', '70+', '80+', '90+'];
 
-        this.features = topojson.feature(this.us, this.us.objects.counties).features;
-
         this.colorScale = d3.scaleThreshold()
             .domain(ext_color_domain)
             .range(ext_color_range);
 
+        this.features = topojson.feature(this.us, this.us.objects.counties).features;
+
         // create mapData from data
-        for (var key in this.data){
-            this.mapData[key] = {};
-            for(var year in this.data[key]){
-                this.mapData[key][year] = {
-                    temperature: this.data[key][year].Temperature,
-                    quantity: this.data[key][year].Quantity,
-                    dosage_unit: this.data[key][year]['Dosage Unit'],
-                    deaths: this.data[key][year]['Drug Overdoses'],
-                    population: this.data[key][year].Population
+        for (var county in this.data){
+            this.mapData[county] = {};
+            for(var year in this.data[county]){
+                this.mapData[county][year] = {
+                    temperature: this.data[county][year].Temperature,
+                    quantity: this.data[county][year].Quantity,
+                    dosage_unit: this.data[county][year]['Dosage Unit'],
+                    deaths: this.data[county][year]['Drug Overdoses'],
+                    population: this.data[county][year].Population
                 };
             }
         }
@@ -63,6 +63,8 @@ class Map {
         this.features.forEach((d) => {
             d.details = this.mapData[d.properties.id] ? this.mapData[d.properties.id] : {};
         });
+
+        console.log(this.features);
 
         this.map.append('g')
             .attr('class', 'counties')
