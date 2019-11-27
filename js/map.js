@@ -64,11 +64,17 @@ class Map {
             d.details = this.mapData[d.properties.id] ? this.mapData[d.properties.id] : {};
         });
 
+<<<<<<< HEAD
         console.log(this.features);
 
         this.map.append('g')
             .attr('class', 'counties')
             .selectAll('path')
+=======
+        this.map.append("g")
+            .attr("class", "counties")
+            .selectAll("path")
+>>>>>>> 83c88b845a151dd92add325fd3fab7c2cba36014
             .data(this.features)
             .enter()
             .append('path')
