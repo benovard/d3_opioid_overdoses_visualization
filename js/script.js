@@ -1,4 +1,5 @@
 let map = new Map();
+let barchart = new Barcharts();
 var selectedData = 'Opioid Purchases';
 var selectedYear = 2006;
 

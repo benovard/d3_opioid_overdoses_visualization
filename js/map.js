@@ -13,7 +13,7 @@ class Map{
 
         d3.queue()
             .defer(d3.json, "data/topojson-counties.json")
-            .defer(d3.json, "data/new_data.json")
+            .defer(d3.json, "data/overdoses_2010.json")
             .await((error, us, data) => {
                 if (error) {
                     console.log("Uh oh: " + error);
@@ -25,7 +25,8 @@ class Map{
     }
 
     drawMap (us, data) {
-        console.log(us);
+
+        console.log(data);
 
         var path = d3.geoPath();
         var color = d3.scaleThreshold()
@@ -70,29 +71,28 @@ class Map{
             })
             .on('click', function (d) {
                 d3.select(this)
-                    .style("stroke", "black")
+                    .style("stroke", "white")
                     .style("stroke-width", 1)
                     .style("cursor", "pointer");
-                //d3.select(".state")
-                //    .text(d.properties.state);
+                
                 d3.select(".county")
                     .text(d.properties.long_name + ", " + d.properties.state);
                 d3.select(".deaths")
                     .text(d.details && d.details.deaths && "Deaths: " + d.details.deaths);
+                
                 d3.select(".population")
                     .text(d.details && d.details.population && "Population: " + d.details.population);
+
                 d3.select('.details')
                     .style('visibility', "visible")
-                    ;
             })
             .on('mouseout', function (d) {
                 d3.select(this)
                     .style("stroke", null)
-                    .style("stroke-width", 0.25)
-                    ;
+                    .style("stroke-width", 0.25);
+                
                 d3.select('.details')
-                    .style('visibility', "hidden")
-                    ;
+                    .style('visibility', "hidden");
             })
         ;
 
