@@ -92,3 +92,15 @@ rect {
 text {
   font-size: 1.4em;
 }
+
+div.tooltip { 
+	position: absolute;     
+	text-align: center;     
+	/* width: 80px;           */
+	/* height: 14px;          */
+	padding: 2px;       
+	font: 12px sans-serif;    
+	background: #fff; 
+	border: 0px;        
+	pointer-events: none;     
+}
