@@ -161,7 +161,6 @@ class Map {
     update(year, data){
         this.year = String(year);
         this.selectedData = data;
-        console.log(this.year, this.selectedData);
 
         this.map.select('.counties')
             .selectAll('path')
