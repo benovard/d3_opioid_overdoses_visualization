@@ -1,31 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        
         <meta charset="UTF-8">
         <title>Data Visualization Final</title>
         <link rel="stylesheet" href="styles.css"/>
-        
         <script src="d3.js"></script>
-
     </head>
-
     <body>
-        
         <h1>Exploring Opioid Use in America</h1>
-
         <div id="year-slider">
-		<div class="switch-field">
-			<input type="radio" id="radio-three" name="switch-two" value="Opioid Overdoses" checked/>
-			<label for="radio-three">Opioid Overdoses</label>
-			<input type="radio" id="radio-four" name="switch-two" value="Opioid Sales" />
-			<label for="radio-four">Opioid Sales</label>
-			<input type="radio" id="radio-five" name="switch-two" value="Temperature" />
-			<label for="radio-five">Annual Average Maximum Temperature</label>
-		</div>
+            <div class="switch-field">
+                <input type="radio" id="radio-three" name="switch-two" value="Opioid Overdoses" checked/>
+                <label for="radio-three">Opioid Overdoses</label>
+                <input type="radio" id="radio-four" name="switch-two" value="Opioid Sales" />
+                <label for="radio-four">Opioid Sales</label>
+                <input type="radio" id="radio-five" name="switch-two" value="Temperature" />
+                <label for="radio-five">Annual Average Maximum Temperature</label>
+            </div>
         </div>
-
         <div class ="row">
             <div class="column">
                 <svg id="map"></svg>
@@ -37,7 +29,6 @@
                 <p class="deaths"></p>
             </div>
         </div>
-
         <div class="row">
             <div class="column">
                 <svg id="county_barchart"></svg>
@@ -47,17 +38,15 @@
             </div>
         </div>
 
-        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
+        <!--<script src="http://d3js.org/topojson.v1.min.js"></script>-->
+        <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-queue.v2.min.js"></script>
         <script src="https://d3js.org/topojson.v2.min.js"></script>
         <script src="https://unpkg.com/d3-simple-slider"></script>
+        
         <script src="js/map.js"></script>
         <script src="js/barcharts.js"></script>
         <script src="js/script.js"></script>
-
-        <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
-        <script src="http://d3js.org/topojson.v1.min.js"></script>
-        <script src="https://d3js.org/d3-queue.v2.min.js"></script>
-
     </body>
-
 </html>
