@@ -58,6 +58,7 @@ class Map{
                 };
             }
         }
+        console.log(this.mapData);
 
         // match names in topojson and data
         this.features.forEach((d) => {
