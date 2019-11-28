@@ -39,6 +39,9 @@ class Map {
         var ext_color_range = ['#f7fcfd', '#e0ecf4', '#bfd3e6', '#9ebcda', '#8c96c6', '#8c6bb1', '#88419d', '#810f7c', '#4d004b']
         var legend_labels = ['< 1', '10+', '20+', '30+', '40+', '50+', '60+', '70+', '80+', '90+'];
 
+        // use a scaleLinear instead maybe?
+        // this.colorScale = d3.scaleSequential(d3.interpolateBlues).domain([0,maxSelectedValue]);
+        // or better yet if the value passed to colorScale is undefined, it is maybe a light red
         this.colorScale = d3.scaleThreshold()
             .domain(ext_color_domain)
             .range(ext_color_range);
@@ -49,19 +52,24 @@ class Map {
         for (var county in this.data){
             this.mapData[county] = {};
             for(var year in this.data[county]){
-                this.mapData[county][year] = {
-                    temperature: this.data[county][year].Temperature,
-                    quantity: this.data[county][year].Quantity,
-                    dosage_unit: this.data[county][year]['Dosage Unit'],
-                    deaths: this.data[county][year]['Drug Overdoses'],
-                    population: this.data[county][year].Population
-                };
+                if (year != 'fips') {
+                    this.mapData[county][year] = {
+                        temperature: this.data[county][year].Temperature,
+                        quantity: this.data[county][year].Quantity,
+                        dosage_unit: this.data[county][year]['Dosage Unit'],
+                        deaths: this.data[county][year]['Drug Overdoses'],
+                        population: this.data[county][year].Population
+                    };
+                } else {
+                    this.mapData[county]['fips'] = this.data[county].fips;
+                }
             }
         }
 
         // match names in topojson and data
-        this.features.forEach((d) => {
-            d.details = this.mapData[d.properties.id] ? this.mapData[d.properties.id] : {};
+        this.features.forEach(d => {
+            var temp = this.mapData[d.properties.id] ? this.mapData[d.properties.id] : {};
+            d.properties = {...d.details, ...temp};
         });
 
         console.log(this.features);
@@ -77,7 +85,7 @@ class Map {
                 return d.properties.id;
             })
             .style('fill', (d) => {
-                return d.details[this.year] && d.details[this.year].quantity ? this.colorScale(d.details[this.year].quantity) : undefined;
+                return d.properties[this.year] && d.properties[this.year].quantity ? this.colorScale(d.properties[this.year].quantity) : undefined;
             })
             .on('click', function (d) {
                 d3.select(this)
