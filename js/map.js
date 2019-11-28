@@ -88,35 +88,54 @@ class Map {
             .style('fill', (d) => {
                 return d.properties[this.year] && d.properties[this.year][this.selectedData] ? this.colorScale(d.properties[this.year][this.selectedData]) : undefined;
             })
-            .on('click', function (d) {
-                d3.select(this)
-                    .style('stroke', 'white')
-                    .style('stroke-width', 1)
-                    .style('cursor', 'pointer')
-                    ;
+            .on('click', (d) => {
+                var thisCounty = d.properties[this.year];
+                var thisCountyAvg = d.properties['Average'];
+                console.log(d)
                 d3.select('.county')
                     .text(d.properties.long_name + ', ' + d.properties.state)
-                    ;
+                ;
                 d3.select('.deaths')
-                    .text(d.properties && d.properties.deaths && 'Deaths: ' + d.properties.deaths)
-                    ;
+                    .text(thisCounty.deaths == undefined ? 'Deaths: No Data' : 'Deaths: ' + thisCounty.deaths)
+                ;
                 d3.select('.population')
-                    .text(d.properties && d.properties.population && 'Population: ' + d.properties.population)
-                    ;
-                d3.select('.details')
-                    .style('visibility', 'visible')
-                    ;
+                    .text(thisCounty.population == undefined ? 'Population: No Data' : 'Population: ' + thisCounty.population)
+                ;
+                d3.select('.prescriptions')
+                    .text(thisCounty.quantity == undefined ? 'Total Prescriptions: No Data' : 'Total Prescriptions: ' + thisCounty.quantity)
+                ;
+                d3.select('.temp')
+                    .text(thisCounty.temperature == undefined ? 'Average Temperature For The Year ' + this.year + ': No Data' : 'Average Temperature: ' + thisCounty.temperature + " °F")
+                ;
+                d3.select('#avg_label')
+                    .text('Averages for the years 2006 - 2011: ')
+                ;
+                d3.select('.avg_pop')
+                    .text(thisCountyAvg.population == undefined ? 'Population: No Data' : 'Population: ' + thisCountyAvg.population)
+                ;
+                d3.select('.avg_deaths')
+                    .text(thisCountyAvg.deaths == undefined ? 'Deaths: No Data' : 'Deaths: ' + thisCountyAvg.deaths)
+                ;
+                d3.select('.avg_prescriptions')
+                    .text(thisCountyAvg.quantity == undefined ? 'Prescriptions: No Data' : 'Prescriptions: ' + thisCountyAvg.quantity)
+                ;
+                d3.select('.avg_temp')
+                    .text(thisCountyAvg.temperature == undefined ? 'Temperature: No Data' : 'Temperature: ' + thisCountyAvg.temperature + " °F")
+                ;
+            })
+            .on('mouseover', function (d) {
+                d3.select(this)
+                    .style('stroke', 'white')
+                    .style('stroke-width', 2.5)
+                    .style('cursor', 'pointer')
+                ;
             })
             .on('mouseout', function (d) {
                 d3.select(this)
                     .style('stroke', null)
                     .style('stroke-width', 0.25)
-                    ;
-                d3.select('.details')
-                    .style('visibility', 'hidden')
-                    ;
+                ;
             })
-            ;
 
         this.map.append('path')
             .attr('class', 'county-borders')
