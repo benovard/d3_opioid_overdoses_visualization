@@ -86,7 +86,7 @@ class Map {
                 return d.properties.id;
             })
             .style('fill', (d) => {
-                return d.properties[this.year] && d.properties[this.year].quantity ? this.colorScale(d.properties[this.year].quantity) : undefined;
+                return d.properties[this.year] && d.properties[this.year][this.selectedData] ? this.colorScale(d.properties[this.year][this.selectedData]) : undefined;
             })
             .on('click', function (d) {
                 d3.select(this)
@@ -136,7 +136,8 @@ class Map {
             .attr('width',ls_w)
             .attr('height',ls_h)
             .style('fill',(d,i)=>this.colorScale(d))
-            .style('opacity',0.8);
+            .style('opacity',0.8)
+        ;
 
 		legend.selectAll('text')
             .data(ext_color_domain)
@@ -160,11 +161,12 @@ class Map {
     update(year, data){
         this.year = String(year);
         this.selectedData = data;
+        console.log(this.year, this.selectedData);
 
         this.map.select('.counties')
             .selectAll('path')
             .style('fill', (d) => {
-                return d.properties[this.year] && d.properties[this.year].quantity ? this.colorScale(d.properties[this.year].quantity) : undefined;
+                return d.properties[this.year] && d.properties[this.year][this.selectedData] ? this.colorScale(d.properties[this.year][this.selectedData]) : undefined;
             })
             ;
     };

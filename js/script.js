@@ -1,4 +1,4 @@
-var selectedData = 'Opioid Purchases';
+var selectedData = 'deaths';
 var selectedYear = 2006;
 let map = new Map(selectedYear, selectedData);
 let barchart = new Barcharts();
@@ -27,35 +27,6 @@ var slider = d3.sliderBottom()
   ;
 
 yearSelector.call(slider);
-
-// slider = d3.select('#year-slider')
-//   .append('input')
-//   .attr('type', 'range')
-//   .attr('min', 2006)
-//   .attr('max', 2011)
-//   .style('display', 'block')
-//   .attr('id', 'slider')
-//   .on('input', sliderChange)
-//   ;
-
-// dropdownData = ['Opioid Purchases', 'Drug Overdoses', 'Temperature'];
-
-// dropdown = d3.select('#year-slider')
-//   .insert('select', 'svg')
-//   .on('change', (val) => {
-//     selectedData = val;
-//     map.update(selectedYear, selectedData);
-//   })
-//   .attr('align', 'right')
-//   ;
-
-// dropdown.selectAll('option')
-//   .data(dropdownData)
-//   .enter()
-//   .append('option')
-//   .attr('value', function(d) {return d})
-//   .text(function(d) {return d})
-//   ;
 
 d3.selectAll('input[name="switch-two"]')
   .on('change', function(){
