@@ -75,6 +75,11 @@ class Map {
 
         console.log(this.features);
 
+        this.map.call(d3.zoom().on('zoom', () => {
+            console.log('zoom');
+            this.map.attr('transform', d3.event.transform);
+        }));
+
         this.map.append('g')
             .attr('class', 'counties')
             .selectAll('path')
@@ -136,7 +141,8 @@ class Map {
                     .style('stroke-width', 0.25)
                 ;
             })
-
+        ;
+        
         this.map.append('path')
             .attr('class', 'county-borders')
             .attr('d', this.path(topojson.mesh(this.us, this.us.objects.counties, function(a, b) { 
