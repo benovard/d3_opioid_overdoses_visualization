@@ -69,7 +69,7 @@ class Map {
         // match names in topojson and data
         this.features.forEach(d => {
             var temp = this.mapData[d.properties.id] ? this.mapData[d.properties.id] : {};
-            d.properties = {...d.details, ...temp};
+            d.properties = {...d.properties, ...temp};
         });
 
         console.log(this.features);
