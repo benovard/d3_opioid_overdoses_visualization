@@ -97,10 +97,10 @@ class Map {
                     .text(d.properties.long_name + ', ' + d.properties.state)
                     ;
                 d3.select('.deaths')
-                    .text(d.details && d.details.deaths && 'Deaths: ' + d.details.deaths)
+                    .text(d.properties && d.properties.deaths && 'Deaths: ' + d.properties.deaths)
                     ;
                 d3.select('.population')
-                    .text(d.details && d.details.population && 'Population: ' + d.details.population)
+                    .text(d.properties && d.properties.population && 'Population: ' + d.properties.population)
                     ;
                 d3.select('.details')
                     .style('visibility', 'visible')
@@ -163,7 +163,7 @@ class Map {
         this.map.select('.counties')
             .selectAll('path')
             .style('fill', (d) => {
-                return d.details[this.year] && d.details[this.year].quantity ? this.colorScale(d.details[this.year].quantity) : undefined;
+                return d.properties[this.year] && d.properties[this.year].quantity ? this.colorScale(d.properties[this.year].quantity) : undefined;
             })
             ;
     };
