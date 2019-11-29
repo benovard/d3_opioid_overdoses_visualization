@@ -141,16 +141,20 @@ class Map {
                 
                 var tooltipData = "";
                 if (this.selectedData == 'deaths'){
-                    if(d.properties[this.year].deaths == undefined) tooltipData = `Deaths: No Data`;
-                    else tooltipData = `Total Deaths: ${d.properties[this.year].deaths}`;
+                    if(d.properties[this.year].deaths == undefined) tooltipData = `Total Overdoses: No Data`;
+                    else tooltipData = `Total Overdoses: ${d.properties[this.year].deaths}`;
                 }
                 else if (this.selectedData == 'quantity'){
-                    if(d.properties[this.year].quantity == undefined) tooltipData = `Deaths: No Data`;
-                    else tooltipData = `Total prescriptions: ${d.properties[this.year].quantity}`;
+                    if(d.properties[this.year].quantity == undefined) tooltipData = `Total Prescriptions: No Data`;
+                    else tooltipData = `Total Prescriptions: ${d.properties[this.year].quantity}`;
                 } 
                 else if (this.selectedData == 'temperature'){
-                    if(d.properties[this.year].temperature == undefined) tooltipData = `Deaths: No Data`;
+                    if(d.properties[this.year].temperature == undefined) tooltipData = `Average Temperature: No Data`;
                     else tooltipData = `Average Temperature: ${d.properties[this.year].temperature} °F`;
+                } 
+                else if (this.selectedData == 'deathsPer100k'){
+                    if(d.properties[this.year].deathsPer100k == undefined) tooltipData = `Overdoses Per 100k: No Data`;
+                    else tooltipData = `Overdoses Per 100k: ${d.properties[this.year].deathsPer100k.toFixed(2)}`;
                 } 
 
                 tooltip.transition()    
