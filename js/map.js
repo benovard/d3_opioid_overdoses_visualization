@@ -156,6 +156,10 @@ class Map {
                     if(d.properties[this.year].deathsPer100k == undefined) tooltipData = `Overdoses Per 100k: No Data`;
                     else tooltipData = `Overdoses Per 100k: ${d.properties[this.year].deathsPer100k.toFixed(2)}`;
                 } 
+                else if (this.selectedData == 'population'){
+                    if(d.properties[this.year].population == undefined) tooltipData = `Population: No Data`;
+                    else tooltipData = `Population: ${d.properties[this.year].population}`;
+                } 
 
                 tooltip.transition()    
                     .duration(200)    
