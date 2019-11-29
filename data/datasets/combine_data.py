@@ -37,8 +37,8 @@ for i in counties:
     b = drugSales[drugSales['County'] == i]
     c = weather[weather['County'] == i]
     d = weatherTotal[weatherTotal['County'] == i]
-    P, OD, Q, DU = 0, 0, 0, 0
-    Pq, ODq, Qq, DUq = 0, 0, 0, 0
+    P, OD, Q, DU, OD100 = 0, 0, 0, 0, 0
+    Pq, ODq, Qq, DUq, OD100q = 0, 0, 0, 0, 0
     print('\t"'+i+'" : {')
     if len(d) > 0:
         fips = str(int(d.values[0][1]))
@@ -55,12 +55,16 @@ for i in counties:
             print('\t\t\t"Population" : '+str(dOD[0][2])+',')
             P += dOD[0][2]
             Pq += 1
+        
+            print('\t\t\t"Drug Overdoses" : '+str(dOD[0][3])+',')
+            OD += dOD[0][3]
+            ODq += 1
             comma = ''
             if len(w) > 0 or len(dS) > 0:
                 comma = ','
-            print('\t\t\t"Drug Overdoses" : '+str(dOD[0][3])+comma)
-            OD += dOD[0][3]
-            ODq += 1
+            print('\t\t\t"Overdoses per 100k" : '+str(dOD[0][4])+comma)
+            OD100 += dOD[0][4]
+            OD100q += 1
         
         if len(dS) > 0:
             print('\t\t\t"Quantity" : '+str(dS[0][1])+',')

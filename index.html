@@ -10,17 +10,22 @@
         <h1>Exploring Opioid Use in America</h1>
         <div id="year-slider">
             <div class="switch-field">
-                <input type="radio" id="radio-three" name="switch-two" value="deaths" checked/>
-                <label for="radio-three">Opioid Overdoses</label>
+                <input type="radio" id="radio-two" name="switch-two" value="deaths" checked/>
+                <label for="radio-two">Opioid Overdoses</label>
+                <input type="radio" id="radio-three" name="switch-two" value="deathsPer100k"/>
+                <label for="radio-three">Overdoses Per 100k</label>
                 <input type="radio" id="radio-four" name="switch-two" value="quantity" />
                 <label for="radio-four">Opioid Sales</label>
                 <input type="radio" id="radio-five" name="switch-two" value="temperature" />
-                <label for="radio-five">Annual Average Maximum Temperature</label>
+                <label for="radio-five">Annual Average Max Temperature</label>
+                <input type="radio" id="radio-six" name="switch-two" value="population" />
+                <label for="radio-six">Population</label>
             </div>
         </div>
         <div class ="row">
             <div class="column">
                 <svg id="map"></svg>
+                <svg id="legend"></svg>
             </div>
             <div class="column">
                 <h1 class="county"></h1>

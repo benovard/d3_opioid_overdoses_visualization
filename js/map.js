@@ -58,7 +58,8 @@ class Map {
                         quantity: this.data[county][year].Quantity,
                         dosage_unit: this.data[county][year]['Dosage Unit'],
                         deaths: this.data[county][year]['Drug Overdoses'],
-                        population: this.data[county][year].Population
+                        population: this.data[county][year].Population,
+                        deathsPer100k: this.data[county][year]['Overdoses per 100k']
                     };
                 } else {
                     this.mapData[county]['fips'] = this.data[county].fips;
@@ -73,7 +74,15 @@ class Map {
             d.properties = {...d.properties, ...temp};
         });
 
-        console.log(this.features);
+        this.map.call(d3.zoom().on('zoom', () => {
+            console.log('zoom');
+            this.map.attr('transform', d3.event.transform);
+        }));
+
+        var tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opactiy", 0)
+        ;
 
         this.map.append('g')
             .attr('class', 'counties')
@@ -123,20 +132,48 @@ class Map {
                     .text(thisCountyAvg.temperature == undefined ? 'Temperature: No Data' : 'Temperature: ' + thisCountyAvg.temperature + " °F")
                 ;
             })
-            .on('mouseover', function (d) {
-                d3.select(this)
-                    .style('stroke', 'white')
-                    .style('stroke-width', 2.5)
-                    .style('cursor', 'pointer')
-                ;
-            })
-            .on('mouseout', function (d) {
-                d3.select(this)
-                    .style('stroke', null)
-                    .style('stroke-width', 0.25)
-                ;
-            })
+            .on('mouseover', (d) => {
+                // d3.select(this)
+                //     .style('stroke', 'white')
+                //     .style('stroke-width', 2.5)
+                //     .style('cursor', 'pointer')
+                // ;
+                
+                var tooltipData = "";
+                if (this.selectedData == 'deaths'){
+                    if(d.properties[this.year].deaths == undefined) tooltipData = `Deaths: No Data`;
+                    else tooltipData = `Total Deaths: ${d.properties[this.year].deaths}`;
+                }
+                else if (this.selectedData == 'quantity'){
+                    if(d.properties[this.year].quantity == undefined) tooltipData = `Deaths: No Data`;
+                    else tooltipData = `Total prescriptions: ${d.properties[this.year].quantity}`;
+                } 
+                else if (this.selectedData == 'temperature'){
+                    if(d.properties[this.year].temperature == undefined) tooltipData = `Deaths: No Data`;
+                    else tooltipData = `Average Temperature: ${d.properties[this.year].temperature} °F`;
+                } 
 
+                tooltip.transition()    
+                    .duration(200)    
+                    .style("opacity", .9)
+                ;    
+                tooltip.html(d.properties.long_name + 
+                             '<br>' + tooltipData)  
+                    .style("left", (d3.event.pageX) + "px")   
+                    .style("top", (d3.event.pageY - 28) + "px")
+                ;  
+            })
+            .on('mouseout', (d) => {
+                // d3.select(this)
+                //     .style('stroke', null)
+                //     .style('stroke-width', 0.25)
+                // ;
+                tooltip.transition()    
+                    .duration(500)    
+                    .style("opacity", 0);
+            })
+        ;
+        
         this.map.append('path')
             .attr('class', 'county-borders')
             .attr('d', this.path(topojson.mesh(this.us, this.us.objects.counties, function(a, b) { 
@@ -177,6 +214,7 @@ class Map {
 
     };
 
+    // updates the map when data is changed
     update(year, data){
         this.year = String(year);
         this.selectedData = data;
