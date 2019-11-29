@@ -11,7 +11,7 @@ topo = topo.read()
 
 #print(fips)
 
-regex = '"id":"(\d{5})","properties":{"name":"([A-z\s\-]*)(")}'
+regex = '"id":"(\d{5})","properties":{"name":"([A-z\s\-\']*)(")}'
 
 toposplit = re.finditer(regex,topo)
 
