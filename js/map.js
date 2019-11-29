@@ -28,6 +28,7 @@ class Map {
         this.year = String(year);
         this.selectedData = data;
         this.mapData = {};
+        this.dee
 
         this.path = d3.geoPath();
     }
@@ -75,7 +76,6 @@ class Map {
         });
 
         this.map.call(d3.zoom().on('zoom', () => {
-            console.log('zoom');
             this.map.attr('transform', d3.event.transform);
         }));
 
@@ -132,13 +132,20 @@ class Map {
                     .text(thisCountyAvg.temperature == undefined ? 'Temperature: No Data' : 'Temperature: ' + thisCountyAvg.temperature + " °F")
                 ;
             })
+            .on('mouseenter', function (d) {
+                d3.select(this)
+                    .style('stroke', 'white')
+                    .style('stroke-width', 3)
+                    .style('cursor', 'pointer')
+                ;
+            })
+            .on('mouseleave', function (d) {
+                d3.select(this)
+                    .style('stroke', null)
+                    .style('stroke-width', 0.25)
+                ;
+            })
             .on('mouseover', (d) => {
-                // d3.select(this)
-                //     .style('stroke', 'white')
-                //     .style('stroke-width', 2.5)
-                //     .style('cursor', 'pointer')
-                // ;
-                
                 var tooltipData = "";
                 if (this.selectedData == 'deaths'){
                     if(d.properties[this.year].deaths == undefined) tooltipData = `Total Overdoses: No Data`;
@@ -172,10 +179,6 @@ class Map {
                 ;  
             })
             .on('mouseout', (d) => {
-                // d3.select(this)
-                //     .style('stroke', null)
-                //     .style('stroke-width', 0.25)
-                // ;
                 tooltip.transition()    
                     .duration(500)    
                     .style("opacity", 0);
@@ -220,6 +223,10 @@ class Map {
             .text(legend_title)
         ;
 
+    };
+
+    getThis(d) {
+        console.log(d);
     };
 
     // updates the map when data is changed
