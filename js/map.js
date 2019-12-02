@@ -16,7 +16,7 @@ class Map {
                 }
             });
 
-        this.width = 960; 
+        this.width = 960;
         this.height = 750;
         this.svg = d3.select('body').select('#map')
             .attr('width', this.width)
@@ -50,9 +50,9 @@ class Map {
         this.features = topojson.feature(this.us, this.us.objects.counties).features;
 
         // create mapData from data
-        for (var county in this.data){
+        for (var county in this.data) {
             this.mapData[county] = {};
-            for(var year in this.data[county]){
+            for (var year in this.data[county]) {
                 if (year != 'fips') {
                     this.mapData[county][year] = {
                         temperature: this.data[county][year].Temperature,
@@ -69,10 +69,32 @@ class Map {
         }
         console.log(this.mapData);
 
+        var maxValue = 0;
+        var values = [];
+        for(var i in this.mapData){
+            for(var j in this.mapData[i]){
+                //console.log(this.mapData[i][j][this.selectedData]);
+                if(this.mapData[i][j][this.selectedData] != undefined && this.mapData[i][j][this.selectedData] > maxValue){
+                    maxValue = j[this.selectedData];
+                    values.push(this.mapData[i][j][this.selectedData]);
+                    console.log(this.mapData[i][j][this.selectedData]);
+                if(this.mapData[i][j][this.selectedData] == undefined){
+                    console.log(j, 'undefined');
+                }
+            }
+            }
+        }
+        console.log(maxValue);
+
+        this.colorScale = d3.scaleLinear()
+            .domain([0, 50, 100])
+            .range(['#f7fcfd', '#8c96c6', '#4d004b'])
+            ;
+
         // match names in topojson and data
         this.features.forEach(d => {
             var temp = this.mapData[d.properties.id] ? this.mapData[d.properties.id] : {};
-            d.properties = {...d.properties, ...temp};
+            d.properties = { ...d.properties, ...temp };
         });
 
         this.map.call(d3.zoom().on('zoom', () => {
@@ -82,7 +104,7 @@ class Map {
         var tooltip = d3.select("body").append("div")
             .attr("class", "tooltip")
             .style("opactiy", 0)
-        ;
+            ;
 
         this.map.append('g')
             .attr('class', 'counties')
@@ -103,125 +125,125 @@ class Map {
                 console.log(d)
                 d3.select('.county')
                     .text(d.properties.long_name + ', ' + d.properties.state)
-                ;
+                    ;
                 d3.select('.deaths')
                     .text(thisCounty.deaths == undefined ? 'Deaths: No Data' : 'Deaths: ' + thisCounty.deaths)
-                ;
+                    ;
                 d3.select('.population')
                     .text(thisCounty.population == undefined ? 'Population: No Data' : 'Population: ' + thisCounty.population)
-                ;
+                    ;
                 d3.select('.prescriptions')
                     .text(thisCounty.quantity == undefined ? 'Total Prescriptions: No Data' : 'Total Prescriptions: ' + thisCounty.quantity)
-                ;
+                    ;
                 d3.select('.temp')
                     .text(thisCounty.temperature == undefined ? 'Average Temperature For The Year ' + this.year + ': No Data' : 'Average Temperature: ' + thisCounty.temperature + " °F")
-                ;
+                    ;
                 d3.select('#avg_label')
                     .text('Averages for the years 2006 - 2011: ')
-                ;
+                    ;
                 d3.select('.avg_pop')
                     .text(thisCountyAvg.population == undefined ? 'Population: No Data' : 'Population: ' + thisCountyAvg.population)
-                ;
+                    ;
                 d3.select('.avg_deaths')
                     .text(thisCountyAvg.deaths == undefined ? 'Deaths: No Data' : 'Deaths: ' + thisCountyAvg.deaths)
-                ;
+                    ;
                 d3.select('.avg_prescriptions')
                     .text(thisCountyAvg.quantity == undefined ? 'Prescriptions: No Data' : 'Prescriptions: ' + thisCountyAvg.quantity)
-                ;
+                    ;
                 d3.select('.avg_temp')
                     .text(thisCountyAvg.temperature == undefined ? 'Temperature: No Data' : 'Temperature: ' + thisCountyAvg.temperature + " °F")
-                ;
+                    ;
             })
             .on('mouseenter', function (d) {
                 d3.select(this)
                     .style('stroke', 'white')
                     .style('stroke-width', 3)
                     .style('cursor', 'pointer')
-                ;
+                    ;
             })
             .on('mouseleave', function (d) {
                 d3.select(this)
                     .style('stroke', null)
                     .style('stroke-width', 0.25)
-                ;
+                    ;
             })
             .on('mouseover', (d) => {
                 var tooltipData = "";
-                if (this.selectedData == 'deaths'){
-                    if(d.properties[this.year].deaths == undefined) tooltipData = `Total Overdoses: No Data`;
+                if (this.selectedData == 'deaths') {
+                    if (d.properties[this.year].deaths == undefined) tooltipData = `Total Overdoses: No Data`;
                     else tooltipData = `Total Overdoses: ${d.properties[this.year].deaths}`;
                 }
-                else if (this.selectedData == 'quantity'){
-                    if(d.properties[this.year].quantity == undefined) tooltipData = `Total Prescriptions: No Data`;
+                else if (this.selectedData == 'quantity') {
+                    if (d.properties[this.year].quantity == undefined) tooltipData = `Total Prescriptions: No Data`;
                     else tooltipData = `Total Prescriptions: ${d.properties[this.year].quantity}`;
-                } 
-                else if (this.selectedData == 'temperature'){
-                    if(d.properties[this.year].temperature == undefined) tooltipData = `Average Temperature: No Data`;
+                }
+                else if (this.selectedData == 'temperature') {
+                    if (d.properties[this.year].temperature == undefined) tooltipData = `Average Temperature: No Data`;
                     else tooltipData = `Average Temperature: ${d.properties[this.year].temperature} °F`;
-                } 
-                else if (this.selectedData == 'deathsPer100k'){
-                    if(d.properties[this.year].deathsPer100k == undefined) tooltipData = `Overdoses Per 100k: No Data`;
+                }
+                else if (this.selectedData == 'deathsPer100k') {
+                    if (d.properties[this.year].deathsPer100k == undefined) tooltipData = `Overdoses Per 100k: No Data`;
                     else tooltipData = `Overdoses Per 100k: ${d.properties[this.year].deathsPer100k.toFixed(2)}`;
-                } 
-                else if (this.selectedData == 'population'){
-                    if(d.properties[this.year].population == undefined) tooltipData = `Population: No Data`;
+                }
+                else if (this.selectedData == 'population') {
+                    if (d.properties[this.year].population == undefined) tooltipData = `Population: No Data`;
                     else tooltipData = `Population: ${d.properties[this.year].population}`;
-                } 
+                }
 
-                tooltip.transition()    
-                    .duration(200)    
+                tooltip.transition()
+                    .duration(200)
                     .style("opacity", .9)
-                ;    
-                tooltip.html(d.properties.long_name + ", " + d.properties.state + 
-                             '<br>' + tooltipData)  
-                    .style("left", (d3.event.pageX) + "px")   
+                    ;
+                tooltip.html(d.properties.long_name + ", " + d.properties.state +
+                    '<br>' + tooltipData)
+                    .style("left", (d3.event.pageX) + "px")
                     .style("top", (d3.event.pageY - 28) + "px")
-                ;  
+                    ;
             })
             .on('mouseout', (d) => {
-                tooltip.transition()    
-                    .duration(500)    
+                tooltip.transition()
+                    .duration(500)
                     .style("opacity", 0);
             })
-        ;
-        
+            ;
+
         this.map.append('path')
             .attr('class', 'county-borders')
-            .attr('d', this.path(topojson.mesh(this.us, this.us.objects.counties, function(a, b) { 
-                return a !== b; 
+            .attr('d', this.path(topojson.mesh(this.us, this.us.objects.counties, function (a, b) {
+                return a !== b;
             })))
-        ;
+            ;
 
-        var legend = this.svg.append('g').attr('class','legend');
+        var legend = this.svg.append('g').attr('class', 'legend');
 
         legend.selectAll('rect')
             .data(ext_color_domain)
             .enter()
             .append('rect')
-            .attr('x',(d,i)=>960-(i*ls_w)-ls_w)
-            .attr('y',680)
-            .attr('width',ls_w)
-            .attr('height',ls_h)
-            .style('fill',(d,i)=>this.colorScale(d))
-            .style('opacity',0.8)
-        ;
+            .attr('x', (d, i) => 960 - (i * ls_w) - ls_w)
+            .attr('y', 680)
+            .attr('width', ls_w)
+            .attr('height', ls_h)
+            .style('fill', (d, i) => this.colorScale(d))
+            .style('opacity', 0.8)
+            ;
 
-		legend.selectAll('text')
+        legend.selectAll('text')
             .data(ext_color_domain)
             .enter()
             .append('text')
-            .attr('x', function(d, i){ return 960 - (i*ls_w) - ls_w;})
+            .attr('x', function (d, i) { return 960 - (i * ls_w) - ls_w; })
             .attr('y', 720)
-            .text(function(d, i){ return legend_labels[i]; })
-        ;
+            .text(function (d, i) { return legend_labels[i]; })
+            ;
 
-		var legend_title = 'Number of deaths:';
+        var legend_title = 'Number of deaths:';
         legend.append('text')
-            .attr('x',0)
-            .attr('y',670)
-            .attr('class','legend_title')
+            .attr('x', 0)
+            .attr('y', 670)
+            .attr('class', 'legend_title')
             .text(legend_title)
-        ;
+            ;
 
     };
 
@@ -230,7 +252,7 @@ class Map {
     };
 
     // updates the map when data is changed
-    update(year, data){
+    update(year, data) {
         this.year = String(year);
         this.selectedData = data;
 
