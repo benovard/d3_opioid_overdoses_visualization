@@ -41342,28 +41342,28 @@
 	"KAUAIHI" : {
 		"fips" : "15007",
 		"2006" : {
-			"Quantity" : 128.0,
+			"Quantity" : 128.0
 		},
 		"2007" : {
-			"Quantity" : 92.0,
+			"Quantity" : 92.0
 		},
 		"2008" : {
-			"Quantity" : 214.0,
+			"Quantity" : 214.0
 		},
 		"2009" : {
-			"Quantity" : 145.0,
+			"Quantity" : 145.0
 		},
 		"2010" : {
-			"Quantity" : 244.0,
+			"Quantity" : 244.0
 		},
 		"2011" : {
-			"Quantity" : 138.0,
+			"Quantity" : 138.0
 		},
 		"Average" : {
-			"Quantity" : 160.16666666666666,
+			"Quantity" : 160.16666666666666
 		},
 		"Ranking" : {
-			"Quantity" : 1561.0,
+			"Quantity" : 1561.0
 		}
 	},
 	"ROOSEVELTMT" : {
@@ -50871,26 +50871,26 @@
 	"ANCHORAGEAK" : {
 		"fips" : "2020",
 		"2006" : {
-			"Quantity" : 11.0,
+			"Quantity" : 11.0
 		},
 		"2007" : {
-			"Quantity" : 1.0,
+			"Quantity" : 1.0
 		},
 		"2008" : {
-			"Quantity" : 2.0,
+			"Quantity" : 2.0
 		},
 		"2009" : {
-			"Quantity" : 1.0,
+			"Quantity" : 1.0
 		},
 		"2010" : {
 		},
 		"2011" : {
 		},
 		"Average" : {
-			"Quantity" : 3.75,
+			"Quantity" : 3.75
 		},
 		"Ranking" : {
-			"Quantity" : 1129.5,
+			"Quantity" : 1129.5
 		}
 	},
 	"MENARDTX" : {
@@ -55962,28 +55962,28 @@
 	"BROOMFIELDCO" : {
 		"fips" : "8014",
 		"2006" : {
-			"Quantity" : 9.0,
+			"Quantity" : 9.0
 		},
 		"2007" : {
-			"Quantity" : 10.0,
+			"Quantity" : 10.0
 		},
 		"2008" : {
-			"Quantity" : 15.0,
+			"Quantity" : 15.0
 		},
 		"2009" : {
-			"Quantity" : 16.0,
+			"Quantity" : 16.0
 		},
 		"2010" : {
-			"Quantity" : 17.0,
+			"Quantity" : 17.0
 		},
 		"2011" : {
-			"Quantity" : 22.0,
+			"Quantity" : 22.0
 		},
 		"Average" : {
-			"Quantity" : 14.833333333333334,
+			"Quantity" : 14.833333333333334
 		},
 		"Ranking" : {
-			"Quantity" : 1051.0,
+			"Quantity" : 1051.0
 		}
 	},
 	"MEDINAOH" : {
@@ -87588,49 +87588,49 @@
 			"Population" : 2405911.0,
 			"Drug Overdoses" : 136.0,
 			"Overdoses per 100k" : 5.652744427999999,
-			"Quantity" : 380.0,
+			"Quantity" : 380.0
 		},
 		"2007" : {
 			"Population" : 2415576.0,
 			"Drug Overdoses" : 120.0,
 			"Overdoses per 100k" : 4.967759243,
-			"Quantity" : 395.0,
+			"Quantity" : 395.0
 		},
 		"2008" : {
 			"Population" : 2436062.0,
 			"Drug Overdoses" : 127.0,
 			"Overdoses per 100k" : 5.213332009,
-			"Quantity" : 636.0,
+			"Quantity" : 636.0
 		},
 		"2009" : {
 			"Population" : 2463943.0,
 			"Drug Overdoses" : 129.0,
 			"Overdoses per 100k" : 5.235510724,
-			"Quantity" : 1073.0,
+			"Quantity" : 1073.0
 		},
 		"2010" : {
 			"Population" : 2496435.0,
 			"Drug Overdoses" : 91.0,
 			"Overdoses per 100k" : 3.645198052,
-			"Quantity" : 1271.0,
+			"Quantity" : 1271.0
 		},
 		"2011" : {
 			"Population" : 2554766.0,
 			"Drug Overdoses" : 110.0,
 			"Overdoses per 100k" : 4.305678093,
-			"Quantity" : 1117.0,
+			"Quantity" : 1117.0
 		},
 		"Average" : {
 			"Population" : 2462115.5,
 			"Drug Overdoses" : 118.83333333333333,
 			"Overdoses per 100k" : 4.836703758166666,
-			"Quantity" : 812.0,
+			"Quantity" : 812.0
 		},
 		"Ranking" : {
 			"Population" : 640.0,
 			"Drug Overdoses" : 343.0,
 			"Overdoses per 100k" : 5.0,
-			"Quantity" : 1354.0,
+			"Quantity" : 1354.0
 		}
 	},
 	"DICKEYND" : {
@@ -89869,28 +89869,28 @@
 	"HONOLULUHI" : {
 		"fips" : "15003",
 		"2006" : {
-			"Quantity" : 870.0,
+			"Quantity" : 870.0
 		},
 		"2007" : {
-			"Quantity" : 945.0,
+			"Quantity" : 945.0
 		},
 		"2008" : {
-			"Quantity" : 920.0,
+			"Quantity" : 920.0
 		},
 		"2009" : {
-			"Quantity" : 1081.0,
+			"Quantity" : 1081.0
 		},
 		"2010" : {
-			"Quantity" : 1405.0,
+			"Quantity" : 1405.0
 		},
 		"2011" : {
-			"Quantity" : 1128.0,
+			"Quantity" : 1128.0
 		},
 		"Average" : {
-			"Quantity" : 1058.1666666666667,
+			"Quantity" : 1058.1666666666667
 		},
 		"Ranking" : {
-			"Quantity" : 1562.0,
+			"Quantity" : 1562.0
 		}
 	},
 	"HUMBOLDTIA" : {
@@ -96484,28 +96484,28 @@
 	"HAWAIIHI" : {
 		"fips" : "15001",
 		"2006" : {
-			"Quantity" : 276.0,
+			"Quantity" : 276.0
 		},
 		"2007" : {
-			"Quantity" : 304.0,
+			"Quantity" : 304.0
 		},
 		"2008" : {
-			"Quantity" : 312.0,
+			"Quantity" : 312.0
 		},
 		"2009" : {
-			"Quantity" : 547.0,
+			"Quantity" : 547.0
 		},
 		"2010" : {
-			"Quantity" : 377.0,
+			"Quantity" : 377.0
 		},
 		"2011" : {
-			"Quantity" : 358.0,
+			"Quantity" : 358.0
 		},
 		"Average" : {
-			"Quantity" : 362.3333333333333,
+			"Quantity" : 362.3333333333333
 		},
 		"Ranking" : {
-			"Quantity" : 738.0,
+			"Quantity" : 738.0
 		}
 	},
 	"BECKHAMOK" : {
@@ -115852,28 +115852,28 @@
 	"MAUIHI" : {
 		"fips" : "15009",
 		"2006" : {
-			"Quantity" : 380.0,
+			"Quantity" : 380.0
 		},
 		"2007" : {
-			"Quantity" : 489.0,
+			"Quantity" : 489.0
 		},
 		"2008" : {
-			"Quantity" : 385.0,
+			"Quantity" : 385.0
 		},
 		"2009" : {
-			"Quantity" : 779.0,
+			"Quantity" : 779.0
 		},
 		"2010" : {
-			"Quantity" : 742.0,
+			"Quantity" : 742.0
 		},
 		"2011" : {
-			"Quantity" : 631.0,
+			"Quantity" : 631.0
 		},
 		"Average" : {
-			"Quantity" : 567.6666666666666,
+			"Quantity" : 567.6666666666666
 		},
 		"Ranking" : {
-			"Quantity" : 589.0,
+			"Quantity" : 589.0
 		}
 	},
 	"PIMAAZ" : {
