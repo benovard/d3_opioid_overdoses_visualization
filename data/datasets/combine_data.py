@@ -52,7 +52,6 @@ cols = ['FIPS','Index','County','State','Abbr','Pretty Name','Year','Population'
 combinedDF = combinedDF[cols]
 combinedDF = combinedDF.dropna(subset=['FIPS'])
 combinedDF['FIPS'] = combinedDF['FIPS'].map(str).str[:-2]
-# print(combinedDF)
 
 dODCounties = drugOD['Index'].tolist()
 dSCounties = drugSales['Index'].tolist()
@@ -60,7 +59,24 @@ wCounties = weather['Index'].tolist()
 aCounties = combinedDF['Index'].tolist()
 counties = set().union(dODCounties, dSCounties, wCounties, aCounties)
 
-print('{')
+avgDF = combinedDF.drop_duplicates(subset=['Index'])
+avgDF = avgDF.drop(['Year'],axis=1)
+for i in counties:
+    avgDF.loc[avgDF['Index'] == i, 'Population'] = avg(combinedDF[combinedDF['Index'] == i]['Population'].tolist())
+    avgDF['Population'] = avgDF['Population'].rank()
+    avgDF.loc[avgDF['Index'] == i, 'Deaths'] = avg(combinedDF[combinedDF['Index'] == i]['Deaths'].tolist())
+    avgDF['Deaths'] = avgDF['Deaths'].rank()
+    avgDF.loc[avgDF['Index'] == i, 'Death Rate per 100k'] = avg(combinedDF[combinedDF['Index'] == i]['Death Rate per 100k'].tolist())
+    avgDF['Death Rate per 100k'] = avgDF['Death Rate per 100k'].rank()
+    avgDF.loc[avgDF['Index'] == i, 'Quantity'] = avg(combinedDF[combinedDF['Index'] == i]['Quantity'].tolist())
+    avgDF['Quantity'] = avgDF['Quantity'].rank()
+    avgDF.loc[avgDF['Index'] == i, 'Temp'] = avg(combinedDF[combinedDF['Index'] == i]['Temp'].tolist())
+    avgDF['Temp'] = avgDF['Temp'].rank()
+
+output = 'y'
+
+if output == 'y':
+    print('{')
 for i in counties:
     county = combinedDF[combinedDF['Index'] == i]
     temp = county['FIPS'].tolist()
@@ -73,8 +89,9 @@ for i in counties:
             fips = '0' + fips
     if fips == 'NaN':
         continue
-    print('\t"'+i+'" : {')
-    print('\t\t"fips" : "'+fips+'",')
+    if output == 'y':
+        print('\t"'+i+'" : {')
+        print('\t\t"fips" : "'+fips+'",')
     for index,row in county.iterrows():
         population = row['Population']
         drugoverdoses = row['Deaths']
@@ -82,42 +99,61 @@ for i in counties:
         sales = row['Quantity']
         temperature = row['Temp']
         comma = [',' if str(k) != 'nan' else '' for k in values]
-        print('\t\t"'+str(row['Year'])+'" : {')
-        if str(row['Population']) != 'nan':
-            print('\t\t\t"Population" : '+str(row['Population'])+comma[0])
-        if str(row['Deaths']) != 'nan':
-            print('\t\t\t"Drug Overdoses" : '+str(row['Deaths'])+comma[1])
-        if str(row['Death Rate per 100k']) != 'nan':
-            print('\t\t\t"Overdoses per 100k" : '+str(row['Death Rate per 100k'])+comma[2])
-        if str(row['Quantity']) != 'nan':
-            print('\t\t\t"Quantity" : '+str(row['Quantity'])+comma[3])
-        if str(row['Temp']) != 'nan':
-            print('\t\t\t"Temperature" : '+str(row['Temp']))
-        print('\t\t},')
+        if output == 'y':
+            print('\t\t"'+str(row['Year'])+'" : {')
+            if str(row['Population']) != 'nan':
+                print('\t\t\t"Population" : '+str(row['Population'])+comma[0])
+            if str(row['Deaths']) != 'nan':
+                print('\t\t\t"Drug Overdoses" : '+str(row['Deaths'])+comma[1])
+            if str(row['Death Rate per 100k']) != 'nan':
+                print('\t\t\t"Overdoses per 100k" : '+str(row['Death Rate per 100k'])+comma[2])
+            if str(row['Quantity']) != 'nan':
+                print('\t\t\t"Quantity" : '+str(row['Quantity'])+comma[3])
+            if str(row['Temp']) != 'nan':
+                print('\t\t\t"Temperature" : '+str(row['Temp']))
+            print('\t\t},')
     population = avg(county['Population'].tolist())
-    if str(population) != 'nan': population = round(population)
     drugoverdoses = avg(county['Deaths'].tolist())
-    if str(drugoverdoses) != 'nan': drugoverdoses = round(drugoverdoses)
     overdoses100k = avg(county['Death Rate per 100k'].tolist())
-    if str(overdoses100k) != 'nan': overdoses100k = round(overdoses100k)
     sales = avg(county['Quantity'].tolist())
-    if str(sales) != 'nan': sales = round(sales)
     temperature = avg(county['Temp'].tolist())
+    rankings = avgDF[avgDF['Index'] == i]
     comma = [',' if str(k) != 'nan' else '' for k in values]
-    print('\t\t"Average" : {')
-    if str(population) != 'nan':
-        print('\t\t\t"Population" : '+str(population)+comma[0])
-    if str(drugoverdoses) != 'nan':
-        print('\t\t\t"Drug Overdoses" : '+str(drugoverdoses)+comma[1])
-    if str(overdoses100k) != 'nan':
-        print('\t\t\t"Overdoses per 100k" : '+str(overdoses100k)+comma[2])
-    if str(sales) != 'nan':
-        print('\t\t\t"Quantity" : '+str(sales)+comma[3])
-    if str(temperature) != 'nan':
-        print('\t\t\t"Temperature" : '+str(temperature))
-    print('\t\t},')
-    print('\t\t"Ranking" : {')
-    print('\t\t}')
-    print('\t},')
-    break
-print('}')
+    if output == 'y':
+        print('\t\t"Average" : {')
+        if str(population) != 'nan':
+            print('\t\t\t"Population" : '+str(population)+comma[0])
+        if str(drugoverdoses) != 'nan':
+            print('\t\t\t"Drug Overdoses" : '+str(drugoverdoses)+comma[1])
+        if str(overdoses100k) != 'nan':
+            print('\t\t\t"Overdoses per 100k" : '+str(overdoses100k)+comma[2])
+        if str(sales) != 'nan':
+            print('\t\t\t"Quantity" : '+str(sales)+comma[3])
+        if str(temperature) != 'nan':
+            print('\t\t\t"Temperature" : '+str(temperature))
+        print('\t\t},')
+        population = rankings['Population'].tolist()[0]
+        drugoverdoses = rankings['Deaths'].tolist()[0]
+        overdoses100k = rankings['Death Rate per 100k'].tolist()[0]
+        sales = rankings['Quantity'].tolist()[0]
+        temperature = rankings['Temp'].tolist()[0]
+        comma = [',' if str(k) != 'nan' else '' for k in values]
+        print('\t\t"Ranking" : {')
+        if str(population) != 'nan':
+            print('\t\t\t"Population" : '+str(population)+comma[0])
+        if str(drugoverdoses) != 'nan':
+            print('\t\t\t"Drug Overdoses" : '+str(drugoverdoses)+comma[1])
+        if str(overdoses100k) != 'nan':
+            print('\t\t\t"Overdoses per 100k" : '+str(overdoses100k)+comma[2])
+        if str(sales) != 'nan':
+            print('\t\t\t"Quantity" : '+str(sales)+comma[3])
+        if str(temperature) != 'nan':
+            print('\t\t\t"Temperature" : '+str(temperature))
+        print('\t\t}')
+        print('\t},')
+
+if output == 'y':
+    print('}')
+if output == 'n':
+    print(combinedDF.head(30))
+    print(avgDF.head(30))
