@@ -20,7 +20,7 @@ class Barcharts{
                     console.log("Uh oh: " + error);
                 }
                 else {
-                    this.data = data
+                    this.makeData(data)
                 }
         });
 
@@ -32,7 +32,7 @@ class Barcharts{
     }
 
     sortByRank (data,key) {
-
+        var sorted = []
         function sortMe (a, b,key) {
             if (a[1].Ranking[key] != undefined && b[1].Ranking[key] != undefined) {
                 if (a[1].Ranking[key] > b[1].Ranking[key]) return 1;
@@ -49,21 +49,18 @@ class Barcharts{
                 return 0;
             }
         }
-
         for (var i in data){
             if (data[i].Ranking[key] != undefined) {
-                this.county_list.push([i, data[i]]);
+                sorted.push([i, data[i]]);
             }
         }
-
-        this.county_list.sort((a,b)=>sortMe(a,b,key));
-
+        sorted.sort((a,b)=>sortMe(a,b,key));
         var k = 0
-        for (var i in this.county_list) {
-            i.push(k);
+        for (var i = 0; i < sorted.length; i++) {
+            sorted[i] = [sorted[i][0],sorted[i][1],k]
             k += 1;
         }
-
+        return sorted
     }
 
     makeData (data) {
@@ -84,112 +81,51 @@ class Barcharts{
                 }
             }
         }
-        this.sortByRank(this.barData,this.selection);
     }
 
     drawCountyBarchart (selectedCounty, selectedData) {
-
-        this.makeData(this.data);
-
-        this.selection = selectedData;
-
-        // remove the previous barchart
-        this.county_svg.selectAll('*').remove();
-
-        var countiesToDisplay = []; 
-
-        for (var i in this.county_list){
-            if (Math.abs(selectedCounty.properties.Ranking[this.selection] - this.county_list[i][1].Ranking[this.selection] ) <= 5) {
-                countiesToDisplay.push(this.county_list[i]);
-            }
-        }
-
         const margin = { top: 20, right: 20, bottom: 20, left: 100};
         const innerWidth = this.width - margin.left - margin.right;
         const innerHeight = this.height - margin.top - margin.bottom;
 
-        const xScale = d3.scaleLinear()
-            .domain([countiesToDisplay[10][1].Average[this.selection] - 1, countiesToDisplay[0][1].Average[this.selection]])
-            .range([0, innerWidth])
-        ;
-
+        this.county_svg.selectAll('*').remove()
+        this.selection = selectedData
+        var sorteddata = this.sortByRank(this.barData,this.selection);
+        var countyname = selectedCounty.properties.id
+        var county
+        for (var i in sorteddata) {
+            if (sorteddata[i][0] == countyname) {
+                county = sorteddata[i]
+            }
+        }
+        var countiesToDisplay = []
+        for (var i in sorteddata) {
+            if (Math.abs(county[2] - sorteddata[i][2]) <= 5) {
+                countiesToDisplay.push(sorteddata[i])
+            }
+        }
         var list_of_counties = [];
-
         for (var i in countiesToDisplay){
             list_of_counties.push(countiesToDisplay[i][0])
         }
-
+        const xScale = d3.scaleLinear()
+            .domain([countiesToDisplay[countiesToDisplay.length-1][1].Average[this.selection]-Math.min(1,0.1*countiesToDisplay[countiesToDisplay.length-1][1].Average[this.selection]), countiesToDisplay[0][1].Average[this.selection]])
+            .range([0,innerWidth])
         const yScale = d3.scaleBand()
             .domain(list_of_counties)
             .range([0, innerHeight])
             .padding(0.1)
-        ;
-
         const g = this.county_svg.append('g')
             .attr('transform', `translate(${margin.left},${margin.top})`)
-        ;
-
         g.append('g').call(d3.axisLeft(yScale));
         g.append('g').call(d3.axisBottom(xScale))
             .attr('transform', `translate(0,${innerHeight})`) //this just puts the axis on the bottom
-        ;
-
         g.selectAll('rect')
             .data(countiesToDisplay)
             .enter().append('rect')
             .attr('y', (d,i) => yScale(d[0]))
             .attr('width', (d,i) => xScale(d[1].Average[this.selection]))
             .attr('height', yScale.bandwidth())
-        ;
-
         console.log(countiesToDisplay)
     }
-
-    // drawStateBarchart (data) {
-
-    //     console.log(data);
-
-    //     // only these will need to change based upon which dataset we are displaying
-    //     const xValue = d => d.Deaths;
-    //     const yValue = d => d.State;
-
-    //     const margin = { top: 20, right: 20, bottom: 20, left: 100};
-    //     const innerWidth = this.width - margin.left - margin.right;
-    //     const innerHeight = this.height - margin.top - margin.bottom;
-
-    //     const xScale = d3.scaleLinear()
-    //         .domain([0, d3.max(data, xValue)])
-    //         .range([0, innerWidth])
-    //     ;
-
-    //     const yScale = d3.scaleBand()
-    //         .domain(data.map(yValue))
-    //         .range([0, innerHeight])
-    //         .padding(0.1)
-    //     ;
-
-    //     const g = this.state_svg.append('g')
-    //         .attr('transform', `translate(${margin.left},${margin.top})`)
-    //     ;
-
-    //     g.append('g').call(d3.axisLeft(yScale));
-    //     g.append('g').call(d3.axisBottom(xScale))
-    //         .attr('transform', `translate(0,${innerHeight})`) //this just puts the axis on the bottom
-    //     ;
-
-
-    //     g.selectAll('rect')
-    //         .data(data)
-    //         .enter().append('rect')
-    //         .attr('y', d => yScale(yValue(d)))
-    //         .attr('width', d => xScale(xValue(d)))
-    //         .attr('height', yScale.bandwidth())
-
-    // }
-
-
-
-
-
 }
-
