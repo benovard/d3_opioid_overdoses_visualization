@@ -64,8 +64,6 @@ class Barcharts{
             }
         }
 
-        console.log(this.county_list);
-
     }
 
     makeData (data) {

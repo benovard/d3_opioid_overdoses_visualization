@@ -36,16 +36,8 @@ class Map {
     drawMap() {
         const ls_w = 96; // width of the map divided by 10 gives us 10 cells with a size of 96
         const ls_h = 20; // height of a cell for the legend
-        var ext_color_domain = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90];
-        var ext_color_range = ['#f7fcfd', '#e0ecf4', '#bfd3e6', '#9ebcda', '#8c96c6', '#8c6bb1', '#88419d', '#810f7c', '#4d004b']
+        this.ext_color_range = ['#f7fcfd', '#e0ecf4', '#bfd3e6', '#9ebcda', '#8c96c6', '#8c6bb1', '#88419d', '#810f7c', '#4d004b']
         var legend_labels = ['< 1', '10+', '20+', '30+', '40+', '50+', '60+', '70+', '80+', '90+'];
-
-        // use a scaleLinear instead maybe?
-        // this.colorScale = d3.scaleSequential(d3.interpolateBlues).domain([0,maxSelectedValue]);
-        // or better yet if the value passed to colorScale is undefined, it is maybe a light red
-        this.colorScale = d3.scaleThreshold()
-            .domain(ext_color_domain)
-            .range(ext_color_range);
 
         this.features = topojson.feature(this.us, this.us.objects.counties).features;
 
@@ -67,40 +59,31 @@ class Map {
                 }
             }
         }
-        console.log(this.mapData);
 
+        // get max value
         var maxValue;
+        var maxVals = [];
         var values = [];
-        // for(var i in this.mapData){
-        //     for(var j in this.mapData[i]){
-        //         //console.log(this.mapData[i][j][this.selectedData]);
-        //         if(this.mapData[i][j][this.selectedData] != undefined && this.mapData[i][j][this.selectedData] > maxValue){
-        //             maxValue = j[this.selectedData];
-        //             values.push(this.mapData[i][j][this.selectedData]);
-        //             console.log(this.mapData[i][j][this.selectedData]);
-        //         if(this.mapData[i][j][this.selectedData] == undefined){
-        //             console.log(j, 'undefined');
-        //         }
-        //     }
-        //     }
-        // }
-        // console.log(maxValue);
-
-        for(var i in this.mapData){
-            if(this.mapData[i][this.year][this.selectedData] == undefined){
-                values.push(-Infinity);
-                continue;
+        for(year of ['2006', '2007', '2008', '2009', '2010', '2011']){
+            var values = [];
+            for(var i in this.mapData){
+                if(this.mapData[i][year][this.selectedData] == undefined){
+                    values.push(-Infinity);
+                    continue;
+                }
+                values.push(this.mapData[i][year][this.selectedData]);
             }
-            values.push(this.mapData[i][this.year][this.selectedData]);
+        
+            values.sort((a, b) => a - b);
+            maxVals.push(values[values.length - 1]);
         }
-        values.sort((a, b) => a - b); 
-        console.log(values);    
-        maxValue = Math.max(values);
-        console.log(maxValue);
+        maxValue = Math.max(...maxVals);
+        maxValue = Math.log(maxValue);
+        this.ext_color_domain = [0, maxValue/10, 2*maxValue/10, 3*maxValue/10, 4*maxValue/10, 5*maxValue/10, 6*maxValue/10, 7*maxValue/10, 8*maxValue/10, 9*maxValue/10];
 
         this.colorScale = d3.scaleLinear()
-            .domain([0, 50, 100])
-            .range(['#f7fcfd', '#8c96c6', '#4d004b'])
+            .domain(this.ext_color_domain)
+            .range(this.ext_color_range)
             ;
 
         // match names in topojson and data
@@ -129,7 +112,7 @@ class Map {
                 return d.properties.id;
             })
             .style('fill', (d) => {
-                return d.properties[this.year] && d.properties[this.year][this.selectedData] ? this.colorScale(d.properties[this.year][this.selectedData]) : undefined;
+                return d.properties[this.year] && d.properties[this.year][this.selectedData] ? this.color(d.properties[this.year][this.selectedData]) : undefined;
             })
             .on('click', (d) => {
                 var thisCounty = d.properties[this.year];
@@ -229,7 +212,7 @@ class Map {
         var legend = this.svg.append('g').attr('class', 'legend');
 
         legend.selectAll('rect')
-            .data(ext_color_domain)
+            .data(this.ext_color_domain)
             .enter()
             .append('rect')
             .attr('x', (d, i) => 960 - (i * ls_w) - ls_w)
@@ -241,7 +224,7 @@ class Map {
             ;
 
         legend.selectAll('text')
-            .data(ext_color_domain)
+            .data(this.ext_color_domain)
             .enter()
             .append('text')
             .attr('x', function (d, i) { return 960 - (i * ls_w) - ls_w; })
@@ -263,15 +246,58 @@ class Map {
         console.log(d);
     };
 
+    color(val) {
+        if (this.selectedData == 'temperature') {
+            // old scheme
+            return this.colorScale(val)
+        } else {
+            // new scheme
+            return this.colorScale(Math.log(val))
+        }
+    }
+
     // updates the map when data is changed
     update(year, data) {
         this.year = String(year);
         this.selectedData = data;
 
+        var maxValue;
+        var maxVals = [];
+        var values = [];
+
+        // update max value
+        for(year of ['2006', '2007', '2008', '2009', '2010', '2011']){
+            var values = [];
+            for(var i in this.mapData){
+                if(this.mapData[i][year][this.selectedData] == undefined){
+                    values.push(-Infinity);
+                    continue;
+                }
+                values.push(this.mapData[i][year][this.selectedData]);
+            }
+        
+            values.sort((a, b) => a - b);
+            maxVals.push(values[values.length - 1]);
+        }
+        maxValue = Math.max(...maxVals);
+        maxValue = Math.log(maxValue);
+
+        this.ext_color_domain = [0, maxValue/10, 2*maxValue/10, 3*maxValue/10, 4*maxValue/10, 5*maxValue/10, 6*maxValue/10, 7*maxValue/10, 8*maxValue/10, 9*maxValue/10];
+        if(this.selectedData == 'temperature'){
+            this.ext_color_domain = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90];
+        }
+    
+        // update color scale
+        this.colorScale = d3.scaleLinear()
+            .domain(this.ext_color_domain)
+            .range(this.ext_color_range)
+            ;
+      
+        // update
         this.map.select('.counties')
             .selectAll('path')
             .style('fill', (d) => {
-                return d.properties[this.year] && d.properties[this.year][this.selectedData] ? this.colorScale(d.properties[this.year][this.selectedData]) : undefined;
+                return d.properties[this.year] && d.properties[this.year][this.selectedData] ? this.color(d.properties[this.year][this.selectedData]) : undefined;
             })
             ;
     };
