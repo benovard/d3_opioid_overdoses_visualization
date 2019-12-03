@@ -41,10 +41,10 @@ class Barcharts{
                 if (a[1].Ranking[key] == b[1].Ranking[key]) return 0;
                 if (a[1].Ranking[key] < b[1].Ranking[key]) return -1;
             }
-            if (a[1].Ranking[key] != undefined) {
+            if (b[1].Ranking[key] != undefined) {
                 return 1;
             }
-            if (b[1].Ranking[key] != undefined) {
+            if (a[1].Ranking[key] != undefined) {
                 return -1;
             }
             if (a[1].Ranking[key] == undefined && b[1].Ranking[key] == undefined) {
