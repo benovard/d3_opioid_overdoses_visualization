@@ -45,9 +45,9 @@ class Map {
         this.features = topojson.feature(this.us, this.us.objects.counties).features;
 
         // create mapData from data
-        for (var county in this.data){
+        for (var county in this.data) {
             this.mapData[county] = {};
-            for(var year in this.data[county]){
+            for (var year in this.data[county]) {
                 if (year != 'fips') {
                     this.mapData[county][year] = {
                         temperature: this.data[county][year].Temperature,
