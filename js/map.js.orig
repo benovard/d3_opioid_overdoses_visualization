@@ -45,9 +45,9 @@ class Map {
         this.features = topojson.feature(this.us, this.us.objects.counties).features;
 
         // create mapData from data
-        for (var county in this.data){
+        for (var county in this.data) {
             this.mapData[county] = {};
-            for(var year in this.data[county]){
+            for (var year in this.data[county]) {
                 if (year != 'fips') {
                     this.mapData[county][year] = {
                         temperature: this.data[county][year].Temperature,
@@ -149,8 +149,12 @@ class Map {
                     ;
                 d3.select('.avg_temp')
                     .text(thisCountyAvg.temperature == undefined ? 'Temperature: No Data' : 'Temperature: ' + thisCountyAvg.temperature + " °F")
+<<<<<<< HEAD
+                    ;
+=======
                 ;
                 this.barchart.drawCountyBarchart(d, this.selectedData);
+>>>>>>> ef232e6234c11f6fe97658f4f949e25c808158da
             })
             .on('mouseenter', function (d) {
                 d3.select(this)
@@ -235,7 +239,11 @@ class Map {
             .text(function (d, i) { return legend_labels[i]; })
             ;
 
+<<<<<<< HEAD
+        var legend_title = 'Number of deaths:';
+=======
 		var legend_title = '';
+>>>>>>> ef232e6234c11f6fe97658f4f949e25c808158da
         legend.append('text')
             .attr('x', 0)
             .attr('y', 670)

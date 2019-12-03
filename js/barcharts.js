@@ -14,20 +14,17 @@ class Barcharts{
         ;
 
         d3.queue()
-        .defer(d3.json, "data/county_barchart_test_data.json")
-        .defer(d3.json, "data/data.json")
-        .await((error, county_data, data) => {
-            if (error) {
-                console.log("Uh oh: " + error);
-            }
-            else {
-                this.makeData(data)
-                // this.drawCountyBarchart(county_data)
-                // this.drawStateBarchart(data)
-            }
+            .defer(d3.json, "data/data.json")
+            .await((error, data) => {
+                if (error) {
+                    console.log("Uh oh: " + error);
+                }
+                else {
+                    this.data = data
+                }
         });
 
-        this.selection = 'temperature';
+        this.selection = 'deaths';
         this.county_list = [];
 
         this.barData = {};
@@ -54,14 +51,17 @@ class Barcharts{
         }
 
         for (var i in data){
-            this.county_list.push([i, data[i]]);
+            if (data[i].Ranking[key] != undefined) {
+                this.county_list.push([i, data[i]]);
+            }
         }
+
         this.county_list.sort((a,b)=>sortMe(a,b,key));
 
-        for (var i in this.county_list){
-            if (this.county_list[i][1].Ranking.temperature == undefined){
-                this.county_list.splice(i, 1);
-            }
+        var k = 0
+        for (var i in this.county_list) {
+            i.push(k);
+            k += 1;
         }
 
     }
@@ -85,27 +85,42 @@ class Barcharts{
             }
         }
         this.sortByRank(this.barData,this.selection);
-
     }
 
-    drawCountyBarchart (data) {
-        console.log('county',data)
+    drawCountyBarchart (selectedCounty, selectedData) {
 
-        // only these will need to change based upon which dataset we are displaying
-        const xValue = d => d.Deaths;
-        const yValue = d => d.County;
+        this.makeData(this.data);
+
+        this.selection = selectedData;
+
+        // remove the previous barchart
+        this.county_svg.selectAll('*').remove();
+
+        var countiesToDisplay = []; 
+
+        for (var i in this.county_list){
+            if (Math.abs(selectedCounty.properties.Ranking[this.selection] - this.county_list[i][1].Ranking[this.selection] ) <= 5) {
+                countiesToDisplay.push(this.county_list[i]);
+            }
+        }
 
         const margin = { top: 20, right: 20, bottom: 20, left: 100};
         const innerWidth = this.width - margin.left - margin.right;
         const innerHeight = this.height - margin.top - margin.bottom;
 
         const xScale = d3.scaleLinear()
-            .domain([0, d3.max(data, xValue)])
+            .domain([countiesToDisplay[10][1].Average[this.selection] - 1, countiesToDisplay[0][1].Average[this.selection]])
             .range([0, innerWidth])
         ;
 
+        var list_of_counties = [];
+
+        for (var i in countiesToDisplay){
+            list_of_counties.push(countiesToDisplay[i][0])
+        }
+
         const yScale = d3.scaleBand()
-            .domain(data.map(yValue))
+            .domain(list_of_counties)
             .range([0, innerHeight])
             .padding(0.1)
         ;
@@ -116,62 +131,61 @@ class Barcharts{
 
         g.append('g').call(d3.axisLeft(yScale));
         g.append('g').call(d3.axisBottom(xScale))
-            .attr('transform', `translate(0,${innerHeight})`) //this just buts the axis on the bottom
-        ;
-
-
-        g.selectAll('rect')
-            .data(data)
-            .enter().append('rect')
-            .attr('y', d => yScale(yValue(d)))
-            .attr('width', d => xScale(xValue(d)))
-            .attr('height', yScale.bandwidth())
-
-    }
-
-    drawStateBarchart (data) {
-
-
-
-        console.log(data);
-
-        // only these will need to change based upon which dataset we are displaying
-        const xValue = d => d.Deaths;
-        const yValue = d => d.State;
-
-        const margin = { top: 20, right: 20, bottom: 20, left: 100};
-        const innerWidth = this.width - margin.left - margin.right;
-        const innerHeight = this.height - margin.top - margin.bottom;
-
-        const xScale = d3.scaleLinear()
-            .domain([0, d3.max(data, xValue)])
-            .range([0, innerWidth])
-        ;
-
-        const yScale = d3.scaleBand()
-            .domain(data.map(yValue))
-            .range([0, innerHeight])
-            .padding(0.1)
-        ;
-
-        const g = this.state_svg.append('g')
-            .attr('transform', `translate(${margin.left},${margin.top})`)
-        ;
-
-        g.append('g').call(d3.axisLeft(yScale));
-        g.append('g').call(d3.axisBottom(xScale))
             .attr('transform', `translate(0,${innerHeight})`) //this just puts the axis on the bottom
         ;
 
-
         g.selectAll('rect')
-            .data(data)
+            .data(countiesToDisplay)
             .enter().append('rect')
-            .attr('y', d => yScale(yValue(d)))
-            .attr('width', d => xScale(xValue(d)))
+            .attr('y', (d,i) => yScale(d[0]))
+            .attr('width', (d,i) => xScale(d[1].Average[this.selection]))
             .attr('height', yScale.bandwidth())
+        ;
 
+        console.log(countiesToDisplay)
     }
+
+    // drawStateBarchart (data) {
+
+    //     console.log(data);
+
+    //     // only these will need to change based upon which dataset we are displaying
+    //     const xValue = d => d.Deaths;
+    //     const yValue = d => d.State;
+
+    //     const margin = { top: 20, right: 20, bottom: 20, left: 100};
+    //     const innerWidth = this.width - margin.left - margin.right;
+    //     const innerHeight = this.height - margin.top - margin.bottom;
+
+    //     const xScale = d3.scaleLinear()
+    //         .domain([0, d3.max(data, xValue)])
+    //         .range([0, innerWidth])
+    //     ;
+
+    //     const yScale = d3.scaleBand()
+    //         .domain(data.map(yValue))
+    //         .range([0, innerHeight])
+    //         .padding(0.1)
+    //     ;
+
+    //     const g = this.state_svg.append('g')
+    //         .attr('transform', `translate(${margin.left},${margin.top})`)
+    //     ;
+
+    //     g.append('g').call(d3.axisLeft(yScale));
+    //     g.append('g').call(d3.axisBottom(xScale))
+    //         .attr('transform', `translate(0,${innerHeight})`) //this just puts the axis on the bottom
+    //     ;
+
+
+    //     g.selectAll('rect')
+    //         .data(data)
+    //         .enter().append('rect')
+    //         .attr('y', d => yScale(yValue(d)))
+    //         .attr('width', d => xScale(xValue(d)))
+    //         .attr('height', yScale.bandwidth())
+
+    // }
 
 
 
