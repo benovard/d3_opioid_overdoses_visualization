@@ -14,17 +14,14 @@ class Barcharts{
         ;
 
         d3.queue()
-        .defer(d3.json, "data/county_barchart_test_data.json")
-        .defer(d3.json, "data/data.json")
-        .await((error, county_data, data) => {
-            if (error) {
-                console.log("Uh oh: " + error);
-            }
-            else {
-                this.makeData(data)
-                // this.drawCountyBarchart(county_data)
-                // this.drawStateBarchart(data)
-            }
+            .defer(d3.json, "data/data.json")
+            .await((error, data) => {
+                if (error) {
+                    console.log("Uh oh: " + error);
+                }
+                else {
+                    this.makeData(data);
+                }
         });
 
         this.selection = 'temperature';
@@ -56,6 +53,7 @@ class Barcharts{
         for (var i in data){
             this.county_list.push([i, data[i]]);
         }
+
         this.county_list.sort((a,b)=>sortMe(a,b,key));
 
         for (var i in this.county_list){
@@ -63,8 +61,6 @@ class Barcharts{
                 this.county_list.splice(i, 1);
             }
         }
-
-        console.log(this.county_list);
 
     }
 
@@ -87,11 +83,14 @@ class Barcharts{
             }
         }
         this.sortByRank(this.barData,this.selection);
-
     }
 
-    drawCountyBarchart (data) {
-        console.log('county',data)
+    drawCountyBarchart (selectedCounty) {
+
+        console.log(this.county_list);
+        console.log(selectedCounty);
+
+        
 
         // only these will need to change based upon which dataset we are displaying
         const xValue = d => d.Deaths;

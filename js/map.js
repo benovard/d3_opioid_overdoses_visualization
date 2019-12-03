@@ -31,6 +31,9 @@ class Map {
         this.dee
 
         this.path = d3.geoPath();
+
+        this.barchart = new Barcharts();
+
     }
 
     drawMap() {
@@ -131,6 +134,7 @@ class Map {
                 d3.select('.avg_temp')
                     .text(thisCountyAvg.temperature == undefined ? 'Temperature: No Data' : 'Temperature: ' + thisCountyAvg.temperature + " °F")
                 ;
+                this.barchart.drawCountyBarchart(d.properties.name);
             })
             .on('mouseenter', function (d) {
                 d3.select(this)
