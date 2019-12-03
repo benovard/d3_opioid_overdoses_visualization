@@ -218,7 +218,7 @@ class Map {
             .text(function(d, i){ return legend_labels[i]; })
         ;
 
-		var legend_title = 'Number of deaths:';
+		var legend_title = '';
         legend.append('text')
             .attr('x',0)
             .attr('y',670)
