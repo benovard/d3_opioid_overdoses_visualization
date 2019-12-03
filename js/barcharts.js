@@ -84,6 +84,7 @@ class Barcharts{
     }
 
     drawCountyBarchart (selectedCounty, selectedData) {
+        console.log('hi')
         const margin = { top: 20, right: 20, bottom: 20, left: 100};
         const innerWidth = this.width - margin.left - margin.right;
         const innerHeight = this.height - margin.top - margin.bottom;
@@ -109,7 +110,7 @@ class Barcharts{
             list_of_counties.push(countiesToDisplay[i][0])
         }
         const xScale = d3.scaleLinear()
-            .domain([countiesToDisplay[countiesToDisplay.length-1][1].Average[this.selection]-Math.min(1,0.1*countiesToDisplay[countiesToDisplay.length-1][1].Average[this.selection]), countiesToDisplay[0][1].Average[this.selection]])
+            .domain([countiesToDisplay[countiesToDisplay.length-1][1].Average[this.selection]-Math.max(1,0.1*countiesToDisplay[countiesToDisplay.length-1][1].Average[this.selection]), countiesToDisplay[0][1].Average[this.selection]])
             .range([0,innerWidth])
         const yScale = d3.scaleBand()
             .domain(list_of_counties)
