@@ -103,7 +103,6 @@ class Map {
             .on('click', (d) => {
                 var thisCounty = d.properties[this.year];
                 var thisCountyAvg = d.properties['Average'];
-                console.log(d)
                 d3.select('.county')
                     .text(d.properties.long_name + ', ' + d.properties.state)
                 ;
@@ -134,7 +133,7 @@ class Map {
                 d3.select('.avg_temp')
                     .text(thisCountyAvg.temperature == undefined ? 'Temperature: No Data' : 'Temperature: ' + thisCountyAvg.temperature + " °F")
                 ;
-                this.barchart.drawCountyBarchart(d.properties.name);
+                this.barchart.drawCountyBarchart(d, this.selectedData);
             })
             .on('mouseenter', function (d) {
                 d3.select(this)
