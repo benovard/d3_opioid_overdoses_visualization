@@ -57,7 +57,15 @@ class Barcharts{
             this.county_list.push([i, data[i]]);
         }
         this.county_list.sort((a,b)=>sortMe(a,b,key));
-        console.log(this.county_list)
+
+        for (var i in this.county_list){
+            if (this.county_list[i][1].Ranking.temperature == undefined){
+                this.county_list.splice(i, 1);
+            }
+        }
+
+        console.log(this.county_list);
+
     }
 
     makeData (data) {
