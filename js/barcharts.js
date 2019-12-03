@@ -84,6 +84,7 @@ class Barcharts{
     }
 
     drawCountyBarchart (selectedCounty, selectedData) {
+        console.log('hi')
         const margin = { top: 20, right: 20, bottom: 20, left: 100};
         const innerWidth = this.width - margin.left - margin.right;
         const innerHeight = this.height - margin.top - margin.bottom;
