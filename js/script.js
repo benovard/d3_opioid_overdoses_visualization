@@ -1,7 +1,6 @@
 var selectedData = 'deaths';
 var selectedYear = 2006;
 let map = new Map(selectedYear, selectedData);
-let barchart = new Barcharts();
 
 var yearSelector = d3.select('#year-slider')
   .append('svg')
