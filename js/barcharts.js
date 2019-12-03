@@ -15,19 +15,75 @@ class Barcharts{
 
         d3.queue()
         .defer(d3.json, "data/county_barchart_test_data.json")
-        .defer(d3.json, "data/state_barchart_test_data.json")
-        .await((error, county_data, state_data) => {
+        .defer(d3.json, "data/data.json")
+        .await((error, county_data, data) => {
             if (error) {
                 console.log("Uh oh: " + error);
             }
             else {
-                this.drawCountyBarchart(county_data)
-                this.drawStateBarchart(state_data)
+                this.makeData(data)
+                // this.drawCountyBarchart(county_data)
+                // this.drawStateBarchart(data)
             }
         });
+
+        this.selection = 'temperature';
+        this.county_list = [];
+
+        this.barData = {};
+
+    }
+
+    sortByRank (data,key) {
+
+        function sortMe (a, b,key) {
+            if (a[1].Ranking[key] != undefined && b[1].Ranking[key] != undefined) {
+                if (a[1].Ranking[key] > b[1].Ranking[key]) return 1;
+                if (a[1].Ranking[key] == b[1].Ranking[key]) return 0;
+                if (a[1].Ranking[key] < b[1].Ranking[key]) return -1;
+            }
+            if (a[1].Ranking[key] != undefined) {
+                return 1;
+            }
+            if (b[1].Ranking[key] != undefined) {
+                return -1;
+            }
+            if (a[1].Ranking[key] == undefined && b[1].Ranking[key] == undefined) {
+                return 0;
+            }
+        }
+
+        for (var i in data){
+            this.county_list.push([i, data[i]]);
+        }
+        this.county_list.sort((a,b)=>sortMe(a,b,key));
+        console.log(this.county_list)
+    }
+
+    makeData (data) {
+        for (var county in data){
+            this.barData[county] = {};
+            for(var year in data[county]){
+                if (year != 'fips') {
+                    this.barData[county][year] = {
+                        temperature: data[county][year].Temperature,
+                        quantity: data[county][year].Quantity,
+                        dosage_unit: data[county][year]['Dosage Unit'],
+                        deaths: data[county][year]['Drug Overdoses'],
+                        population: data[county][year].Population,
+                        deathsPer100k: data[county][year]['Overdoses per 100k']
+                    };
+                } else {
+                    this.barData[county]['fips'] = data[county].fips;
+                }
+            }
+        }
+        this.sortByRank(this.barData,this.selection);
+
     }
 
     drawCountyBarchart (data) {
+        console.log('county',data)
 
         // only these will need to change based upon which dataset we are displaying
         const xValue = d => d.Deaths;
@@ -68,6 +124,10 @@ class Barcharts{
     }
 
     drawStateBarchart (data) {
+
+
+
+        console.log(data);
 
         // only these will need to change based upon which dataset we are displaying
         const xValue = d => d.Deaths;
