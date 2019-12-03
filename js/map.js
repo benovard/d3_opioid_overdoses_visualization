@@ -69,21 +69,33 @@ class Map {
         }
         console.log(this.mapData);
 
-        var maxValue = 0;
+        var maxValue;
         var values = [];
+        // for(var i in this.mapData){
+        //     for(var j in this.mapData[i]){
+        //         //console.log(this.mapData[i][j][this.selectedData]);
+        //         if(this.mapData[i][j][this.selectedData] != undefined && this.mapData[i][j][this.selectedData] > maxValue){
+        //             maxValue = j[this.selectedData];
+        //             values.push(this.mapData[i][j][this.selectedData]);
+        //             console.log(this.mapData[i][j][this.selectedData]);
+        //         if(this.mapData[i][j][this.selectedData] == undefined){
+        //             console.log(j, 'undefined');
+        //         }
+        //     }
+        //     }
+        // }
+        // console.log(maxValue);
+
         for(var i in this.mapData){
-            for(var j in this.mapData[i]){
-                //console.log(this.mapData[i][j][this.selectedData]);
-                if(this.mapData[i][j][this.selectedData] != undefined && this.mapData[i][j][this.selectedData] > maxValue){
-                    maxValue = j[this.selectedData];
-                    values.push(this.mapData[i][j][this.selectedData]);
-                    console.log(this.mapData[i][j][this.selectedData]);
-                if(this.mapData[i][j][this.selectedData] == undefined){
-                    console.log(j, 'undefined');
-                }
+            if(this.mapData[i][this.year][this.selectedData] == undefined){
+                values.push(-Infinity);
+                continue;
             }
-            }
+            values.push(this.mapData[i][this.year][this.selectedData]);
         }
+        values.sort((a, b) => a - b); 
+        console.log(values);    
+        maxValue = Math.max(values);
         console.log(maxValue);
 
         this.colorScale = d3.scaleLinear()
