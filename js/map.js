@@ -28,7 +28,6 @@ class Map {
         this.year = String(year);
         this.selectedData = data;
         this.mapData = {};
-        this.dee
 
         this.path = d3.geoPath();
 
@@ -139,16 +138,16 @@ class Map {
                     .text('Averages for the years 2006 - 2011: ')
                     ;
                 d3.select('.avg_pop')
-                    .text(thisCountyAvg.population == undefined ? 'Population: No Data' : 'Population: ' + thisCountyAvg.population)
+                    .text(thisCountyAvg.population == undefined ? 'Population: No Data' : 'Population: ' + thisCountyAvg.population.toFixed(1))
                     ;
                 d3.select('.avg_deaths')
-                    .text(thisCountyAvg.deaths == undefined ? 'Deaths: No Data' : 'Deaths: ' + thisCountyAvg.deaths)
+                    .text(thisCountyAvg.deaths == undefined ? 'Deaths: No Data' : 'Deaths: ' + thisCountyAvg.deaths.toFixed(1))
                     ;
                 d3.select('.avg_prescriptions')
-                    .text(thisCountyAvg.quantity == undefined ? 'Prescriptions: No Data' : 'Prescriptions: ' + thisCountyAvg.quantity)
+                    .text(thisCountyAvg.quantity == undefined ? 'Prescriptions: No Data' : 'Prescriptions: ' + thisCountyAvg.quantity.toFixed(1))
                     ;
                 d3.select('.avg_temp')
-                    .text(thisCountyAvg.temperature == undefined ? 'Temperature: No Data' : 'Temperature: ' + thisCountyAvg.temperature + " °F")
+                    .text(thisCountyAvg.temperature == undefined ? 'Temperature: No Data' : 'Temperature: ' + thisCountyAvg.temperature.toFixed(1) + " °F")
                 ;
                 this.barchart.drawCountyBarchart(d, this.selectedData);
             })
@@ -212,9 +211,9 @@ class Map {
             })))
             ;
 
-        var legend = this.svg.append('g').attr('class', 'legend');
+        this.legend = this.svg.append('g').attr('class', 'legend');
 
-        legend.selectAll('rect')
+        this.legend.selectAll('rect')
             .data(this.ext_color_domain)
             .enter()
             .append('rect')
@@ -222,21 +221,21 @@ class Map {
             .attr('y', 680)
             .attr('width', ls_w)
             .attr('height', ls_h)
-            .style('fill', (d, i) => this.colorScale(d))
+            .style('fill', (d, i) => this.color(d))
             .style('opacity', 0.8)
             ;
 
-        legend.selectAll('text')
+        this.legend.selectAll('text')
             .data(this.ext_color_domain)
             .enter()
             .append('text')
             .attr('x', function (d, i) { return 960 - (i * ls_w) - ls_w; })
             .attr('y', 720)
-            .text(function (d, i) { return legend_labels[i]; })
+            .text(function (d, i) { return d.toFixed(1) })
             ;
 
 		var legend_title = '';
-        legend.append('text')
+        this.legend.append('text')
             .attr('x', 0)
             .attr('y', 670)
             .attr('class', 'legend_title')
@@ -296,13 +295,24 @@ class Map {
             .range(this.ext_color_range)
             ;
       
-        // update
+        // update map
         this.map.select('.counties')
             .selectAll('path')
             .style('fill', (d) => {
                 return d.properties[this.year] && d.properties[this.year][this.selectedData] ? this.color(d.properties[this.year][this.selectedData]) : undefined;
             })
             ;
+
+        this.legend
+            .selectAll('rect')
+            .style('fill', (d, i) => this.color(d))
+            ;
+
+        this.legend
+            .selectAll('text')
+            .text(function (d, i) { return d.toFixed(1) })
+            ;
+
     };
 
 }
