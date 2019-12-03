@@ -20,7 +20,7 @@ class Barcharts{
                     console.log("Uh oh: " + error);
                 }
                 else {
-                    this.makeData(data);
+                    this.data = data
                 }
         });
 
@@ -58,6 +58,12 @@ class Barcharts{
 
         this.county_list.sort((a,b)=>sortMe(a,b,key));
 
+        var k = 0
+        for (var i in this.county_list) {
+            i.push(k);
+            k += 1;
+        }
+
     }
 
     makeData (data) {
@@ -82,6 +88,8 @@ class Barcharts{
     }
 
     drawCountyBarchart (selectedCounty, selectedData) {
+
+        this.makeData(this.data);
 
         this.selection = selectedData;
 
@@ -129,7 +137,6 @@ class Barcharts{
         g.selectAll('rect')
             .data(countiesToDisplay)
             .enter().append('rect')
-            // .attr('x', 0)
             .attr('y', (d,i) => yScale(d[0]))
             .attr('width', (d,i) => xScale(d[1].Average[this.selection]))
             .attr('height', yScale.bandwidth())
