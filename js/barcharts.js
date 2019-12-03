@@ -33,22 +33,30 @@ class Barcharts{
 
     }
 
-    sortByRank (data) {
+    sortByRank (data,key) {
+
+        function sortMe (a, b,key) {
+            if (a[1].Ranking[key] != undefined && b[1].Ranking[key] != undefined) {
+                if (a[1].Ranking[key] > b[1].Ranking[key]) return 1;
+                if (a[1].Ranking[key] == b[1].Ranking[key]) return 0;
+                if (a[1].Ranking[key] < b[1].Ranking[key]) return -1;
+            }
+            if (a[1].Ranking[key] != undefined) {
+                return 1;
+            }
+            if (b[1].Ranking[key] != undefined) {
+                return -1;
+            }
+            if (a[1].Ranking[key] == undefined && b[1].Ranking[key] == undefined) {
+                return 0;
+            }
+        }
 
         for (var i in data){
             this.county_list.push([i, data[i]]);
         }
-
-        console.log(this.county_list);
-
-        this.county_list.sort(function(a, b) {
-            if (a && b != undefined) {
-                return a[1].Ranking.Temperature - b[1].Ranking.Temperature;
-            }
-
-        });
-
-        console.log(this.county_list);
+        this.county_list.sort((a,b)=>sortMe(a,b,key));
+        console.log(this.county_list)
     }
 
     makeData (data) {
@@ -69,12 +77,12 @@ class Barcharts{
                 }
             }
         }
-
-        this.sortByRank(this.barData);
+        this.sortByRank(this.barData,this.selection);
 
     }
 
     drawCountyBarchart (data) {
+        console.log('county',data)
 
         // only these will need to change based upon which dataset we are displaying
         const xValue = d => d.Deaths;
