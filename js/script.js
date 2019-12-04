@@ -1,7 +1,9 @@
 var selectedData = 'deaths';
 var selectedYear = 2006;
+// create a new map object
 let map = new Map(selectedYear, selectedData);
 
+// create the svg for the selectors
 var yearSelector = d3.select('#year-slider')
   .append('svg')
   .attr('width', 600)
@@ -11,6 +13,7 @@ var yearSelector = d3.select('#year-slider')
   .attr('id', 'slider')
   ;
 
+// create the year slider
 var slider = d3.sliderBottom()
   .min(2006)
   .max(2011)
@@ -27,6 +30,7 @@ var slider = d3.sliderBottom()
 
 yearSelector.call(slider);
 
+// create the selector buttons
 d3.selectAll('input[name="switch-two"]')
   .on('change', function(){
     selectedData = this.value;

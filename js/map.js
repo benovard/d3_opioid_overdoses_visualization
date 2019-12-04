@@ -35,6 +35,7 @@ class Map {
 
     }
 
+    // draws the initial map
     drawMap() {
         const ls_w = 96; // width of the map divided by 10 gives us 10 cells with a size of 96
         const ls_h = 20; // height of a cell for the legend
@@ -62,7 +63,7 @@ class Map {
             }
         }
 
-        // get max value
+        // get max value from counties
         var maxValue;
         var maxVals = [];
         var values = [];
@@ -83,6 +84,7 @@ class Map {
         maxValue = Math.log(maxValue);
         this.ext_color_domain = [0, maxValue/10, 2*maxValue/10, 3*maxValue/10, 4*maxValue/10, 5*maxValue/10, 6*maxValue/10, 7*maxValue/10, 8*maxValue/10, 9*maxValue/10];
 
+        // create color scale for map
         this.colorScale = d3.scaleLinear()
             .domain(this.ext_color_domain)
             .range(this.ext_color_range)
@@ -94,15 +96,18 @@ class Map {
             d.properties = { ...d.properties, ...temp };
         });
 
+        // add zoom to map
         this.map.call(d3.zoom().on('zoom', () => {
             this.map.attr('transform', d3.event.transform);
         }));
 
+        // create tooltip
         var tooltip = d3.select("body").append("div")
             .attr("class", "tooltip")
             .style("opactiy", 0)
             ;
 
+        // creates county paths from json
         this.map.append('g')
             .attr('class', 'counties')
             .selectAll('path')
@@ -151,6 +156,7 @@ class Map {
                 ;
                 this.barchart.drawCountyBarchart(d, this.selectedData);
             })
+            // handle mouse events
             .on('mouseenter', function (d) {
                 d3.select(this)
                     .style('stroke', 'white')
@@ -211,6 +217,7 @@ class Map {
             })))
             ;
 
+        // create map legend
         this.legend = this.svg.append('g').attr('class', 'legend');
 
         this.legend.selectAll('rect')
@@ -248,6 +255,7 @@ class Map {
         console.log(d);
     };
 
+    // returns a color based on input
     color(val) {
         if (this.selectedData == 'temperature') {
             // old scheme
@@ -303,6 +311,7 @@ class Map {
             })
             ;
 
+        // update legend
         this.legend
             .selectAll('rect')
             .style('fill', (d, i) => this.color(d))
