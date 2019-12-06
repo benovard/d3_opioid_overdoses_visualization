@@ -1,7 +1,7 @@
 class Barcharts{
     constructor() {
         this.width = 480; 
-        this.height = 360;
+        this.height = 400;
 
         this.county_svg = d3.select("body").select("#county_barchart")
             .attr("width", this.width)
@@ -88,7 +88,7 @@ class Barcharts{
     // draws the chart
     drawCountyBarchart (selectedCounty, selectedData) {
         console.log('hi')
-        const margin = { top: 20, right: 20, bottom: 20, left: 100};
+        const margin = { top: 20, right: 20, bottom: 60, left: 100};
         const innerWidth = this.width - margin.left - margin.right;
         const innerHeight = this.height - margin.top - margin.bottom;
 
@@ -128,6 +128,7 @@ class Barcharts{
             .call(d3.axisLeft(yScale))
             ;
         g.append('g')
+            .attr('id', 'xAxis')
             .call(d3.axisBottom(xScale))
             .attr('transform', `translate(0,${innerHeight})`) //this just puts the axis on the bottom
             ;
@@ -139,6 +140,12 @@ class Barcharts{
             .attr('width', (d,i) => xScale(d[1].Average[this.selection]))
             .attr('height', yScale.bandwidth())
             ;
-        console.log(countiesToDisplay);
+
+        this.county_svg
+            .append('text')
+            .attr('x', 250)
+            .attr('y', 380)
+            .text(this.selection)
+            ;
     }
 }

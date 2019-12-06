@@ -153,7 +153,7 @@ class Map {
                     ;
                 d3.select('.avg_temp')
                     .text(thisCountyAvg.temperature == undefined ? 'Temperature: No Data' : 'Temperature: ' + thisCountyAvg.temperature.toFixed(1) + " °F")
-                ;
+                    ;
                 this.barchart.drawCountyBarchart(d, this.selectedData);
             })
             // handle mouse events
@@ -206,7 +206,8 @@ class Map {
             .on('mouseout', (d) => {
                 tooltip.transition()
                     .duration(500)
-                    .style("opacity", 0);
+                    .style("opacity", 0)
+                    ;
             })
             ;
 
