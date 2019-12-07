@@ -88,7 +88,7 @@ class Map {
         this.colorScale = d3.scaleLinear()
             .domain(this.ext_color_domain)
             .range(this.ext_color_range)
-            ;
+        ;
 
         // match names in topojson and data
         this.features.forEach(d => {
@@ -105,7 +105,7 @@ class Map {
         var tooltip = d3.select("body").append("div")
             .attr("class", "tooltip")
             .style("opactiy", 0)
-            ;
+        ;
 
         // creates county paths from json
         this.map.append('g')
@@ -122,38 +122,39 @@ class Map {
                 return d.properties[this.year] && d.properties[this.year][this.selectedData] ? this.color(d.properties[this.year][this.selectedData]) : undefined;
             })
             .on('click', (d) => {
+                d3.select('#barchart_label').style('display', 'block');
                 var thisCounty = d.properties[this.year];
                 var thisCountyAvg = d.properties['Average'];
                 d3.select('.county')
                     .text(d.properties.long_name + ', ' + d.properties.state)
-                    ;
+                ;
                 d3.select('.deaths')
                     .text(thisCounty.deaths == undefined ? 'Deaths: No Data' : 'Deaths: ' + thisCounty.deaths)
-                    ;
+                ;
                 d3.select('.population')
                     .text(thisCounty.population == undefined ? 'Population: No Data' : 'Population: ' + thisCounty.population)
-                    ;
+                ;
                 d3.select('.prescriptions')
                     .text(thisCounty.quantity == undefined ? 'Total Prescriptions: No Data' : 'Total Prescriptions: ' + thisCounty.quantity)
-                    ;
+                ;
                 d3.select('.temp')
                     .text(thisCounty.temperature == undefined ? 'Average Temperature For The Year ' + this.year + ': No Data' : 'Average Temperature: ' + thisCounty.temperature + " °F")
-                    ;
+                ;
                 d3.select('#avg_label')
                     .text('Averages for the years 2006 - 2011: ')
-                    ;
+                ;
                 d3.select('.avg_pop')
                     .text(thisCountyAvg.population == undefined ? 'Population: No Data' : 'Population: ' + thisCountyAvg.population.toFixed(1))
-                    ;
+                ;
                 d3.select('.avg_deaths')
                     .text(thisCountyAvg.deaths == undefined ? 'Deaths: No Data' : 'Deaths: ' + thisCountyAvg.deaths.toFixed(1))
-                    ;
+                ;
                 d3.select('.avg_prescriptions')
                     .text(thisCountyAvg.quantity == undefined ? 'Prescriptions: No Data' : 'Prescriptions: ' + thisCountyAvg.quantity.toFixed(1))
-                    ;
+                ;
                 d3.select('.avg_temp')
                     .text(thisCountyAvg.temperature == undefined ? 'Temperature: No Data' : 'Temperature: ' + thisCountyAvg.temperature.toFixed(1) + " °F")
-                    ;
+                ;
                 this.barchart.drawCountyBarchart(d, this.selectedData);
             })
             // handle mouse events
@@ -162,13 +163,13 @@ class Map {
                     .style('stroke', 'white')
                     .style('stroke-width', 3)
                     .style('cursor', 'pointer')
-                    ;
+                ;
             })
             .on('mouseleave', function (d) {
                 d3.select(this)
                     .style('stroke', null)
                     .style('stroke-width', 0.25)
-                    ;
+                ;
             })
             .on('mouseover', (d) => {
                 var tooltipData = "";
@@ -196,27 +197,27 @@ class Map {
                 tooltip.transition()
                     .duration(200)
                     .style("opacity", .9)
-                    ;
+                ;
                 tooltip.html(d.properties.long_name + ", " + d.properties.state +
                     '<br>' + tooltipData)
                     .style("left", (d3.event.pageX) + "px")
                     .style("top", (d3.event.pageY - 28) + "px")
-                    ;
+                ;
             })
             .on('mouseout', (d) => {
                 tooltip.transition()
                     .duration(500)
                     .style("opacity", 0)
-                    ;
+                ;
             })
-            ;
+        ;
 
         this.map.append('path')
             .attr('class', 'county-borders')
             .attr('d', this.path(topojson.mesh(this.us, this.us.objects.counties, function (a, b) {
                 return a !== b;
             })))
-            ;
+        ;
 
         // create map legend
         this.legend = this.svg.append('g').attr('class', 'legend');
@@ -231,7 +232,7 @@ class Map {
             .attr('height', ls_h)
             .style('fill', (d, i) => this.color(d))
             .style('opacity', 0.8)
-            ;
+        ;
 
         this.legend.selectAll('text')
             .data(this.ext_color_domain)
@@ -240,15 +241,15 @@ class Map {
             .attr('x', function (d, i) { return 960 - (i * ls_w) - ls_w; })
             .attr('y', 720)
             .text(function (d, i) { return d.toFixed(1) })
-            ;
+        ;
 
-		var legend_title = '';
+		var legend_title = ``;
         this.legend.append('text')
             .attr('x', 0)
             .attr('y', 670)
             .attr('class', 'legend_title')
             .text(legend_title)
-            ;
+        ;
 
     };
 
@@ -302,26 +303,26 @@ class Map {
         this.colorScale = d3.scaleLinear()
             .domain(this.ext_color_domain)
             .range(this.ext_color_range)
-            ;
-      
+        ;
+    
         // update map
         this.map.select('.counties')
             .selectAll('path')
             .style('fill', (d) => {
                 return d.properties[this.year] && d.properties[this.year][this.selectedData] ? this.color(d.properties[this.year][this.selectedData]) : undefined;
             })
-            ;
+        ;
 
         // update legend
         this.legend
             .selectAll('rect')
             .style('fill', (d, i) => this.color(d))
-            ;
+        ;
 
         this.legend
             .selectAll('text')
             .text(function (d, i) { return d.toFixed(1) })
-            ;
+        ;
 
     };
 
