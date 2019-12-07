@@ -4,3 +4,8 @@
     * Austin Williams - A02170170 - austin.michaelwill@gmail.com
 
 Visualizing opioid sales, overdose and weather data.
+
+Project Proposal: https://github.com/austin-michael/data_vis_final_project/blob/master/docs/process/process.md
+Process Book: https://github.com/austin-michael/data_vis_final_project/blob/master/docs/process/process_book.pdf
+Screencast: [TODO]
+Project Website: https://austin-michael.github.io/data_vis_final_project/src/index.html 
