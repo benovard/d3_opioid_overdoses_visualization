@@ -122,6 +122,7 @@ class Map {
                 return d.properties[this.year] && d.properties[this.year][this.selectedData] ? this.color(d.properties[this.year][this.selectedData]) : undefined;
             })
             .on('click', (d) => {
+                d3.select('#barchart_label').style('display', 'block');
                 var thisCounty = d.properties[this.year];
                 var thisCountyAvg = d.properties['Average'];
                 d3.select('.county')
