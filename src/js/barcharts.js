@@ -6,12 +6,12 @@ class Barcharts{
         this.county_svg = d3.select("body").select("#county_barchart")
             .attr("width", this.width)
             .attr("height", this.height)
-            ;
+        ;
 
         this.state_svg = d3.select("body").select("#state_barchart")
             .attr("width", this.width)
             .attr("height", this.height)
-            ;
+        ;
 
         d3.queue()
             .defer(d3.json, "data/data.json")
@@ -87,7 +87,6 @@ class Barcharts{
 
     // draws the chart
     drawCountyBarchart (selectedCounty, selectedData) {
-        console.log('hi')
         const margin = { top: 20, right: 20, bottom: 60, left: 100};
         const innerWidth = this.width - margin.left - margin.right;
         const innerHeight = this.height - margin.top - margin.bottom;
@@ -115,23 +114,23 @@ class Barcharts{
         const xScale = d3.scaleLinear()
             .domain([countiesToDisplay[countiesToDisplay.length-1][1].Average[this.selection]-Math.max(1,0.1*countiesToDisplay[countiesToDisplay.length-1][1].Average[this.selection]), countiesToDisplay[0][1].Average[this.selection]])
             .range([0,innerWidth])
-            ;
+        ;
         const yScale = d3.scaleBand()
             .domain(list_of_counties)
             .range([0, innerHeight])
             .padding(0.1)
-            ;
+        ;
         const g = this.county_svg.append('g')
             .attr('transform', `translate(${margin.left},${margin.top})`)
-            ;
+        ;
         g.append('g')
             .call(d3.axisLeft(yScale))
-            ;
+        ;
         g.append('g')
             .attr('id', 'xAxis')
             .call(d3.axisBottom(xScale))
             .attr('transform', `translate(0,${innerHeight})`) //this just puts the axis on the bottom
-            ;
+        ;
         g.selectAll('rect')
             .data(countiesToDisplay)
             .enter()
@@ -139,13 +138,13 @@ class Barcharts{
             .attr('y', (d,i) => yScale(d[0]))
             .attr('width', (d,i) => xScale(d[1].Average[this.selection]))
             .attr('height', yScale.bandwidth())
-            ;
+        ;
 
         this.county_svg
             .append('text')
             .attr('x', 250)
             .attr('y', 380)
             .text(this.selection)
-            ;
+        ;
     }
 }
