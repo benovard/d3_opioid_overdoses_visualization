@@ -13,6 +13,3 @@ Process Book: https://github.com/austin-michael/data_vis_final_project/blob/mast
 
 Screencast: 
 https://www.youtube.com/watch?v=A711Elru4w8&t=4s
-
-
-Project Website: https://austin-michael.github.io/data_vis_final_project/src/index.html 
